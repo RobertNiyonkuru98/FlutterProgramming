@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title> Phase Playbook</title>
+<style>
+:root{
+  --ink:#16202b; --muted:#5a6b7b; --line:#dbe3ea; --soft:#f6f8fa;
+  --accent:#0b6b5f; --accent-soft:#e6f2f0; --warn:#a8410d; --warn-soft:#fdf1e7;
+  --hi:#8a1c1c; --hi-soft:#fdecec;
+}
+*{box-sizing:border-box}
+body{
+  font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink); line-height:1.62; max-width:920px; margin:0 auto;
+  padding:56px 40px 96px; background:#fff; font-size:15.5px;
+  -webkit-print-color-adjust:exact; print-color-adjust:exact;
+}
+h1{font-size:2.05em; line-height:1.2; margin:0 0 .15em; letter-spacing:-.02em}
+h1+h2{border:0; margin-top:.1em; color:var(--muted); font-weight:600; font-size:1.06em; padding:0}
+h1+h2+h3{border:0;margin-top:.6em}
+h2{
+  font-size:1.42em; margin:2.2em 0 .7em; padding-top:.55em;
+  border-top:2px solid var(--line); letter-spacing:-.01em;
+}
+h3{font-size:1.12em; margin:1.9em 0 .5em; color:var(--accent)}
+h3:first-of-type{margin-top:1.1em}
+p{margin:.72em 0}
+a{color:var(--accent)}
+strong{color:#0d1720}
+hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+/* tables */
+table{border-collapse:collapse; width:100%; margin:1.1em 0 1.5em; font-size:.92em}
+th,td{border:1px solid var(--line); padding:9px 11px; text-align:left; vertical-align:top}
+th{background:var(--soft); font-weight:650; font-size:.95em}
+tbody tr:nth-child(even){background:#fbfcfd}
+/* blockquotes */
+blockquote{
+  margin:1.3em 0; padding:14px 20px; border-left:4px solid var(--accent);
+  background:var(--accent-soft); border-radius:0 6px 6px 0;
+}
+blockquote p{margin:.35em 0}
+blockquote h3{margin-top:0; color:var(--accent)}
+/* code */
+code{
+  background:#eef2f5; padding:2px 6px; border-radius:4px; font-size:.87em;
+  font-family:"Cascadia Mono",Consolas,"SF Mono",Menlo,monospace;
+}
+pre{background:#f4f7f9; border:1px solid var(--line); border-radius:6px; padding:14px 16px; overflow-x:auto}
+pre code{background:none; padding:0; font-size:.86em; line-height:1.5}
+/* task lists */
+ul li{margin:.3em 0}
+input[type=checkbox]{margin-right:7px}
+/* print */
+@page{size:A4; margin:16mm 14mm}
+@media print{
+  body{padding:0; max-width:none; font-size:10.4pt; line-height:1.5}
+  h2{page-break-after:avoid} h3{page-break-after:avoid}
+  table,blockquote,pre{page-break-inside:avoid}
+  a{color:var(--ink); text-decoration:none}
+}
+</style>
+</head><body>
+<h1>Phase Playbook</h1>
+<h3>ALU Final Project, Part 1 — User Research &amp; Prototype Design</h3>
+<p><strong>Team:</strong> Robert · Deborah · Elie · David · Igihozo<br />
+<strong>Today: Wed 16 Sep 2026 · Submit: Wed 23 Sep · Hard deadline: Thu 24 Sep 23:59 · 8 days</strong></p>
+<blockquote>
+<p><strong>Which document is which:</strong><br />
+- <strong><code>Team-Tasks-Round1.md</code> — who does what, and when.</strong> That is the authoritative schedule. This file does not repeat it.<br />
+- <strong><code>Part1-RUBRIC-CHECKLIST.md</code> — where the marks are</strong>, and the final gates.<br />
+- <strong>This file — how to actually do each piece</strong>, plus the traps. Read the section for your own role.</p>
+</blockquote>
+<hr />
+<h2>1. The five traps that cost marks</h2>
+<table>
+<thead>
+<tr>
+<th>Trap</th>
+<th>Why it bites</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sensory notes missing from empathy maps</strong></td>
+<td>The rubric requires <strong>Sights, Sounds, Feels, Smells</strong> in the quadrants. The brief never mentions it. It is the single most commonly missed item on this assignment</td>
+<td>Build the FigJam template with those four labels <strong>already on it</strong> before you fill anything in</td>
+</tr>
+<tr>
+<td><strong>Figma link set to "restricted"</strong></td>
+<td>A link that asks for access = zero for 10 points</td>
+<td>Test in an <strong>incognito window</strong> on Monday 21, not Wednesday 23</td>
+</tr>
+<tr>
+<td><strong>In-text citation with no matching reference</strong></td>
+<td>The brief calls this plagiarism → automatic zero</td>
+<td>Two people check separately on Wed 23: one reads each <code>[n]</code> aloud, the other confirms it in the list</td>
+</tr>
+<tr>
+<td><strong>Bullet points in the proposal</strong></td>
+<td>The brief says paragraphs only; bullets are allowed <strong>only</strong> for Project Objectives</td>
+<td>Narrative sections = paragraphs. Everything else = images</td>
+</tr>
+<tr>
+<td><strong>Designing before the research</strong></td>
+<td>Screens that don't trace to an interview quote score poorly — the rubric wants screens that "map explicitly to the empathy map, journey map and UVP"</td>
+<td>Nothing gets designed before Saturday's synthesis call</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. Literature review (Robert) — max 1 page, min 2 paragraphs</h2>
+<p><strong>Build the source table before you write a single sentence:</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Citation (IEEE)</th>
+<th>The one statistic you'll use</th>
+<th>Page / quote</th>
+<th>URL</th>
+<th>Date accessed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Then write three movements, <strong>in paragraphs</strong>:</p>
+<ol>
+<li><strong>Problem context</strong> — the broader issue. Healthcare access for migrants and newly arrived people; unfamiliar insurance; emergency situations.</li>
+<li><strong>Evidence</strong> — the numbers, each with a <code>[n]</code>. Look for: RSSB, Rwanda FDA, NISR, Ministry of Health / RBC, WHO, World Bank, and published studies on health access for mobile/migrant populations.</li>
+<li><strong>Gap identification</strong> — what existing tools miss and why a mobile app fixes it. <strong>This is where your pharmacy-door insight goes</strong> — that acceptance information is public but only physically readable.</li>
+</ol>
+<p><strong>Rules:</strong> 5–7 sources. Numbered <code>[1]…[n]</code> <strong>in order of first appearance</strong>. <strong>Vary your language</strong> — do not start three consecutive sentences with "According to". Only cite what you have actually read. Prefer sources that name Rwanda; "pilot data from similar interventions in Kenya" is acceptable, "no country at all" is not.</p>
+<hr />
+<h2>3. Interviews (everyone) — the highest-value 3 days</h2>
+<h3>The script — one script for everybody</h3>
+<p><strong>The brief is explicit:</strong> the questions are the same, the answers differ. So build <strong>5 warm-up + 8–10 core questions</strong> once, and reuse it 12 times.</p>
+<p>Cover these six areas:<br />
+1. <strong>How they handle it today</strong> — "Walk me through the last time you needed medicine here."<br />
+2. <strong>The insurance moment</strong> — "How did you find out which pharmacy takes your insurance?"<br />
+3. <strong>The workaround</strong> — "What do you do when you're not sure?"<br />
+4. <strong>The cost of the problem</strong> — time, money, trips, stress. Ask for a real example, not an opinion.<br />
+5. <strong>The emergency case</strong> — "What would you do at 11pm with a sick child?"<br />
+6. <strong>What would change it</strong> — "What would have made that easier?"</p>
+<h3>Rules that decide whether you get good data</h3>
+<ul>
+<li><strong>No yes/no questions.</strong> "Do you use X?" ✗ → "How do you handle X today?" ✓</li>
+<li><strong>Never describe our app before asking about the problem.</strong> The moment you do, every answer after it is contaminated.</li>
+<li><strong>Same questions for everyone.</strong> If you improvise new ones, you can't compare.</li>
+<li><strong>Ask "why" and "what" and then stay quiet.</strong> Silence gets you the real answer; the second sentence a person says is usually the honest one.</li>
+<li><strong>Write quotes verbatim</strong>, in their words — 2–3 per person. You will need them for the empathy maps, the personas and the insights summary.</li>
+<li><strong>Record the observation too:</strong> mood, hesitation, when they laughed, what they reached for. The rubric grades "rich evidence".</li>
+</ul>
+<h3>Consent — read it, then record the answer</h3>
+<blockquote>
+<p>"Before we start — this is for a university project. I'd like to record so I can write accurate notes. Nothing is shared publicly, your name isn't used, and you can stop or skip any question. Do you consent to being recorded?" <em>(wait for a spoken yes — on the recording)</em></p>
+</blockquote>
+<p>Keep the signed/scanned consent form. <strong>Five points live in this row.</strong></p>
+<h3>Bias — the brief names five, so show you handled them</h3>
+<p>Same questions for everyone (not just the answers you hoped for) · a diverse set of participants, not 12 clones of yourselves · never lead · record everything so you don't remember only the first and last thing said · <strong>do not pivot the problem statement because you already spent time on it</strong> (sunk cost).</p>
+<h3>Upload the same day — this is not optional</h3>
+<pre><code>03_Interviews/P07_Name/   script-responses.pdf  ·  audio.m4a  ·  notes.jpg
+</code></pre>
+<p>Consent inside the audio. If it isn't in Drive the same day, it doesn't exist.</p>
+<hr />
+<h2>4. Synthesis (Saturday afternoon)</h2>
+<p><strong>Empathy maps.</strong> Brief says one per user; <strong>rubric only requires 3–4 key ones.</strong> Do <strong>4 rich maps</strong> and put <strong>direct quotes + sensory notes</strong> in them.<br />
+- Quadrants: <strong>SAYS · THINKS · DOES · FEELS</strong><br />
+- Plus <strong>Sights · Sounds · Feels · Smells</strong> — non-negotiable, it's in the rubric<br />
+- Build one FigJam template, duplicate it four times. ~10 minutes each.</p>
+<p><strong>Aggregated maps.</strong> Merge the 4 into <strong>1–2</strong> segments. Name the segments by behaviour, not by person: e.g. <em>"the caller"</em> (phones the insurer), <em>"the walker"</em> (physically checks doors), <em>"the asker"</em> (asks friends/pharmacy staff).</p>
+<p><strong>Personas — 2.</strong> Rubric wants <strong>name, photo, demographics, goals, frustrations, behaviours, environment, and a quote</strong>. The <strong>photo</strong> and <strong>environment</strong> are the two people forget. The quote must be something a real person actually said.</p>
+<p><strong>Insight summary.</strong> Number conducted + the 5 strongest insights, each with a supporting quote and which participants said it.</p>
+<p><strong>Then fill the Claims → Evidence table</strong> in <code>Team-Tasks-Round1.md</code>. One table defends six rubric rows.</p>
+<hr />
+<h2>5. Competitors &amp; journey map (Elie, Sunday)</h2>
+<p><strong>Four competitors: 2 direct, 2 indirect.</strong><br />
+- Direct = same offering, same audience (a provider/medicine finder for newcomers)<br />
+- Indirect = similar offering, different audience, or different offering, same audience (maps, insurer apps, WhatsApp word-of-mouth, government service portals)</p>
+<p><strong>Look internationally — the strongest comparables are the "find a provider that takes my insurance" products from other markets.</strong> Using them is fully legitimate and is exactly what the brief's direct/indirect split is for. Whatever you pick, <strong>verify each one is real and currently available before you put it in the document.</strong></p>
+<p><strong>Screenshot every key screen.</strong> Note pricing, app-store rating, and — most valuable — <strong>read the 1- and 3-star reviews and write down the complaints.</strong> Free differentiation evidence.</p>
+<p><strong>Journey map: one DIRECT competitor.</strong> Stages → actions → thoughts → feelings/emotional curve → pain points → <strong>Opportunities</strong>.</p>
+<blockquote>
+<p>Rubric, verbatim: <em>"the 'Opportunities' column explicitly lists concrete, actionable improvements that map to your later Figma features."</em><br />
+So every opportunity must name a screen Deborah will build. "Better UX" is not an opportunity. "Show accepted insurers on the search results card so the user doesn't open each pharmacy" is.</p>
+</blockquote>
+<hr />
+<h2>6. UVP &amp; reframed problem (Robert, Sunday)</h2>
+<p><strong>UVP — one statement.</strong> Benefit + how it solves the need + what makes it different. The one you already have is strong because the gap is concrete:</p>
+<blockquote>
+<p>The existing thing is a board on a door. Nobody has put it online.</p>
+</blockquote>
+<p><strong>Reframed problem — separate requirement, don't just repeat the original.</strong> Write it <strong>from the user's perspective</strong>, first person, supported by what they actually told you. E.g. <em>"I have insurance I can't use, because I can't find out who takes it without walking there."</em> Pull the wording from a real interview quote.</p>
+<hr />
+<h2>7. IA, flows, storyboard (Elie, Sunday)</h2>
+<p><strong>IA — 8 screens minimum.</strong> A sitemap showing hierarchy and how screens connect. Apply the two principles the brief names: <strong>Choice Principle</strong> (few, well-organised options) and <strong>Focused Navigation</strong> (logical menu design).</p>
+<p><strong>User flows — one per core task.</strong> At minimum: onboarding → first successful search, and one supporting task. Must show actions, decision points, <strong>happy path AND failure states</strong> (wrong input, no network, no results found, pharmacy closed).</p>
+<p><strong>Storyboard — 6 panels.</strong> Characters, setting, emotions. One person's story: has the problem → finds the app → resolves it. Cheapest 5 points in the assignment; do not skip it.</p>
+<hr />
+<h2>8. Figma (Deborah + Igihozo, Sunday–Monday)</h2>
+<p><strong>Order of work matters — build it this way and you save hours:</strong></p>
+<ol>
+<li><strong>Tokens + components first.</strong> Type scale, colour palette, buttons, cards, list rows, icons. Everything after this is assembly, not design.</li>
+<li><strong>60-30-10 colour rule</strong> — named in the brief, so it's marked. Mostly light neutrals, one brand colour, one accent for the primary action.</li>
+<li><strong>10 screens</strong>, covering the full journey: open → pick insurance → locate → see accepting pharmacies → choose → get there. Plus Home, Profile, Settings, Emergency.</li>
+<li><strong>States:</strong> empty (no results found), loading, tap/hover, error (no network). Rubric names these explicitly.</li>
+<li><strong>Real interactions:</strong> clickable links, transitions, at least one simulated state change. A flat picture of screens is not an interactive prototype.</li>
+<li><strong>Share → anyone with the link → test in incognito.</strong> Do this Monday, not Wednesday.</li>
+</ol>
+<p><strong>Make the research visible.</strong> Under each key screenshot, one short caption naming the insight or journey pain point it answers. The rubric asks for screens that "map explicitly to the empathy map, journey map and UVP". Twenty minutes of captions defends several rubric rows at once.</p>
+<hr />
+<h2>9. The PDF (Robert + Igihozo, Tuesday)</h2>
+<p><strong>Format — hard requirements:</strong> Times New Roman, <strong>12pt, single-spaced</strong>, clear headings, supporting diagrams, reference list. <strong>Paragraphs, not bullets</strong> — the only bulleted list is Project Objectives. Single PDF. Polished and error-free (this is inside a 10-point row).</p>
+<p><strong>Order of sections:</strong></p>
+<table>
+<thead>
+<tr>
+<th>§</th>
+<th>Section</th>
+<th>Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Introduction &amp; Mission Alignment</strong> ⭐ <em>rubric-only, not in the submission list</em></td>
+<td>Paragraphs</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Project objectives</td>
+<td>The only bullet list</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Literature review (≤1 page)</td>
+<td>Paragraphs</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Problem statement &amp; hypothesis</td>
+<td>Paragraphs</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Summary of user interviews (number + key insights)</td>
+<td>Paragraphs</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Interview scripts</td>
+<td><strong>Drive link</strong></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Consent / ethics documentation</td>
+<td>Images</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Interview notes</td>
+<td>Link / images</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Audio/video links (consented)</td>
+<td><strong>Hyperlinks</strong></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Empathy maps — individual + aggregated</td>
+<td><strong>Images</strong></td>
+</tr>
+<tr>
+<td>11</td>
+<td>Personas</td>
+<td><strong>Images (with photos)</strong></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Competitor analysis (4)</td>
+<td>Paragraphs</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Competitor screenshots &amp; references</td>
+<td><strong>Images + links</strong></td>
+</tr>
+<tr>
+<td>14</td>
+<td>User journey map</td>
+<td><strong>Image</strong></td>
+</tr>
+<tr>
+<td>15</td>
+<td>Unique Value Proposition</td>
+<td>Paragraph</td>
+</tr>
+<tr>
+<td>16</td>
+<td><strong>Reframed problem</strong> ⭐ <em>rubric-only</em></td>
+<td>Paragraph</td>
+</tr>
+<tr>
+<td>17</td>
+<td>User flows</td>
+<td><strong>Images</strong></td>
+</tr>
+<tr>
+<td>18</td>
+<td>Information architecture</td>
+<td><strong>Image</strong></td>
+</tr>
+<tr>
+<td>19</td>
+<td>Storyboards</td>
+<td><strong>Images</strong></td>
+</tr>
+<tr>
+<td>20</td>
+<td>Figma prototype screenshots</td>
+<td><strong>Images</strong></td>
+</tr>
+<tr>
+<td>21</td>
+<td>Reflection — design decisions ↔ research findings</td>
+<td>Paragraphs</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Live Figma prototype</td>
+<td><strong>Hyperlink</strong></td>
+</tr>
+<tr>
+<td>23</td>
+<td>Group contribution tracker</td>
+<td><strong>Hyperlink</strong></td>
+</tr>
+<tr>
+<td>24</td>
+<td>References (IEEE)</td>
+<td>Numbered list</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>10. Originality — the gate that can zero us</h2>
+<p><strong>We write the proposal ourselves, in our own words, from our own interview notes.</strong></p>
+<p>AI is permitted <strong>only</strong> to fix grammar on text already written — the rubric phrases it as "<em>&gt;50% AI-generated content (limited to brainstorming/editing assistance)</em>". Brainstorming and editing are the allowed lanes. <strong>Generating the narrative is not.</strong></p>
+<p><strong>Our defence is structural:</strong> every claim traces to a quote or a named source. An AI could not have produced your interview transcripts, your sensory notes, or your verbatim participant quotes.</p>
+<p><strong>Keep evidence:</strong> the Google Doc version history, your handwritten notes, the raw audio. If we're ever asked, that is the proof.</p>
+<hr />
+<h2>11. Final gates — Wednesday 23 September</h2>
+<table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>Check</th>
+<th>By</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Link gate</td>
+<td>Every hyperlink opens in an <strong>incognito</strong> window</td>
+<td>Robert</td>
+</tr>
+<tr>
+<td>Figma gate</td>
+<td>Share = anyone with the link</td>
+<td>Deborah</td>
+</tr>
+<tr>
+<td>Format gate</td>
+<td>Times New Roman 12, single-spaced, no bullets outside objectives</td>
+<td>Igihozo</td>
+</tr>
+<tr>
+<td>IEEE gate</td>
+<td>Every in-text <code>[n]</code> matches a reference, in order — read aloud by one, verified by another</td>
+<td>Elie + Igihozo</td>
+</tr>
+<tr>
+<td>Originality gate</td>
+<td>Written by us; AI used for grammar only; version history kept</td>
+<td>All</td>
+</tr>
+<tr>
+<td>Count gate</td>
+<td>12 interviews · 8 IA screens · 10 Figma screens · 6 storyboard panels · 4 empathy maps</td>
+<td>Elie</td>
+</tr>
+<tr>
+<td>Tracker gate</td>
+<td>All contributions logged, link in the PDF</td>
+<td>Igihozo</td>
+</tr>
+<tr>
+<td>Polish gate</td>
+<td>Proofread once more, by whoever wrote the least of it</td>
+<td>All</td>
+</tr>
+<tr>
+<td>Submit</td>
+<td>Screenshot the confirmation</td>
+<td>Igihozo</td>
+</tr>
+</tbody>
+</table>
+</body></html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title> Team Task Assignment — Round 1</title>
+<style>
+:root{
+  --ink:#16202b; --muted:#5a6b7b; --line:#dbe3ea; --soft:#f6f8fa;
+  --accent:#0b6b5f; --accent-soft:#e6f2f0; --warn:#a8410d; --warn-soft:#fdf1e7;
+  --hi:#8a1c1c; --hi-soft:#fdecec;
+}
+*{box-sizing:border-box}
+body{
+  font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink); line-height:1.62; max-width:920px; margin:0 auto;
+  padding:56px 40px 96px; background:#fff; font-size:15.5px;
+  -webkit-print-color-adjust:exact; print-color-adjust:exact;
+}
+h1{font-size:2.05em; line-height:1.2; margin:0 0 .15em; letter-spacing:-.02em}
+h1+h2{border:0; margin-top:.1em; color:var(--muted); font-weight:600; font-size:1.06em; padding:0}
+h1+h2+h3{border:0;margin-top:.6em}
+h2{
+  font-size:1.42em; margin:2.2em 0 .7em; padding-top:.55em;
+  border-top:2px solid var(--line); letter-spacing:-.01em;
+}
+h3{font-size:1.12em; margin:1.9em 0 .5em; color:var(--accent)}
+h3:first-of-type{margin-top:1.1em}
+p{margin:.72em 0}
+a{color:var(--accent)}
+strong{color:#0d1720}
+hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+/* tables */
+table{border-collapse:collapse; width:100%; margin:1.1em 0 1.5em; font-size:.92em}
+th,td{border:1px solid var(--line); padding:9px 11px; text-align:left; vertical-align:top}
+th{background:var(--soft); font-weight:650; font-size:.95em}
+tbody tr:nth-child(even){background:#fbfcfd}
+/* blockquotes */
+blockquote{
+  margin:1.3em 0; padding:14px 20px; border-left:4px solid var(--accent);
+  background:var(--accent-soft); border-radius:0 6px 6px 0;
+}
+blockquote p{margin:.35em 0}
+blockquote h3{margin-top:0; color:var(--accent)}
+/* code */
+code{
+  background:#eef2f5; padding:2px 6px; border-radius:4px; font-size:.87em;
+  font-family:"Cascadia Mono",Consolas,"SF Mono",Menlo,monospace;
+}
+pre{background:#f4f7f9; border:1px solid var(--line); border-radius:6px; padding:14px 16px; overflow-x:auto}
+pre code{background:none; padding:0; font-size:.86em; line-height:1.5}
+/* task lists */
+ul li{margin:.3em 0}
+input[type=checkbox]{margin-right:7px}
+/* print */
+@page{size:A4; margin:16mm 14mm}
+@media print{
+  body{padding:0; max-width:none; font-size:10.4pt; line-height:1.5}
+  h2{page-break-after:avoid} h3{page-break-after:avoid}
+  table,blockquote,pre{page-break-inside:avoid}
+  a{color:var(--ink); text-decoration:none}
+}
+</style>
+</head><body>
+<h1>Team Task Assignment — Round 1</h1>
+<h3>ALU Final Project, Part 1: User Research &amp; Prototype Design</h3>
+<p><strong>Team:</strong> Robert · Deborah · Elie · David · Igihozo · <strong>Kigali, Rwanda</strong><br />
+<strong>🚩 DEADLINE: Thursday 24 September, 23:59 — but we submit Wednesday 23 September.</strong></p>
+<blockquote>
+<p><strong>DRAFT for tomorrow's meeting (Thu 17).</strong> Nothing is fixed until all five of us have read this and said whether it's doable.</p>
+</blockquote>
+<hr />
+<h1>⏰ Read this first — we have 8 days</h1>
+<p>Today is <strong>Wednesday 16 September</strong>. The deadline is <strong>Thursday 24 September</strong>. That is <strong>8 days</strong>, and only <strong>one weekend</strong> (Sat 19 – Sun 20). That weekend is not free time — it is the project.</p>
+<p><strong>Because of that, two things change from a normal plan:</strong></p>
+<ol>
+<li><strong>We start recruiting tonight, not at tomorrow's meeting.</strong> If we wait until Thursday's meeting to send the recruitment message, we lose a full day of interviews and the whole thing collapses. Robert sends it tonight.</li>
+<li><strong>We agree the scope now, and we agree it small.</strong> In 8 days we cannot do the maximum version. We do the version that scores the marks. That is on page 4.</li>
+</ol>
+<hr />
+<h1>⚡ At a glance</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mission</strong></td>
+<td>Healthcare access for newcomers in Rwanda</td>
+</tr>
+<tr>
+<td><strong>The problem</strong></td>
+<td>A foreigner who just arrived holds an insurance card nobody around them recognises, and has no way to find out <strong>which nearby pharmacy accepts <em>their</em> insurer</strong></td>
+</tr>
+<tr>
+<td><strong>Today's only method</strong></td>
+<td>Walk to a pharmacy and read the board on the door. Or call the insurer</td>
+</tr>
+<tr>
+<td><strong>Our users</strong></td>
+<td>International students · other newcomers · pharmacists · insurance/hospital staff</td>
+</tr>
+<tr>
+<td><strong>The app (working idea)</strong></td>
+<td>Choose your insurance → see nearby pharmacies and hospitals that accept it → open now, directions, what to bring. Plus a one-tap <strong>Emergency mode</strong></td>
+</tr>
+<tr>
+<td><strong>Live calls</strong></td>
+<td>4 only: Thu 17 (60m) · Sat 19 (90m) · Tue 22 (60m) · Wed 23 (15m)</td>
+</tr>
+<tr>
+<td><strong>🚩 Hard milestone</strong></td>
+<td><strong>All 12 interviews done by Saturday 19 September, midday</strong></td>
+</tr>
+<tr>
+<td><strong>Submit</strong></td>
+<td><strong>Wednesday 23 September.</strong> Thursday 24th is buffer, not working time</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>🩺 What we know for certain</h1>
+<p><strong>Confirmed by Robert, who works in pharmacy systems. Nobody designs anything before reading this.</strong></p>
+<ol>
+<li><strong>Almost every pharmacy in Rwanda accepts cash.</strong> Some also accept specific insurance providers. <strong>No pharmacy is insurance-only</strong> — cash always works.</li>
+<li><strong>A prescription comes from a hospital or clinic</strong>, is signed and stamped, and is <strong>tied to your insurance card</strong>.</li>
+<li>You take the prescription <em>and</em> your insurance card to <strong>a pharmacy that accepts that specific insurer</strong>.</li>
+<li>You pay your share per whatever percentage your insurance covers.</li>
+<li><strong>Each pharmacy displays which insurances it accepts on a board or sticker at the door.</strong> That is the only public record of it — <strong>physical, and only readable if you are standing in front of that pharmacy.</strong></li>
+<li>There is <strong>no app, no website, no directory</strong> to search "which pharmacies near me accept my insurer."</li>
+</ol>
+<blockquote>
+<h3>💡 Our product in one sentence</h3>
+<p><strong>We digitise the board on the pharmacy door.</strong></p>
+<p>The information already exists and is already public. Today you can only read it by walking there — one pharmacy at a time. That is the gap. It is the whole reason our app should exist.</p>
+</blockquote>
+<hr />
+<h1>❓ What we don't know yet — these ARE our interview questions</h1>
+<p>Do not guess any of these. <strong>Each one is a question for a real person</strong>, and together they are basically our interview script.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Open question</th>
+<th>Ask who</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>What is the correct <strong>emergency/ambulance number</strong>, and how does calling one actually work?</td>
+<td>Pharmacist, clinic reception</td>
+<td>David</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Which insurers do <strong>international students at ALU</strong> hold? Does the university provide cover?</td>
+<td>ALU student affairs + 6 student interviews</td>
+<td>Robert</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Do <strong>over-the-counter</strong> items still need a prescription, or only insured treatment?</td>
+<td>Pharmacists</td>
+<td>Elie</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Are there <strong>24-hour pharmacies</strong> in Kigali, and how common?</td>
+<td>Pharmacists, students</td>
+<td>David</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Do pharmacists know instantly which insurers they take, or check a list? <strong>Would they welcome being listed in an app?</strong></td>
+<td>Pharmacists</td>
+<td>Elie</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Rule for the whole project:</strong> we write down what a real person told us, or what a named official source says. <strong>We never invent a number, a price, a percentage or a rule.</strong> If we can't verify it, we don't claim it.</p>
+</blockquote>
+<hr />
+<h1>👥 Who we interview — 12 people in 3 days</h1>
+<p>The rubric grades <strong>"participant diversity"</strong> and needs <strong>more than 10 interviews</strong>. Twelve gives us a buffer.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>How many</th>
+<th>Where</th>
+<th>Who</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>International students at ALU</strong></td>
+<td><strong>6</strong></td>
+<td>Campus — WhatsApp groups, dorms, classmates</td>
+<td>Everyone, 1 each</td>
+</tr>
+<tr>
+<td><strong>Other newcomers</strong> (expats, volunteers, NGO/embassy)</td>
+<td><strong>2</strong></td>
+<td>Coworkers, church, gym, LinkedIn</td>
+<td>David + Robert</td>
+</tr>
+<tr>
+<td><strong>Pharmacists / pharmacy staff</strong></td>
+<td><strong>2</strong></td>
+<td>Walk into any Kigali pharmacy, ask for the manager</td>
+<td>Elie + David</td>
+</tr>
+<tr>
+<td><strong>Insurance or hospital reception/billing</strong></td>
+<td><strong>2</strong></td>
+<td>Call the insurer, or a private clinic's front desk</td>
+<td>Deborah + Igihozo</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Screener question that qualifies someone:</strong> <em>"Did you arrive in Rwanda within the last 24 months?"</em> — plus their insurer, so we capture the right mix.</p>
+<p><strong>Timing reality:</strong><br />
+- <strong>Pharmacy and insurance staff work weekdays, business hours</strong> → book those four for <strong>Thursday afternoon and Friday daytime</strong>. Do not leave them to the weekend or they will not answer.<br />
+- <strong>Students</strong> → Thursday evening, Friday evening, Saturday morning.</p>
+<p><strong>Same script for everyone — only the answers differ.</strong></p>
+<hr />
+<h1>🎯 The scope we agree on for 8 days</h1>
+<p>This is not the maximum version. It is the version that scores the marks with the time we have. The numbers in brackets are the rubric's minimums — everything below is <strong>at or above</strong> the requirement.</p>
+<table>
+<thead>
+<tr>
+<th>Deliverable</th>
+<th>Our target</th>
+<th>Rubric requires</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interviews</td>
+<td><strong>12</strong></td>
+<td>more than 10</td>
+</tr>
+<tr>
+<td><strong>Individual empathy maps</strong></td>
+<td><strong>4 rich ones</strong> (we heard one story repeatedly)</td>
+<td>"at least 3–4 key interviews"</td>
+</tr>
+<tr>
+<td><strong>Aggregated empathy maps</strong></td>
+<td><strong>2</strong></td>
+<td>1+ synthesised map</td>
+</tr>
+<tr>
+<td>Personas</td>
+<td><strong>2</strong></td>
+<td>2–3</td>
+</tr>
+<tr>
+<td>Competitors</td>
+<td><strong>4</strong> (2 direct, 2 indirect)</td>
+<td>4–6</td>
+</tr>
+<tr>
+<td>Journey map</td>
+<td><strong>1</strong> (a direct competitor)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>IA screens</td>
+<td><strong>8</strong></td>
+<td>8+</td>
+</tr>
+<tr>
+<td>Figma screens</td>
+<td><strong>10</strong></td>
+<td>10+</td>
+</tr>
+<tr>
+<td>Storyboard panels</td>
+<td><strong>6</strong></td>
+<td>6–10</td>
+</tr>
+</tbody>
+</table>
+<p><strong>What this saves us:</strong> the brief says "empathy map per interviewed user," which would be 12. <strong>The rubric only asks for 3–4 key ones.</strong> Doing 4 rich maps instead of 12 shallow ones wins the same marks and buys us most of a day. Record the interviews — that is our evidence either way.</p>
+<hr />
+<h1>🗓️ The 8 days</h1>
+<p><strong>One weekend carries this project.</strong> Saturday 19 and Sunday 20 are full working days. Plan your life around them now.</p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Day</th>
+<th>What must be true by end of day</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Wed 16</strong></td>
+<td>Today</td>
+<td>🚩 <strong>Robert sends the kickoff AND the recruitment message tonight.</strong> Tracker copied, Drive created. Everyone replies with their 3 answers. David drafts the screener, consent form and script tonight</td>
+</tr>
+<tr>
+<td><strong>Thu 17</strong></td>
+<td>Thu</td>
+<td>☎️ <strong>TEAM MEETING 60m.</strong> Mission + problem statement frozen · roles confirmed · 15 names collected · <strong>script frozen by evening</strong> · pharmacist/insurance slots booked for the afternoon. 🚩 <strong>Interviews begin — 1 each</strong></td>
+</tr>
+<tr>
+<td><strong>Fri 18</strong></td>
+<td>Fri</td>
+<td>Interviews all day and evening. <strong>Target 12 by Friday night</strong></td>
+</tr>
+<tr>
+<td><strong>Sat 19</strong></td>
+<td>Sat</td>
+<td>Interviews finish (morning) → ☎️ <strong>SYNTHESIS CALL 90m</strong> (afternoon) → 4 empathy maps, 1–2 aggregated, 2 personas, top-5 insights, evidence table. Literature review + introduction + problem/hypothesis finalised</td>
+</tr>
+<tr>
+<td><strong>Sun 20</strong></td>
+<td>Sun</td>
+<td>Competitors (4) + screenshots · journey map · UVP + reframed problem · IA (8 screens) · user flows · storyboard (6 panels) · <strong>Figma: tokens + first screens</strong></td>
+</tr>
+<tr>
+<td><strong>Mon 21</strong></td>
+<td>Mon</td>
+<td><strong>Figma full build day</strong> — 10 screens, interactions, empty and tap states, <strong>public link tested in incognito</strong></td>
+</tr>
+<tr>
+<td><strong>Tue 22</strong></td>
+<td>Tue</td>
+<td>☎️ <strong>DESIGN REVIEW + COMPILE 60m.</strong> PDF assembled end to end: every section, image, hyperlink, IEEE reference list</td>
+</tr>
+<tr>
+<td><strong>Wed 23</strong></td>
+<td>Wed</td>
+<td>☎️ <strong>QA CALL 15m.</strong> Citation check by two people · originality pass · formatting · link test in incognito. 🚩 <strong>WE SUBMIT</strong></td>
+</tr>
+<tr>
+<td><strong>Thu 24</strong></td>
+<td>Thu</td>
+<td><strong>Buffer only.</strong> Do not plan to work today</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Daily rhythm — one line in the group every evening:</strong><br />
+<code>David — 2/2 interviews done, scripts + audio uploaded. Blocked: none.</code></p>
+<hr />
+<h1>📋 Your tasks</h1>
+<p>Read your block. Then answer three things tomorrow: <strong>Is this doable? What would you change? What can't you do?</strong></p>
+<hr />
+<h2>🔬 ROBERT — Research Lead</h2>
+<p><strong>One line:</strong> you know this industry, so you write the sections that carry the thinking marks.</p>
+<p><strong>Tonight (Wed 16):</strong> send the kickoff message <strong>and the recruitment message</strong>. Set up the Drive folder. This is the most important thing anyone does today — if recruitment is late, everything is late.<br />
+<strong>By Sat 19:</strong> draft the <strong>Introduction</strong>, the <strong>Literature Review</strong> (max 1 page, 2+ paragraphs, <strong>no bullets</strong>), and the <strong>Problem Statement + Hypothesis</strong>. Build the source table (5–7 sources).<br />
+<strong>By Sun 20:</strong> finalise the literature review after the interviews. Write the <strong>UVP</strong> and the <strong>reframed problem from the user's perspective</strong>.<br />
+<strong>By Fri 18:</strong> 2 interviews — 1 international student, 1 newcomer. <strong>Own open question #2.</strong></p>
+<p><strong>Sources that must name Rwanda or East Africa:</strong> RSSB, Rwanda FDA, NISR, Ministry of Health / RBC, WHO, World Bank, and studies on health access for migrants. <strong>Only cite what you have actually read.</strong><br />
+<strong>You hand over:</strong> introduction · literature review · problem + hypothesis · UVP + reframed problem.</p>
+<hr />
+<h2>🎨 DEBORAH — Design Lead</h2>
+<p><strong>One line:</strong> you own the Figma prototype. It is worth 10 points on its own — the same as the entire written research.</p>
+<p><strong>Now → Sat 19:</strong> nothing heavy. <strong>Join the synthesis call</strong> and listen. The pain points you hear become your screens.<br />
+<strong>Sun 20:</strong> build <strong>design tokens and a component library first</strong> (type scale, colours, buttons, cards, icons) — then screens go three times faster.<br />
+<strong>Mon 21:</strong> full build day. <strong>10 screens</strong>, covering the whole journey from opening the app to reaching a pharmacy, plus Home, Profile, Settings and the emergency feature. Add interactions, transitions, <strong>empty states and tap states</strong>. Set the share link to <strong>anyone with the link</strong> and <strong>test it in an incognito window</strong>.<br />
+<strong>By Fri 18:</strong> 2 interviews — 1 student, 1 insurance/hospital staff member.</p>
+<p><strong>You hand over:</strong> the Figma file · the public link · exported screenshots.<br />
+<strong>⚠️ You and Igihozo pair up on this</strong> — see page 5.</p>
+<hr />
+<h2>🧩 ELIE — Diagrams &amp; Quality Check</h2>
+<p><strong>One line:</strong> you own every diagram the rubric asks for, and you check our citations before we submit.</p>
+<p><strong>By Fri 18:</strong> 2 interviews — 1 student, 1 pharmacist (<strong>own open question #5</strong>).<br />
+<strong>Sun 20:</strong> competitor research — <strong>4 competitors</strong>, 2 direct and 2 indirect. Screenshot every key screen. <strong>Mine the 1- and 3-star app reviews for complaints</strong> — those become our reasons to exist.<br />
+<strong>Sun 20:</strong> the <strong>user journey map for one direct competitor</strong>: stages, actions, thoughts, feelings, pain points, and an <strong>Opportunities column</strong>. Every opportunity must name a specific Figma screen we will build.<br />
+<strong>Sun 20:</strong> the <strong>IA diagram</strong> (8 screens) · the <strong>user flow diagrams</strong> (happy path <strong>and</strong> failure states — wrong input, no network, no results) · the <strong>storyboard</strong> (6 panels with characters, setting, emotions).<br />
+<strong>Wed 23:</strong> run the <strong>two-person citation check</strong> and the formatting check.</p>
+<p><strong>You hand over:</strong> IA · user flows · storyboard · journey map · competitor screenshots · QA sign-off.<br />
+<strong>Why you:</strong> flows and IA are logic work. That is your strength.</p>
+<hr />
+<h2>📞 DAVID — Fieldwork Coordinator</h2>
+<p><strong>One line:</strong> you are the reason 12 real interviews happen in 3 days.</p>
+<p><strong>Tonight (Wed 16):</strong> draft the <strong>screener</strong> (Google Form), the <strong>recruitment email</strong>, and the <strong>consent form</strong>. Send them to Robert so recruitment goes out tonight.<br />
+<strong>Thu 17:</strong> confirm <strong>12 bookings</strong> in the shared calendar. Brief every interviewer: <em>no yes/no questions; never describe our solution before asking about the problem.</em><br />
+<strong>Thu 17 → Sat 19:</strong> remind each interviewer 24h and 2h before their slot. <strong>Every evening, confirm scripts, audio and consent landed in Drive.</strong> If someone hasn't done their interviews by Friday night, say so loudly.<br />
+<strong>Sat 19:</strong> build the <strong>Claims → Evidence table</strong> (page 6).<br />
+<strong>By Fri 18:</strong> 2 interviews — 1 newcomer, 1 pharmacist. <strong>Own open questions #1 and #4.</strong></p>
+<p><strong>You hand over:</strong> recruitment plan · recruitment email · consent forms · filled calendar · complete evidence folder · evidence table.<br />
+<strong>Why you:</strong> this role barely needs code. It needs someone reliable.</p>
+<hr />
+<h2>🧭 IGIHOZO — Project Lead &amp; Compiler + second on design</h2>
+<p><strong>One line:</strong> you keep the schedule honest, you assemble the final PDF, and you build screens with Deborah.</p>
+<p><strong>Tonight:</strong> make sure the <strong>tracker</strong> is copied and shared with all five.<br />
+<strong>Thu 17:</strong> run the timing of the meeting. <strong>Write the meeting notes — they are graded.</strong><br />
+<strong>Thu 17 → Wed 23:</strong> post the daily one-line reminder. Chase anyone silent for a day (a day, not two — we don't have two).<br />
+<strong>Sun 20 – Mon 21:</strong> <strong>build screens with Deborah.</strong> Two people on Figma is deliberate — see page 5.<br />
+<strong>Tue 22 – Wed 23:</strong> assemble the PDF · run the QA checklist · <strong>submit and screenshot the confirmation</strong>.<br />
+<strong>By Fri 18:</strong> 2 interviews — 1 student, 1 insurance staff member.</p>
+<p><strong>You hand over:</strong> meeting notes · decision log · the final PDF · submission confirmation.</p>
+<hr />
+<h1>⚠️ Two things we must say out loud</h1>
+<h3>1. Nobody's listed strength is design — and design is 10 points</h3>
+<p>All five of us are coders. That genuinely helps Part 2. But the <strong>Figma prototype is worth as much as the entire research write-up</strong>, and it is the one thing nobody here has claimed as a strength.</p>
+<p><strong>So: Deborah leads, Igihozo pairs. Split the screens. Share one component library</strong> so you produce a consistent app. Do not let one person carry ten screens alone on a Monday.</p>
+<h3>2. This is Part 1 — Part 2 is Flutter, and we will reuse all of it</h3>
+<p>Whatever we lock here becomes the <strong>spec we build later</strong>. Flows and IA are the blueprint. Getting them right now saves us a rebuild then.</p>
+<hr />
+<h1>🗓️ Meeting agenda — Thursday 17 September, 60 minutes</h1>
+<p><strong>Recruitment is already out by the time we meet.</strong> This meeting confirms and assigns; it does not create.</p>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0–5 min</td>
+<td>Round: name + hours you can work Thu/Fri/Sat/Sun</td>
+<td>Everyone's real capacity written down</td>
+</tr>
+<tr>
+<td>5–12 min</td>
+<td>Read "What we know for certain" <strong>and</strong> "What we still don't know" aloud</td>
+<td>Everyone understands the product and the 5 open questions</td>
+</tr>
+<tr>
+<td>12–20 min</td>
+<td><strong>Access test:</strong> each person names 3 people they can reach <strong>by Saturday</strong></td>
+<td>15 names in the admin folder. If someone can't, we fix it <strong>in this meeting</strong></td>
+</tr>
+<tr>
+<td>20–28 min</td>
+<td>Confirm the 8-day scope on page 4</td>
+<td>Everyone accepts the trimmed targets</td>
+</tr>
+<tr>
+<td>28–40 min</td>
+<td>Walk through the five role blocks</td>
+<td>Everyone knows their block</td>
+</tr>
+<tr>
+<td>40–52 min</td>
+<td><strong>Go around the circle.</strong> Each person: <em>Is it doable? What would you change? What can't you do?</em></td>
+<td>Every concern written down. Nothing dismissed</td>
+</tr>
+<tr>
+<td>52–57 min</td>
+<td>Swap and rebalance</td>
+<td>Adjusted until everyone says yes</td>
+</tr>
+<tr>
+<td>57–60 min</td>
+<td>Lock: mission · roles · interview slots</td>
+<td>Written into the group by Igihozo</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bring:</strong> your phone with contacts open, and your available hours for Thu/Fri/Sat/Sun.</p>
+<hr />
+<h1>🔁 Flexibility — what can move, what cannot</h1>
+<p><strong>Cannot move. Zero-score or hard-deadline items:</strong><br />
+- All 12 interviews done by <strong>Saturday 19 September, midday</strong><br />
+- Consent recorded for every recorded interview<br />
+- <strong>Every in-text citation matches a reference in the list</strong> — verified by two people separately<br />
+- <strong>We write the proposal ourselves.</strong> AI only to fix grammar on text we already wrote. Over 50% AI-flagged text scores zero<br />
+- Figma share link public, tested in incognito<br />
+- <strong>We submit Wednesday 23rd</strong></p>
+<p><strong>Can move freely:</strong><br />
+- Who does which role<br />
+- 11 or 12 interviews<br />
+- Which competitor we use for the journey map<br />
+- Who writes which PDF section<br />
+- Who does the extra interviews</p>
+<p><strong>If you're overloaded — say it in the meeting.</strong> The rule: we cut <strong>scope</strong>, never <strong>evidence</strong>.</p>
+<hr />
+<h1>🆘 If it goes wrong</h1>
+<p><strong>11 interviews · 8 Figma screens · 4 empathy maps · 2 personas · 1 storyboard · a clean 1-page literature review · every link working.</strong> That still passes. Tell the group early if we need to fall back — <strong>not on the 22nd.</strong></p>
+<hr />
+<h1>📊 Claims → Evidence table (fill Saturday 19 September)</h1>
+<p>This proves our insights trace back to real people — the rubric's heaviest row asks for exactly that.</p>
+<table>
+<thead>
+<tr>
+<th>Insight</th>
+<th>Which participants</th>
+<th>What they said (exact words)</th>
+<th>Where it appears in our design</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>✅ Sign-off</h1>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Name</th>
+<th>Doable?</th>
+<th>Changes requested</th>
+<th>Agreed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Research Lead</td>
+<td>Robert</td>
+<td></td>
+<td></td>
+<td>☐</td>
+</tr>
+<tr>
+<td>Design Lead</td>
+<td>Deborah</td>
+<td></td>
+<td></td>
+<td>☐</td>
+</tr>
+<tr>
+<td>Diagrams &amp; QA</td>
+<td>Elie</td>
+<td></td>
+<td></td>
+<td>☐</td>
+</tr>
+<tr>
+<td>Fieldwork Coordinator</td>
+<td>David</td>
+<td></td>
+<td></td>
+<td>☐</td>
+</tr>
+<tr>
+<td>Lead &amp; Compiler</td>
+<td>Igihozo</td>
+<td></td>
+<td></td>
+<td>☐</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>💬 Robert — send these TWO messages tonight</h1>
+<p><strong>Message 1 — the group:</strong></p>
+<blockquote>
+<p>Team 👋 Two things before tomorrow's meeting. <strong>First, we're more pressed than we thought: deadline is Thu 24 Sep but we submit Wed 23 Sep — that's 7 days of work and only ONE weekend.</strong> So we start tonight, not tomorrow.</p>
+<p><strong>Our mission:</strong> helping international students and other newcomers in Rwanda find a pharmacy that accepts their insurance, near where they are — especially in an emergency.</p>
+<p>The gap is simple and real: <strong>every pharmacy shows which insurances it accepts on a board at the door. That is the only place that information exists.</strong> There's no app for it. We digitise that board.</p>
+<p><strong>Everyone reply tonight with:</strong><br />
+1. Your full name, email, phone, and the <strong>hours you can actually work Thu/Fri/Sat/Sun</strong> — be honest, we all have jobs.<br />
+2. <strong>Three people you can interview by Saturday</strong> — name + how you reach them. We need 12 in total and only have 3 days.<br />
+3. If you arrived in Rwanda in the last two years, <strong>you are yourself a user</strong> of what we're building.</p>
+<p>Tomorrow: 60-minute meeting, I'll send the task document before it. <strong>Nothing is fixed until everyone says it's doable.</strong> 🚀</p>
+</blockquote>
+<p><strong>Message 2 — recruitment (send to ALU student groups + your own contacts):</strong></p>
+<blockquote>
+<p>Hi! We're a team of 5 ALU students working on our final project. We're building an app to help international students and newcomers in Rwanda find a <strong>pharmacy that accepts their insurance</strong> — because right now the only way to know is to read the board on the pharmacy door.</p>
+<p>We're looking for a <strong>20-minute chat</strong> (WhatsApp call, in person, or Google Meet — your choice). No right or wrong answers, no sales pitch. Everything is anonymous, and you can say no to any question.</p>
+<p>Who we're looking for: <strong>anyone who arrived in Rwanda in the last 2 years.</strong> Also happy to speak to pharmacists and staff at insurance companies or clinics.</p>
+<p>If you can help, reply here or DM me directly. 🙏</p>
+</blockquote>
+</body></html>
