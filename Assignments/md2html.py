@@ -4,7 +4,7 @@ import os, re, html
 import markdown
 
 SRC = r"C:\Users\Richter Richard NAHO\TonyRobert98\FlutterProgramming\Assignments"
-DOCS = ["Team-Tasks-Round1.md", "Phase-Playbook.md", "Part1-RUBRIC-CHECKLIST.md"]
+DOCS = ["Team-Tasks-Round1.md", "Phase-Playbook.md", "Part1-RUBRIC-CHECKLIST.md", "Round2-FreeNow-Assignments.md"]
 
 CSS = """
 :root{

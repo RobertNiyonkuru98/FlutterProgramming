@@ -21,16 +21,36 @@ class ButtonIconPage extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: TextButton(
-          onPressed: (){
-            print('you clicked me');
+        child: IconButton(
+          onPressed: () {
+            print('You clicked me');
           },
-          style: TextButton.styleFrom(
-            backgroundColor: Colors.deepPurple,
-            foregroundColor: Colors.black,
+          icon: Icon(
+            Icons.alternate_email,
           ),
-          child: Text('Click man')
-        )
+          color: Colors.amber,
+        ),
+        // ElevatedButton.icon(
+        //   onPressed: () {},
+        //   icon: Icon(
+        //       Icons.mail
+        //   ),
+        //   label: Text('mail me'),
+        //   style: ElevatedButton.styleFrom(
+        //       backgroundColor:Colors.amber,
+        //       foregroundColor:Colors.black,
+        //   ),
+        // ),
+        // TextButton(
+        //   onPressed: (){
+        //     print('you clicked me');
+        //   },
+        //   style: TextButton.styleFrom(
+        //     backgroundColor: Colors.deepPurple,
+        //     foregroundColor: Colors.black,
+        //   ),
+        //   child: Text('Click man')
+        // )
         // ElevatedButton(
         //   onPressed: (){},
         //   style: ElevatedButton.styleFrom(

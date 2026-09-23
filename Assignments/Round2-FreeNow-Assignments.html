@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title> Round 2 — Assignments for the Three Who Are Free</title>
+<style>
+:root{
+  --ink:#16202b; --muted:#5a6b7b; --line:#dbe3ea; --soft:#f6f8fa;
+  --accent:#0b6b5f; --accent-soft:#e6f2f0; --warn:#a8410d; --warn-soft:#fdf1e7;
+  --hi:#8a1c1c; --hi-soft:#fdecec;
+}
+*{box-sizing:border-box}
+body{
+  font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink); line-height:1.62; max-width:920px; margin:0 auto;
+  padding:56px 40px 96px; background:#fff; font-size:15.5px;
+  -webkit-print-color-adjust:exact; print-color-adjust:exact;
+}
+h1{font-size:2.05em; line-height:1.2; margin:0 0 .15em; letter-spacing:-.02em}
+h1+h2{border:0; margin-top:.1em; color:var(--muted); font-weight:600; font-size:1.06em; padding:0}
+h1+h2+h3{border:0;margin-top:.6em}
+h2{
+  font-size:1.42em; margin:2.2em 0 .7em; padding-top:.55em;
+  border-top:2px solid var(--line); letter-spacing:-.01em;
+}
+h3{font-size:1.12em; margin:1.9em 0 .5em; color:var(--accent)}
+h3:first-of-type{margin-top:1.1em}
+p{margin:.72em 0}
+a{color:var(--accent)}
+strong{color:#0d1720}
+hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+/* tables */
+table{border-collapse:collapse; width:100%; margin:1.1em 0 1.5em; font-size:.92em}
+th,td{border:1px solid var(--line); padding:9px 11px; text-align:left; vertical-align:top}
+th{background:var(--soft); font-weight:650; font-size:.95em}
+tbody tr:nth-child(even){background:#fbfcfd}
+/* blockquotes */
+blockquote{
+  margin:1.3em 0; padding:14px 20px; border-left:4px solid var(--accent);
+  background:var(--accent-soft); border-radius:0 6px 6px 0;
+}
+blockquote p{margin:.35em 0}
+blockquote h3{margin-top:0; color:var(--accent)}
+/* code */
+code{
+  background:#eef2f5; padding:2px 6px; border-radius:4px; font-size:.87em;
+  font-family:"Cascadia Mono",Consolas,"SF Mono",Menlo,monospace;
+}
+pre{background:#f4f7f9; border:1px solid var(--line); border-radius:6px; padding:14px 16px; overflow-x:auto}
+pre code{background:none; padding:0; font-size:.86em; line-height:1.5}
+/* task lists */
+ul li{margin:.3em 0}
+input[type=checkbox]{margin-right:7px}
+/* print */
+@page{size:A4; margin:16mm 14mm}
+@media print{
+  body{padding:0; max-width:none; font-size:10.4pt; line-height:1.5}
+  h2{page-break-after:avoid} h3{page-break-after:avoid}
+  table,blockquote,pre{page-break-inside:avoid}
+  a{color:var(--ink); text-decoration:none}
+}
+</style>
+</head><body>
+<h1>Round 2 — Assignments for the Three Who Are Free</h1>
+<h3>Robert · Igihozo · David</h3>
+<p><strong>Written: Wednesday 23 September 2026, ~10:00 · Hard deadline: Thursday 24 September 23:59</strong><br />
+<strong>Time remaining: about 38 hours.</strong></p>
+<p>Companions: <code>Team-Tasks-Round1.md</code> (roles) · <code>Part1-RUBRIC-CHECKLIST.md</code> (marks) · <code>Phase-Playbook.md</code> (how to)</p>
+<hr />
+<h1>0. Read this first — the calendar, said plainly</h1>
+<p>Our own plan said <strong>"Submit Wed 23 September."</strong> Today is Wed 23 September, 10:00. <strong>We are not submitting today.</strong> The deadline is tomorrow, <strong>Thu 24, 23:59</strong> — and it is a hard deadline, not a buffer.</p>
+<p>So the real number is not "we still have time". It is <strong>38 hours.</strong></p>
+<p><strong>The problem with the current plan:</strong> interviews are not out. And <strong>25 of the 84 points sit behind those interviews.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Behind the interviews</th>
+<th>Pts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interview Execution, Ethics &amp; Evidence</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Participant Recruitment &amp; Interviews</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Empathy Maps</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Personas</td>
+<td>5</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>25</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>We cannot finish without them.</strong> What we <em>can</em> do is stop four people from sitting idle while we wait.</p>
+<p><strong>So we run two tracks, starting now:</strong></p>
+<ul>
+<li><strong>Track A — the three of you (Robert, Igihozo, David).</strong> Everything on the rubric that needs <strong>zero interview data</strong>. That is 31 points of work you can complete and hand in today, plus the scaffolding that makes the other 25 possible.</li>
+<li><strong>Track B — Deborah and Elie.</strong> Figma (10 pts) and IA + user flows (6 pts), which are also interview-independent in structure, plus driving the interviews themselves.</li>
+</ul>
+<blockquote>
+<h3>The one rule for today</h3>
+<p><strong>The three of you do not wait for anything.</strong> You write, design and research as if the interviews are already in the folder. Where a section needs a real quote or a real number, you write the section and leave a clearly-marked blank: <code>[[FILL FROM INTERVIEWS — David]]</code>. A section that is 90% written is worth infinitely more at 23:00 tonight than a perfect section that starts then.</p>
+<h3>The one warning</h3>
+<p><strong>Track A cannot save the 25 points.</strong> If the interviews do not happen today and tomorrow morning, those 25 points are gone regardless of how good our document is. That is the single highest-value thing anyone does in the next 38 hours — more valuable than any section in this file. Sections 3 and 4 below say exactly how to unblock it.</p>
+</blockquote>
+<hr />
+<h1>1. Coverage map — where every point stands right now</h1>
+<table>
+<thead>
+<tr>
+<th>Pts</th>
+<th>Rubric row</th>
+<th>Status</th>
+<th>Owner now</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>10</strong></td>
+<td>Interview Execution, Ethics &amp; Evidence</td>
+<td>🔴 <strong>Blocked — interviews not run</strong></td>
+<td>David (drive) + all</td>
+</tr>
+<tr>
+<td><strong>10</strong></td>
+<td>Figma Prototype</td>
+<td>🟡 In progress</td>
+<td>Deborah + Igihozo</td>
+</tr>
+<tr>
+<td><strong>10</strong></td>
+<td>Citation, Originality &amp; Formatting</td>
+<td>⚪ Not started — <strong>buildable now</strong></td>
+<td><strong>Igihozo</strong></td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td>Journey Maps</td>
+<td>⚪ Not started — <strong>buildable now</strong></td>
+<td><strong>David</strong> (moved from Elie)</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td>Information Architecture &amp; User Flow</td>
+<td>🟡 In progress</td>
+<td>Elie</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>Participant Recruitment &amp; Interviews</td>
+<td>🟠 Half done — <strong>finishable now</strong></td>
+<td><strong>David</strong></td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>Empathy Maps</td>
+<td>🔴 Blocked</td>
+<td>All (after synthesis)</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>Personas</td>
+<td>🔴 Blocked</td>
+<td>Robert (after synthesis)</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>UVP &amp; Reframed Problem</td>
+<td>⚪ Not started — <strong>buildable now</strong></td>
+<td><strong>Robert</strong></td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>Storyboards</td>
+<td>⚪ Not started — <strong>buildable now</strong></td>
+<td><strong>Igihozo</strong> (moved from Elie)</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>Team Member Contribution Evaluation</td>
+<td>⚪ Not started — <strong>buildable now</strong></td>
+<td><strong>Igihozo</strong></td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>Introduction &amp; Mission Alignment</td>
+<td>⚪ Not started — <strong>buildable now</strong></td>
+<td><strong>Robert</strong></td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>Problem Statement &amp; Hypothesis</td>
+<td>🟠 Drafted in summary — <strong>finishable now</strong></td>
+<td><strong>Robert</strong></td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>Literature Review</td>
+<td>⚪ Not started — <strong>buildable now</strong></td>
+<td><strong>Robert</strong></td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>Competitor Analysis</td>
+<td>⚪ Not started — <strong>buildable now</strong></td>
+<td><strong>David</strong> (moved from Elie)</td>
+</tr>
+<tr>
+<td><strong>84</strong></td>
+<td></td>
+<td><strong>→ 31 pts fully buildable today without a single interview</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bold = the three of you.</strong> Every bold row is completed before you sleep tonight.</p>
+<hr />
+<h1>2. Track A — your assignments</h1>
+<hr />
+<h2>🔬 ROBERT — The Argument</h2>
+<h3>14 points · all 14 need zero interview data</h3>
+<p>You write the four sections that carry the thinking marks. Do them <strong>in this order</strong> — each one feeds the next, and the last one is the one the interviews will later prove.</p>
+<h3>R1 — Source table <em>(60 minutes — do this before writing a sentence)</em></h3>
+<p>Open a table. Fill it before you write prose.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>IEEE citation</th>
+<th>One statistic or finding you will use</th>
+<th>Page / quote</th>
+<th>URL</th>
+<th>Date accessed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Target: 5–7 sources. Minimum 5, and they must name Rwanda or East Africa.</strong> Where to look: <strong>RSSB</strong> (health insurance coverage and enrolment figures), <strong>Rwanda FDA</strong>, <strong>NISR</strong> (migration, urban population, household health spending), <strong>Ministry of Health / RBC</strong>, <strong>WHO</strong>, <strong>World Bank</strong>, and studies on <em>health access for migrants and mobile populations</em>. A study on Kenya or Uganda is acceptable and should be named as regional; a study with no country at all is not.</p>
+<p><strong>Only put a source in this table if you have actually opened it and read the relevant part.</strong> The brief verifies in-text citations against the reference list, and a mismatch scores zero for plagiarism. Do not pad.</p>
+<h3>R2 — Literature Review — 3 pts <em>(90 minutes)</em></h3>
+<p><strong>Maximum one page. Paragraphs only — no bullets, no numbered lists.</strong> Three movements:</p>
+<ol>
+<li><strong>Context.</strong> Healthcare access for people who have recently arrived in a country: unfamiliar insurance, unfamiliar systems, language, and the emergency case.</li>
+<li><strong>Evidence.</strong> The numbers from your table, each with an IEEE <code>[n]</code>. Everything cited, nothing asserted.</li>
+<li><strong>The gap.</strong> What existing tools do not cover — and this is where our pharmacy-door insight lands: <em>the acceptance information exists and is public, but it exists only physically, on a board at each pharmacy door, readable only by standing in front of that pharmacy.</em></li>
+</ol>
+<p><strong>Rules that will lose marks if ignored:</strong> number references <code>[1]…[n]</code> <strong>in order of first appearance</strong> · do not start three sentences in a row with "According to" · every sentence you write must be yours.</p>
+<h3>R3 — Introduction &amp; Mission Alignment — 3 pts <em>(45 minutes)</em></h3>
+<p><strong>This section is not in the submission-criteria list you were given, but it is graded.</strong> Say so to the team so nobody deletes it.</p>
+<p>One to two paragraphs: the community challenge we are addressing, why it matters, and <strong>credible data on the social and economic significance</strong> — cited, from R1. Write it academically: cohesive and analytical, not promotional.</p>
+<h3>R4 — Problem Statement + Hypothesis — 3 pts <em>(45 minutes)</em></h3>
+<p><strong>Both are required, and they are two different things.</strong> Two short paragraphs in the document.</p>
+<p><strong>Paragraph 1 — the problem, user-centred and grounded in preliminary research.</strong> The version we already have is the right shape; it now needs citations from R1 and the wording tightened.</p>
+<p><strong>Paragraph 2 — a <em>testable</em> hypothesis.</strong> This is the part people lose marks on. A testable hypothesis names a <strong>population</strong>, a <strong>measurable outcome</strong> and a <strong>comparison</strong> — not a wish. Use this frame:</p>
+<blockquote>
+<p><em>We hypothesise that [population] currently [measurable current cost — time, trips, money], and that if [our intervention] then [measurable improvement], which we will test by [how — the baseline reported in interviews, plus task testing in the prototype].</em></p>
+</blockquote>
+<p>The current-cost number will come from the interviews, so write it as <code>[[FILL FROM INTERVIEWS — David]]</code> and keep going. <strong>The measurable improvement must be something a prototype can actually demonstrate</strong> (time to find an accepting pharmacy, number of failed trips, whether they can identify the nearest open one).</p>
+<h3>R5 — UVP + Reframed Problem — 5 pts <em>(60 minutes)</em></h3>
+<p><strong>Two separate deliverables in this one row. Most teams submit only the first and lose half the marks.</strong></p>
+<p><strong>(a) The UVP — one single, clear, compelling statement.</strong> It must contain the key benefit, how it solves the need, and what makes it different. Yours is strong because the difference is concrete — the existing thing is a board on a door, and nobody has put it online. Write it as one or two sentences a stranger understands on first read.</p>
+<p><strong>(b) The reframed problem — from the USER'S perspective.</strong> First person, in their voice, supported by what they told us. Not a repeat of R4. Something in this register:</p>
+<blockquote>
+<p><em>"I have insurance I can't use, because I can't find out who takes it without walking there."</em></p>
+</blockquote>
+<p>Leave a marked slot for a verbatim interview quote to sit beside it — that quote is what makes this row exemplary.</p>
+<h3>➡️ Handoff — what David needs from you, <strong>by 13:00 today</strong></h3>
+<p>Send David <strong>the hypothesis from R4</strong> as soon as it is drafted. His interview script must contain the questions that produce the baseline number and the quotes that (a) fill R4's blank, (b) fill R5b's quote, and (c) fill the Claims → Evidence table. If the script is finalised before your hypothesis exists, the hypothesis is untestable and two rows lose their evidence.</p>
+<p><strong>You hand over:</strong> source table · literature review · introduction · problem + hypothesis · UVP + reframed problem.</p>
+<hr />
+<h2>🧭 IGIHOZO — The Delivery</h2>
+<h3>5 points outright, plus the 10-point formatting row, plus the document everyone else pastes into</h3>
+<h3>I1 — Build the submission document skeleton — <strong>DO THIS FIRST</strong> <em>(60 minutes)</em></h3>
+<p><strong>Nothing else in this plan works without it.</strong> Right now four people are about to write sections into four different files with four different formats, and somebody has to merge and reformat all of it at 22:00 tomorrow. That is how the 10-point formatting row gets lost.</p>
+<p>Create <strong>one</strong> Google Doc and share it with all five as <strong>anyone with the link can edit</strong>.</p>
+<p><strong>Format it once, properly, before any content goes in:</strong> <strong>Times New Roman, 12pt, single-spaced</strong>, page numbers in the footer, real heading styles (Heading 1 / Heading 2, never manual bold-and-bigger), and a title block with team names and the mission.</p>
+<p>Then paste in <strong>all 24 section headings in this exact order</strong>, each with a placeholder line underneath in this shape:</p>
+<pre><code>[OWNER] [STATUS: not started / drafting / done] [NEEDS: interviews / nothing]
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>§</th>
+<th>Section</th>
+<th>§</th>
+<th>Section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Introduction &amp; Mission Alignment ⭐</td>
+<td>13</td>
+<td>Competitor screenshots &amp; references</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Project objectives <em>(the only bullet list allowed)</em></td>
+<td>14</td>
+<td>User journey map</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Literature review (≤1 page)</td>
+<td>15</td>
+<td>Unique Value Proposition</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Problem statement &amp; hypothesis</td>
+<td>16</td>
+<td>Reframed problem ⭐</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Summary of user interviews</td>
+<td>17</td>
+<td>User flows</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Interview scripts <em>(Drive link)</em></td>
+<td>18</td>
+<td>Information architecture</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Consent / ethics documentation</td>
+<td>19</td>
+<td>Storyboards</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Interview notes</td>
+<td>20</td>
+<td>Figma prototype screenshots</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Audio/video links</td>
+<td>21</td>
+<td>Reflection — design ↔ research</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Empathy maps</td>
+<td>22</td>
+<td>Live Figma prototype <em>(hyperlink)</em></td>
+</tr>
+<tr>
+<td>11</td>
+<td>Personas</td>
+<td>23</td>
+<td>Group contribution tracker <em>(hyperlink)</em></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Competitor analysis</td>
+<td>24</td>
+<td>References (IEEE)</td>
+</tr>
+</tbody>
+</table>
+<p>⭐ = <strong>graded but missing from the submission-criteria list.</strong> Do not let anyone delete §1 or §16.</p>
+<p><strong>Done when:</strong> four people can open one link, find their section by name, and type into it — and the whole thing is already TNR 12 single-spaced. Post the link in the group the moment it exists. That single message unblocks the other three people today.</p>
+<h3>I2 — Team Member Contribution Evaluation — 5 pts <em>(75 minutes)</em></h3>
+<p>This row is graded on <strong>evidence of process</strong>, and it is the row teams lose purely because nobody kept records. You are the compiler, so you already have the raw material. The row asks for:</p>
+<ul>
+<li><strong>a work plan</strong> — that is <code>Team-Tasks-Round1.md</code> and this file. Summarise them.</li>
+<li><strong>initial meeting notes</strong> — the Thu 17 meeting. Write them up now from memory and the group chat, with the date, who attended, and what was decided. <strong>Write these as if written that day.</strong></li>
+<li><strong>delegated tasks</strong> — who was given what, when.</li>
+<li><strong>listed team momentum</strong> — what moved, in what order, over the period.</li>
+<li><strong>2–3 contributions per member, with a brief description of what each person did.</strong> All five members, named, no exceptions. This is descriptive, not evaluative — one to two sentences each: <em>"Robert led the literature review and problem definition, producing a seven-source evidence base, and wrote the UVP."</em></li>
+<li><strong>the link to the group contribution tracker.</strong> Copy the tracker, share it, and put the link in the document. <strong>The brief requires the link inside the PDF — a missing link risks this row outright.</strong></li>
+</ul>
+<p><strong>Done when:</strong> all five names appear with 2–3 described contributions each, and the tracker hyperlink is live and opens for someone outside the team.</p>
+<h3>I3 — Storyboard, 6 panels — 5 pts <em>(90 minutes)</em></h3>
+<p><strong>This is the cheapest 5 points in the assignment and it is currently unowned.</strong> It needs no interviews — it is our hypothesis made visible.</p>
+<p>Six panels, one person's story: <strong>has the problem → discovers the app → resolves it.</strong> For each panel write the frame, the caption, and the emotion:</p>
+<table>
+<thead>
+<tr>
+<th>Panel</th>
+<th>What we see</th>
+<th>Caption</th>
+<th>Emotion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Requirements the rubric names explicitly:</strong> <strong>characters</strong> (a specific person, not a stick figure — give them a name and a face) · <strong>setting</strong> (Kigali; a pharmacy door board; a phone at 23:00 with a sick child) · <strong>emotions</strong> shown at each stage · and <strong>key app interfaces visible</strong> in the discovery/resolution panels. Panel 6 must communicate the UVP without a paragraph of text.</p>
+<p>Draw it however is fastest: Figma frames, FigJam, or pen on paper and photographed. <strong>A photographed paper storyboard scores the same as a polished one. Do not spend two hours on styling.</strong></p>
+<p><strong>You hand over:</strong> the shared document · contribution evaluation + tracker link · storyboard.</p>
+<hr />
+<h2>📞 DAVID — The Evidence Pack, then the Competitors</h2>
+<h3>5 + 3 points now, and you are the person who unlocks the other 25</h3>
+<h3>D1 — Formalise the recruitment pack — 5 pts <em>(75 minutes)</em></h3>
+<p><strong>We already have this material — it just is not in the document yet.</strong> The row is graded on <strong>&gt;10 interviews · a recruitment plan · a recruitment email · participant diversity · documented evidence.</strong> Three of those five things you can hand in today, before a single interview happens.</p>
+<p><strong>(a) Recruitment plan</strong> — write it out as document-ready prose: how many participants, which four segments, where we find each one, and the timeline.</p>
+<table>
+<thead>
+<tr>
+<th>Segment</th>
+<th>Target</th>
+<th>Where</th>
+<th>Recruiter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>International students at ALU</td>
+<td>6</td>
+<td>Campus, WhatsApp groups, dorms</td>
+<td>All</td>
+</tr>
+<tr>
+<td>Other newcomers (expats, NGO, embassy, volunteers)</td>
+<td>2</td>
+<td>Coworkers, church, gym, LinkedIn, WhatsApp</td>
+<td>David + Robert</td>
+</tr>
+<tr>
+<td>Pharmacists / pharmacy staff</td>
+<td>2</td>
+<td>Walk into any Kigali pharmacy, ask for the manager</td>
+<td>Elie + David</td>
+</tr>
+<tr>
+<td>Insurance or hospital reception / billing</td>
+<td>2</td>
+<td>Call the insurer, or a private clinic front desk</td>
+<td>Deborah + Igihozo</td>
+</tr>
+</tbody>
+</table>
+<p><strong>(b) Recruitment email</strong> — the recruitment message from <code>Team-Tasks-Round1.md</code>, cleaned up and pasted into the document as the artefact. Send it again today, to more groups.</p>
+<p><strong>(c) Participant diversity note</strong> — one short paragraph explaining <em>why</em> these four segments and not twelve students. The rubric grades diversity explicitly. Name the screener question that qualifies someone: <em>"Did you arrive in Rwanda within the last 24 months?"</em> — plus their insurer, so we capture a spread of insurers rather than six people with the same one.</p>
+<p><strong>Done when:</strong> the plan, the email and the diversity note are sitting in §5–§7 of Igihozo's document, and the email has gone out to at least two more groups today.</p>
+<h3>D2 — Freeze the interview script + consent — <em>feeds the 10-point row</em> <em>(60 minutes)</em></h3>
+<p>These already exist in draft. Finish them.</p>
+<p><strong>Finalise one script, 5 warm-up + 8–10 core questions</strong>, covering: how they handle it today · the insurance moment · the workaround · the cost (time, money, trips, stress) · the emergency case · what would have changed it. <strong>Use the same script with everybody</strong> — the brief is explicit that questions stay constant and only answers differ.</p>
+<p><strong>Then add one thing:</strong> the questions that test Robert's hypothesis from R4. He sends it to you by 13:00. Without them, R4's blank never gets filled and §5's "key insights" have nothing measurable in them.</p>
+<p><strong>Rule to brief into every interviewer:</strong> <em>no yes/no questions, and never describe our solution before asking about the problem.</em> The moment an interviewer describes the app, every answer after it is contaminated.</p>
+<p><strong>Consent form</strong> — finalise it, and keep the read-aloud line: purpose, recording, anonymity, right to skip, and a <strong>spoken yes captured on the recording</strong>. Five points live in this row; the signed or scanned form is the evidence.</p>
+<p><strong>Done when:</strong> one script PDF, one consent form PDF, both in the Drive folder, both sent to all five interviewers.</p>
+<h3>D3 — The evidence folder and a live status board <em>(45 minutes)</em></h3>
+<p>Create the Drive folder structure now, empty, so nothing has to be fixed later:</p>
+<pre><code>03_Interviews/P07_Name/   script-responses.pdf  ·  audio.m4a  ·  notes.jpg
+</code></pre>
+<p>Then make one table in the group and <strong>keep it updated every evening</strong> — it is what makes the 10-point row defensible:</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Participant</th>
+<th>Segment</th>
+<th>Insurer</th>
+<th>Interviewer</th>
+<th>Booked?</th>
+<th>Done?</th>
+<th>Script+audio+consent in Drive?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Post the daily one line, always.</strong> <code>David — 2/2 done, scripts + audio in Drive. Blocked: none.</code> If nobody has anything to write, something is being hidden — and with 38 hours left, a silent day costs us a tenth of the project.</p>
+<h3>D4 — Competitor Analysis — 3 pts <em>(2 hours)</em></h3>
+<p><strong>Moved to you from Elie</strong> (he is carrying IA + user flows, which are 6 points). This is desktop research: no interviews, no waiting.</p>
+<p><strong>4–6 competitors: at least 2 direct and at least 2 indirect.</strong><br />
+- <strong>Direct</strong> — same offering, same audience: products that help someone find a provider, pharmacy or service that accepts their insurance. <strong>Look internationally.</strong> The strongest comparables are the "find a provider that takes my insurance" products from other markets. Using them is legitimate and is exactly what the direct/indirect split is for.<br />
+- <strong>Indirect</strong> — different offering or different audience: <strong>Google Maps</strong>, a national insurer's own app or website (RSSB and similar), Ministry of Health / RBC service portals, and <strong>WhatsApp word-of-mouth</strong> — which is genuinely our biggest competitor.</p>
+<p>Per competitor, deliver a row in a comparison table plus a short narrative:</p>
+<table>
+<thead>
+<tr>
+<th>Competitor</th>
+<th>Direct/Indirect</th>
+<th>Market</th>
+<th>Key features</th>
+<th>Strengths</th>
+<th>Weaknesses</th>
+<th>The market gap it leaves for us</th>
+<th>URL</th>
+<th>Live?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Then the highest-value 20 minutes in this task:</strong> open each competitor's app-store listing and <strong>read the 1-star and 3-star reviews.</strong> Write down the complaints verbatim. Those complaints are free differentiation evidence and they are the most persuasive sentences available to us — they prove the gap exists in our competitors' own users' words.</p>
+<p><strong>Verify every competitor is real and currently available before it goes in the document.</strong> A dead link or an app that was discontinued is a hole someone can point at.</p>
+<p><strong>Done when:</strong> 4–6 rows completed, every URL opened and confirmed live, screenshots captured, and the complaint quotes written down.</p>
+<h3>D5 — User Journey Map — 6 pts <em>(2 hours — only after D4 is finished)</em></h3>
+<p><strong>Moved to you from Elie, and it must be a DIRECT competitor</strong> — the rubric is explicit; using an indirect one risks the row.</p>
+<p>Pick the strongest direct competitor from D4, <strong>actually use it</strong>, and map one journey through it: <strong>Stages → Actions → Thoughts → Feelings (draw the emotional curve) → Pain Points → Opportunities.</strong></p>
+<p><strong>The Opportunities column is where this row is won or lost.</strong> Rubric, verbatim: the column must <em>"explicitly list concrete, actionable improvements that map to your later Figma features."</em> So every opportunity must <strong>name a specific screen</strong> Deborah and Elie are building.</p>
+<blockquote>
+<p>✗ <em>"Better user experience."</em><br />
+✓ <em>"Show accepted insurers on the search-result card, so the user does not have to open each pharmacy to find out — screen 05, Results list."</em></p>
+</blockquote>
+<p>Get the current screen list from Deborah or Elie before you fill that column, or the column will not map to anything.</p>
+<p><strong>Done when:</strong> one journey map image, with the Opportunities column naming real screens by number.</p>
+<p><strong>You hand over:</strong> recruitment plan · recruitment email · diversity note · script + consent · evidence folder + status board · competitor analysis + screenshots · journey map.</p>
+<hr />
+<h1>3. What is still blocked — and how it unblocks</h1>
+<p>These four rows are <strong>25 points</strong>. Nothing in Track A can substitute for them.</p>
+<table>
+<thead>
+<tr>
+<th>Pts</th>
+<th>Row</th>
+<th>Blocked on</th>
+<th>Unblocked by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>Interview Execution, Ethics &amp; Evidence</td>
+<td>Interviews not run</td>
+<td>Interviews today + tomorrow morning; uploads same day</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Participant Recruitment &amp; Interviews</td>
+<td>Half-done</td>
+<td>D1 today (plan/email/diversity can be handed in now)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Empathy Maps</td>
+<td>Interview quotes</td>
+<td>4 rich maps after synthesis — quotes + <strong>Sights, Sounds, Feels, Smells</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Personas</td>
+<td>Interview material</td>
+<td>2 cards with <strong>photo, environment, real quote</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>The sequence that saves them:</strong></p>
+<ol>
+<li><strong>Today, before anything else:</strong> recruitment message out to every group. Bookings confirmed with a time, not a "yes". Pharmacy and insurance staff <strong>work business hours, weekdays</strong> — those four calls must happen <strong>today or tomorrow morning</strong>, never "Thursday evening".</li>
+<li><strong>Today and tonight:</strong> interviews run. Students interview by phone, in the evening, in parallel — five people doing two each finishes twelve.</li>
+<li><strong>The moment two are done:</strong> the three of you start synthesis on what exists. <strong>Four rich empathy maps, not twelve shallow ones</strong> — the rubric asks for 3–4 key interviews and one aggregated map. That is what we do.</li>
+<li><strong>Fill the blanks.</strong> Every <code>[[FILL FROM INTERVIEWS]]</code> marker in the document gets replaced with a real quote or a real number, and the <strong>Claims → Evidence table</strong> gets filled: insight → which participants → verbatim quote → where it appears in our design. That one table defends six rubric rows at once.</li>
+</ol>
+<hr />
+<h1>4. What we cut, if we have to</h1>
+<p><strong>We cut scope, never evidence.</strong> Do not cut the interviews down to three and call it done — the counts are graded.</p>
+<p>If it goes wrong, this still passes: <strong>11 interviews · 8 Figma screens · 4 empathy maps · 2 personas · 1 storyboard · a clean 1-page literature review · every link working.</strong> Say we need to fall back <strong>today</strong>, not at 22:00 tomorrow.</p>
+<hr />
+<h1>5. Traps that cost marks in the last 24 hours</h1>
+<table>
+<thead>
+<tr>
+<th>Trap</th>
+<th>Cost</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figma share link left on "restricted"</td>
+<td>10 pts</td>
+<td>Deborah tests it in an <strong>incognito window</strong> today</td>
+</tr>
+<tr>
+<td>An in-text <code>[n]</code> with no matching reference</td>
+<td><strong>Zero for the whole assignment</strong></td>
+<td>Two people check separately: one reads each <code>[n]</code> aloud, the other confirms it in the list</td>
+</tr>
+<tr>
+<td>Bullet points in the narrative sections</td>
+<td>Formatting marks</td>
+<td>Paragraphs only. The <strong>only</strong> bullet list is §2 Project objectives</td>
+</tr>
+<tr>
+<td>Section §1 Introduction or §16 Reframed problem deleted as "not on the list"</td>
+<td>3 + part of 5</td>
+<td>Both are graded. They stay</td>
+</tr>
+<tr>
+<td>Sensory notes missing from empathy maps</td>
+<td>5 pts</td>
+<td>Build the FigJam template with <strong>Sights · Sounds · Feels · Smells</strong> already on it</td>
+</tr>
+<tr>
+<td>AI-written prose</td>
+<td><strong>Zero if &gt;50% flagged</strong></td>
+<td>We write it; AI only fixes grammar on text we already wrote. Keep the version history and the raw notes</td>
+</tr>
+<tr>
+<td>Something uploaded "later"</td>
+<td>10 pts</td>
+<td>If it is not in Drive the same day, it does not exist</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>6. Check-in — 21:00 tonight</h1>
+<p>Every person posts one line in the group before 21:00:</p>
+<pre><code>Robert — lit review + intro drafted, hypothesis sent to David at 13:10. Blocked: need 2 sources.
+</code></pre>
+<p><code>name — what moved — what's blocked</code>. Then one 15-minute call to rebalance: whatever is unfinished at 21:00 today gets moved, halved, or handed to somebody else — <strong>tonight</strong>, not tomorrow.</p>
+</body></html>
