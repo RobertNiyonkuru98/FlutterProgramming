@@ -1,7 +1,7 @@
 # Phase Playbook
 ### ALU Final Project, Part 1 — User Research & Prototype Design
 **Team:** Robert · Deborah · Elie · David · Igihozo
-**Today: Wed 16 Sep 2026 · Submit: Wed 23 Sep · Hard deadline: Thu 24 Sep 23:59 · 8 days**
+**Written Wed 16 Sep 2026 for an 8-day run. 🚩 SUPERSEDED: the deadline is now Sunday 27 September, 23:59.** Take the dates from `Round2-FreeNow-Assignments.md`. The how-to detail in this file is unchanged and still valid.
 
 > **Which document is which:**
 > - **`Team-Tasks-Round1.md` — who does what, and when.** That is the authoritative schedule. This file does not repeat it.
@@ -15,8 +15,8 @@
 | Trap | Why it bites | Fix |
 |---|---|---|
 | **Sensory notes missing from empathy maps** | The rubric requires **Sights, Sounds, Feels, Smells** in the quadrants. The brief never mentions it. It is the single most commonly missed item on this assignment | Build the FigJam template with those four labels **already on it** before you fill anything in |
-| **Figma link set to "restricted"** | A link that asks for access = zero for 10 points | Test in an **incognito window** on Monday 21, not Wednesday 23 |
-| **In-text citation with no matching reference** | The brief calls this plagiarism → automatic zero | Two people check separately on Wed 23: one reads each `[n]` aloud, the other confirms it in the list |
+| **Figma link set to "restricted"** | A link that asks for access = zero for 10 points | Test in an **incognito window** on Saturday 26, not Sunday 27 |
+| **In-text citation with no matching reference** | The brief calls this plagiarism → automatic zero | Two people check separately on Sunday 27: one reads each `[n]` aloud, the other confirms it in the list |
 | **Bullet points in the proposal** | The brief says paragraphs only; bullets are allowed **only** for Project Objectives | Narrative sections = paragraphs. Everything else = images |
 | **Designing before the research** | Screens that don't trace to an interview quote score poorly — the rubric wants screens that "map explicitly to the empathy map, journey map and UVP" | Nothing gets designed before Saturday's synthesis call |
 
@@ -39,7 +39,7 @@ Then write three movements, **in paragraphs**:
 
 ---
 
-## 3. Interviews (everyone) — the highest-value 3 days
+## 3. Interviews (everyone) — the highest-value 2 days
 
 ### The script — one script for everybody
 
@@ -77,7 +77,7 @@ Consent inside the audio. If it isn't in Drive the same day, it doesn't exist.
 
 ---
 
-## 4. Synthesis (Saturday afternoon)
+## 4. Synthesis (Saturday 26 afternoon)
 
 **Empathy maps.** Brief says one per user; **rubric only requires 3–4 key ones.** Do **4 rich maps** and put **direct quotes + sensory notes** in them.
 - Quadrants: **SAYS · THINKS · DOES · FEELS**
@@ -94,7 +94,7 @@ Consent inside the audio. If it isn't in Drive the same day, it doesn't exist.
 
 ---
 
-## 5. Competitors & journey map (Elie, Sunday)
+## 5. Competitors & journey map (Elie, Saturday 26)
 
 **Four competitors: 2 direct, 2 indirect.**
 - Direct = same offering, same audience (a provider/medicine finder for newcomers)
@@ -110,7 +110,7 @@ So every opportunity must name a screen Deborah will build. "Better UX" is not a
 
 ---
 
-## 6. UVP & reframed problem (Robert, Sunday)
+## 6. UVP & reframed problem (Robert, Friday 25)
 
 **UVP — one statement.** Benefit + how it solves the need + what makes it different. The one you already have is strong because the gap is concrete:
 
@@ -120,7 +120,7 @@ So every opportunity must name a screen Deborah will build. "Better UX" is not a
 
 ---
 
-## 7. IA, flows, storyboard (Elie, Sunday)
+## 7. IA, flows, storyboard (Elie, Saturday 26)
 
 **IA — 8 screens minimum.** A sitemap showing hierarchy and how screens connect. Apply the two principles the brief names: **Choice Principle** (few, well-organised options) and **Focused Navigation** (logical menu design).
 
@@ -130,7 +130,7 @@ So every opportunity must name a screen Deborah will build. "Better UX" is not a
 
 ---
 
-## 8. Figma (Deborah + Igihozo, Sunday–Monday)
+## 8. Figma (Deborah + Igihozo, Saturday 26 – Sunday 27)
 
 **Order of work matters — build it this way and you save hours:**
 
@@ -139,13 +139,13 @@ So every opportunity must name a screen Deborah will build. "Better UX" is not a
 3. **10 screens**, covering the full journey: open → pick insurance → locate → see accepting pharmacies → choose → get there. Plus Home, Profile, Settings, Emergency.
 4. **States:** empty (no results found), loading, tap/hover, error (no network). Rubric names these explicitly.
 5. **Real interactions:** clickable links, transitions, at least one simulated state change. A flat picture of screens is not an interactive prototype.
-6. **Share → anyone with the link → test in incognito.** Do this Monday, not Wednesday.
+6. **Share → anyone with the link → test in incognito.** Do this Saturday, not Sunday.
 
 **Make the research visible.** Under each key screenshot, one short caption naming the insight or journey pain point it answers. The rubric asks for screens that "map explicitly to the empathy map, journey map and UVP". Twenty minutes of captions defends several rubric rows at once.
 
 ---
 
-## 9. The PDF (Robert + Igihozo, Tuesday)
+## 9. The PDF (Robert + Igihozo, Sunday 27)
 
 **Format — hard requirements:** Times New Roman, **12pt, single-spaced**, clear headings, supporting diagrams, reference list. **Paragraphs, not bullets** — the only bulleted list is Project Objectives. Single PDF. Polished and error-free (this is inside a 10-point row).
 
@@ -192,7 +192,7 @@ AI is permitted **only** to fix grammar on text already written — the rubric p
 
 ---
 
-## 11. Final gates — Wednesday 23 September
+## 11. Final gates — Sunday 27 September
 
 | Gate | Check | By |
 |---|---|---|

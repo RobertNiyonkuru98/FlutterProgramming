@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title> NOW — the Sunday sprint</title>
+<style>
+:root{
+  --ink:#16202b; --muted:#5a6b7b; --line:#dbe3ea; --soft:#f6f8fa;
+  --accent:#0b6b5f; --accent-soft:#e6f2f0; --warn:#a8410d; --warn-soft:#fdf1e7;
+  --hi:#8a1c1c; --hi-soft:#fdecec;
+}
+*{box-sizing:border-box}
+body{
+  font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink); line-height:1.62; max-width:920px; margin:0 auto;
+  padding:56px 40px 96px; background:#fff; font-size:15.5px;
+  -webkit-print-color-adjust:exact; print-color-adjust:exact;
+}
+h1{font-size:2.05em; line-height:1.2; margin:0 0 .15em; letter-spacing:-.02em}
+h1+h2{border:0; margin-top:.1em; color:var(--muted); font-weight:600; font-size:1.06em; padding:0}
+h1+h2+h3{border:0;margin-top:.6em}
+h2{
+  font-size:1.42em; margin:2.2em 0 .7em; padding-top:.55em;
+  border-top:2px solid var(--line); letter-spacing:-.01em;
+}
+h3{font-size:1.12em; margin:1.9em 0 .5em; color:var(--accent)}
+h3:first-of-type{margin-top:1.1em}
+p{margin:.72em 0}
+a{color:var(--accent)}
+strong{color:#0d1720}
+hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+/* tables */
+table{border-collapse:collapse; width:100%; margin:1.1em 0 1.5em; font-size:.92em}
+th,td{border:1px solid var(--line); padding:9px 11px; text-align:left; vertical-align:top}
+th{background:var(--soft); font-weight:650; font-size:.95em}
+tbody tr:nth-child(even){background:#fbfcfd}
+/* blockquotes */
+blockquote{
+  margin:1.3em 0; padding:14px 20px; border-left:4px solid var(--accent);
+  background:var(--accent-soft); border-radius:0 6px 6px 0;
+}
+blockquote p{margin:.35em 0}
+blockquote h3{margin-top:0; color:var(--accent)}
+/* code */
+code{
+  background:#eef2f5; padding:2px 6px; border-radius:4px; font-size:.87em;
+  font-family:"Cascadia Mono",Consolas,"SF Mono",Menlo,monospace;
+}
+pre{background:#f4f7f9; border:1px solid var(--line); border-radius:6px; padding:14px 16px; overflow-x:auto}
+pre code{background:none; padding:0; font-size:.86em; line-height:1.5}
+/* task lists */
+ul li{margin:.3em 0}
+input[type=checkbox]{margin-right:7px}
+/* print */
+@page{size:A4; margin:16mm 14mm}
+@media print{
+  body{padding:0; max-width:none; font-size:10.4pt; line-height:1.5}
+  h2{page-break-after:avoid} h3{page-break-after:avoid}
+  table,blockquote,pre{page-break-inside:avoid}
+  a{color:var(--ink); text-decoration:none}
+}
+</style>
+</head><body>
+<h1>NOW — the Sunday sprint</h1>
+<h3>It is Sunday 27 September 2026. The deadline is tonight, 23:59.</h3>
+<h1>⏰ UNDER 11 HOURS LEFT</h1>
+<p><strong>🚩 PARTIALLY SUPERSEDED — this file was built assuming a team of five.</strong> Robert is now working alone, so the staffing, the "two people dialling in parallel" blocks, and the five-way synthesis split do not apply. <strong>The live plan is <code>SOLO-Mode-Plan.md</code>.</strong> Still valid in this file: the 15-minute script, the per-interview capture checklist, the pharmacy walk-in logic, the honest-numbers rule, and the final gates.</p>
+<hr />
+<h1>0. Read this first</h1>
+<p>Our revised plan assumed Friday, Saturday <strong>and</strong> Sunday. <strong>Saturday is gone.</strong> It is Sunday midday and there are under twelve hours left.</p>
+<p>That is not a reason to panic. It is a reason to stop planning and start dialling. Nobody does any more re-planning today; from here on the document only moves when an interview lands.</p>
+<p><strong>Where we actually stand:</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Robert's six written sections (§1, §2, §3, §4, §15, §16)</td>
+<td>✅ Done</td>
+</tr>
+<tr>
+<td>Igihozo's three (§23 contribution evaluation, storyboard, document skeleton)</td>
+<td>✅ Done</td>
+</tr>
+<tr>
+<td>Drive set up</td>
+<td>✅ Done</td>
+</tr>
+<tr>
+<td><strong>Interviews</strong></td>
+<td>🔴 <strong>2 of 10+. This is the only real hole.</strong></td>
+</tr>
+<tr>
+<td>Empathy maps, personas, §5 interview summary, Claims → Evidence</td>
+<td>🔴 Blocked on the above</td>
+</tr>
+<tr>
+<td>Competitor analysis, journey map, IA, user flows, Figma</td>
+<td>❓ Confirm by 13:00</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Everything still missing is missing because of the interviews.</strong> The document is otherwise a finished shell around one hole, and the hole is fillable this afternoon.</p>
+<p><strong>The number that matters today is four.</strong> Two interviews protect nothing. Four protect 15 points. Read section 2 and then send the messages in section 4.</p>
+<hr />
+<h1>1. The arithmetic — what protects what</h1>
+<table>
+<thead>
+<tr>
+<th>Interviews we end with</th>
+<th>What it protects</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2</strong> (where we are)</td>
+<td>Nothing. The rubric's empathy-map row asks for <strong>3–4 key interviews</strong>, so we cannot even open the row.</td>
+</tr>
+<tr>
+<td><strong>4</strong> ✅ <strong>the line to cross today</strong></td>
+<td><strong>Empathy Maps (5 pts)</strong> + <strong>Personas (5 pts)</strong> + makes §5 writable and the 10-pt row defensible. <strong>15 points protected.</strong></td>
+</tr>
+<tr>
+<td><strong>6–8</strong></td>
+<td>Adds genuine depth to the 10-pt Interview Execution row and lets us claim participant diversity with a straight face.</td>
+</tr>
+<tr>
+<td><strong>10+</strong></td>
+<td>Would protect Participant Recruitment (5 pts) fully. Nice to have. <strong>Not required today.</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>So the goal is four, urgently, and six if the evening goes well.</strong> Four interviews is roughly three hours of work with two people dialling in parallel.</p>
+<p>The 25 points that sat behind the interviews are reachable in part today, and every interview after the fourth is insurance against an answer that turns out to be unusable once you try to quote it.</p>
+<hr />
+<h1>2. The honest-numbers rule — read before you write §5</h1>
+<p><strong>We report the number of interviews we actually did, and we report it against the evidence folder.</strong> Nothing else is acceptable.</p>
+<p>The interview row is graded on evidence: a script, a consent record, audio, and notes, per participant. If §5 says twelve while the Drive holds five folders, that discrepancy is the single most damaging thing in the document, and it is trivially checkable. A team that says <em>"we completed six in-depth interviews and report them fully"</em> scores better than one that claims twelve and cannot produce them.</p>
+<p><strong>So: never inflate the count.</strong> Make depth the argument instead. Six participants with verbatim quotes, sensory notes and a filled Claims → Evidence table reads as rigorous. Twelve names with no audio reads as invented, because it is.</p>
+<hr />
+<h1>3. Right now — the next 30 minutes</h1>
+<p>Nothing else happens until this is done.</p>
+<h3>3.1 Send the blast, to individuals first</h3>
+<p>Groups are slow. <strong>Direct messages convert.</strong> Copy this and send it one person at a time, changing the name:</p>
+<blockquote>
+<p>Hey [name] 👋 Quick favour — 15 minutes, today, on a call. We're doing our university final project on how people who've moved to Rwanda find a pharmacy that takes their insurance. You qualify if you arrived in the last two years. No right answers, nothing sold, anonymous, and you can skip anything. <strong>Are you free at [time]?</strong> It's 15 minutes and I'll call you.</p>
+</blockquote>
+<p>Then send a group version:</p>
+<blockquote>
+<p>Hi all 👋 We're 5 ALU students doing our final project on a real problem: when you arrive in Rwanda and need medicine, there's no way to know which pharmacy takes your insurance without walking there and reading the sign on the door. <strong>We need 15-minute phone calls today</strong>, anyone who arrived in Rwanda in the last 2 years. Anonymous, no sales pitch. Reply with a time and I'll call you. 🙏</p>
+</blockquote>
+<h3>3.2 The booking rule</h3>
+<p><strong>A "yes" is not an interview. A time is.</strong> Do not accept <em>"sure, later"</em>. Reply with two concrete options: <em>"16:00 or 17:30?"</em> Then put the name and the time in the group so everyone can see the count climbing. Visible counts create urgency.</p>
+<h3>3.3 Who to ask, in this order</h3>
+<ol>
+<li><strong>ALU classmates and the course WhatsApp group.</strong> Fastest, highest hit rate, all qualify.</li>
+<li><strong>Dorm or hostel neighbours.</strong> Ask in person. In-person gets a yes on the spot and gives you the sensory notes.</li>
+<li><strong>Coworkers, church, gym, LinkedIn.</strong> Any non-student newcomer.</li>
+<li><strong>Pharmacies — walk in this afternoon.</strong> See section 5. This is the only route to the pharmacy segment, and the rubric grades participant diversity.</li>
+</ol>
+<hr />
+<h1>4. The 15-minute script</h1>
+<p>Fifteen minutes is deliberate. It is long enough for an empathy map and short enough that people say yes and that you can run several. <strong>Ask these in order, and ask them the same way every time.</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Screener:</strong> When did you arrive in Rwanda, and which health insurance do you hold?</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Walk me through the last time you needed medicine here. What happened, step by step?</td>
+</tr>
+<tr>
+<td>3</td>
+<td>How did you decide which pharmacy to go to?</td>
+</tr>
+<tr>
+<td>4</td>
+<td>How did you find out whether they accept your insurance?</td>
+</tr>
+<tr>
+<td>5</td>
+<td>What did you do when you weren't sure?</td>
+</tr>
+<tr>
+<td>6</td>
+<td>How long did that take, and how many trips did it cost you? <em>(get a real number, not "a while")</em></td>
+</tr>
+<tr>
+<td>7</td>
+<td>What if it were late at night, or a weekend? What would you do then?</td>
+</tr>
+<tr>
+<td>8</td>
+<td>What would have made that easier?</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Three rules, and they decide whether the data is usable:</strong></p>
+<ul>
+<li><strong>No yes/no questions.</strong> <em>"Do you use X?"</em> ✗ → <em>"How do you handle X?"</em> ✓</li>
+<li><strong>Never describe our app before asking about the problem.</strong> The moment you do, every answer after it is contaminated and the interview is worthless for the empathy map.</li>
+<li><strong>Write quotes verbatim, in their words.</strong> Two or three per person. Those exact sentences are what fill the empathy maps, the personas and the Claims → Evidence table. Paraphrase and you lose the marks.</li>
+</ul>
+<hr />
+<h1>5. The pharmacy walk-in — do it this afternoon</h1>
+<p><strong>One hour, two people, two or three pharmacies.</strong> It is the highest-value single action left today, for four reasons:</p>
+<ol>
+<li>It is the <strong>only</strong> way to get the pharmacy and pharmacy-staff segment, which is what the rubric's diversity row is measuring.</li>
+<li>It produces the <strong>best sensory notes</strong> — the sign on the door, the queue, the smell of the dispensary. Those four labels (Sights, Sounds, Feels, Smells) are the most-missed item on this assignment, and they cannot be written from a phone call.</li>
+<li>It gets you two interviews in one hour, for free.</li>
+<li><strong>You will photograph the board.</strong> That photo is direct evidence for our entire problem statement, and it belongs in the document.</li>
+</ol>
+<p><strong>Be honest and be brief.</strong> Ask for the manager or the pharmacist, say you are students, and ask five questions: which insurers do you accept · how do you display that · do people ask you this often · do you get customers holding cards you don't take · would you mind being listed in an app.</p>
+<p><strong>And if a pharmacy is shut when you get there, that is not a wasted trip.</strong> It is a finding: <em>"at 15:00 on a Sunday, the pharmacy on X road was closed"</em> is evidence for exactly the emergency problem we are claiming exists. Record the time, the location and a photo. Write it in §5.</p>
+<hr />
+<h1>6. What to capture, per interview, or it did not happen</h1>
+<p>Consent and upload are not optional. The 10-point row lives here.</p>
+<ul>
+<li>☐ <strong>Consent, spoken and captured on the recording</strong> — <em>"This is for a university project. I'd like to record so my notes are accurate. Nothing is shared publicly, your name isn't used, and you can stop or skip anything. Do you consent?"</em> — wait for the spoken yes.</li>
+<li>☐ <strong>The recording</strong> (phone recorder, WhatsApp voice note, anything)</li>
+<li>☐ <strong>Verbatim quotes</strong> — 2–3, written down before you move to the next call</li>
+<li>☐ <strong>Sensory notes</strong> — what you saw, heard, and smell; their mood; where they paused</li>
+<li>☐ <strong>Uploaded to Drive the same hour:</strong> <code>03_Interviews/P07_Name/  script  ·  audio  ·  notes</code></li>
+</ul>
+<p><strong>If it is not in the Drive, it does not exist.</strong> Do this per interview, not in a batch at 22:00, because that is how audio gets lost.</p>
+<p><strong>Starting now, and in parallel:</strong> two interviews already exist, so <strong>two of the four empathy maps can be built immediately</strong> by whoever is not dialling. Do not wait for the other two.</p>
+<hr />
+<h1>7. From 12:30 to 20:00 — the interview window</h1>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>12:10 – 12:45</strong></td>
+<td>Blast sent to individuals and groups. Slots booked with times. Pharmacy pair leaves.</td>
+</tr>
+<tr>
+<td><strong>12:45 – 15:00</strong></td>
+<td>In-person interviews: campus, dorm, pharmacy walk-ins. Highest quality, best sensory notes.</td>
+</tr>
+<tr>
+<td><strong>15:00 – 17:00</strong></td>
+<td>Phone block 1. <strong>Two people dialling in parallel</strong>, 30-minute slots, 15-minute calls. That is 4 interviews by 17:00.</td>
+</tr>
+<tr>
+<td><strong>17:00 – 20:00</strong></td>
+<td>Phone block 2. This is the prime window: students are home and answering. Push for the total to reach 6–8.</td>
+</tr>
+<tr>
+<td><strong>20:00</strong></td>
+<td>🚩 <strong>Hard stop on interviewing.</strong> Count the folder. Whatever exists at 20:00 is what the document is built on.</td>
+</tr>
+<tr>
+<td><strong>20:00 – 20:30</strong></td>
+<td>Everyone posts their quotes and sensory notes into the shared document. Nobody starts writing until the evidence is in one place.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Do not interview past 20:00, even if calls are still coming.</strong> The analysis is worth more than an eighth interview, and the empathy maps are 5 points that cannot be built at 23:00 from memory.</p>
+<hr />
+<h1>8. 20:30 – 22:00 — the synthesis sprint (90 minutes, five people in parallel)</h1>
+<p>This is where the 15 points actually get earned. <strong>Split it. Do not have one person build four maps.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Who</th>
+<th>Builds</th>
+<th>Detail that wins the marks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1 person</strong></td>
+<td>4 individual empathy maps</td>
+<td>Quadrants <strong>SAYS · THINKS · DOES · FEELS</strong>, filled with <strong>verbatim quotes</strong>. Plus <strong>Sights · Sounds · Feels · Smells</strong>. Put those four labels on the template <em>before</em> you start filling it.</td>
+</tr>
+<tr>
+<td><strong>1 person</strong></td>
+<td>1–2 aggregated maps</td>
+<td>Name the segments by <strong>behaviour</strong>, not by person: <em>"the caller"</em> (phones the insurer), <em>"the walker"</em> (walks to read the door), <em>"the asker"</em> (asks classmates).</td>
+</tr>
+<tr>
+<td><strong>1 person</strong></td>
+<td>2 personas</td>
+<td><strong>Name, photo, demographics, goals, frustrations, behaviours, environment, and a real interview quote.</strong> The photo, the environment and the quote are the three people forget.</td>
+</tr>
+<tr>
+<td><strong>Robert</strong></td>
+<td>§5 summary + your four blanks</td>
+<td>Number conducted, the five strongest insights, each with a supporting quote and which participants said it. Then fill the §4 baseline number and the §16 verbatim quote from the real transcripts.</td>
+</tr>
+<tr>
+<td><strong>1 person</strong></td>
+<td>Claims → Evidence table</td>
+<td>Insight → which participants → verbatim quote → where it appears in our design. <strong>This one table defends six rubric rows.</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Build the maps from quotes you already wrote down, not from memory of the call.</strong> That is the whole reason for the capture checklist.</p>
+<hr />
+<h1>9. 22:00 – 23:30 — compile, gate, and submit</h1>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>22:00</td>
+<td>📄 Assemble the final PDF. Times New Roman 12, single-spaced, <strong>paragraphs not bullets</strong>, every image inserted, §24 reference list built from the source table.</td>
+</tr>
+<tr>
+<td>22:20</td>
+<td>🔗 <strong>Link gate:</strong> the Figma share link opens in an <strong>incognito window</strong>. A restricted link is 10 points gone.</td>
+</tr>
+<tr>
+<td>22:30</td>
+<td>✅ <strong>IEEE gate:</strong> two people separately. One reads each <code>[n]</code> aloud, the other confirms it exists in §24. A mismatch is treated as plagiarism.</td>
+</tr>
+<tr>
+<td>22:45</td>
+<td>📋 <strong>Format gate:</strong> TNR 12, single-spaced, no bullets outside §2, <strong>§1 Introduction and §16 Reframed problem both still present</strong> (they are graded but were missing from your submission-criteria list).</td>
+</tr>
+<tr>
+<td>23:00</td>
+<td>🔢 <strong>Count gate:</strong> number of interviews recorded = number of Drive folders. Check it honestly.</td>
+</tr>
+<tr>
+<td>23:10</td>
+<td>📤 <strong>Submit.</strong> Screenshot the confirmation.</td>
+</tr>
+<tr>
+<td>23:10 – 23:59</td>
+<td>Buffer. Do not plan to work here — this is the window where a good submission becomes a late one.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Submit by 23:10, not at 23:59.</strong> The last hour is not free working time; it is the margin that absorbs the one thing that always goes wrong.</p>
+<hr />
+<h1>10. If we are still stuck at 20:00</h1>
+<p><strong>Four interviews is a passing position, and it is worth saying that plainly.</strong></p>
+<p>With four, we build four rich empathy maps, two personas from them, a §5 that reports the real number and quotes every participant, and a filled Claims → Evidence table. We lose part of the Participant Recruitment row and some depth in the 10-point row, and we still defend the other 12 rows of the document.</p>
+<p><strong>What we do not do is invent participants, quotes or numbers.</strong> Not a single fabricated quote, not one recording we did not make. If it comes to it, say in §5 that the sample was small and why. An examiner forgives a small honest sample. Nobody forgives a fabricated one.</p>
+<hr />
+<h1>11. What not to do in the next 12 hours</h1>
+<ul>
+<li><strong>Do not re-plan.</strong> This file is the plan. Re-planning is the most comfortable way to spend an afternoon without producing anything.</li>
+<li><strong>Do not polish the Figma or the storyboard today</strong> unless it is broken. Those rows are already in reasonable shape; the interviews are not.</li>
+<li><strong>Do not batch the uploads.</strong> Per interview, same hour.</li>
+<li><strong>Do not build the empathy maps from memory.</strong> From the written quotes.</li>
+<li><strong>Do not touch the citations without re-verifying them.</strong> A broken <code>[n]</code> zeroes the whole assignment.</li>
+<li><strong>Do not use the last hour.</strong> Submit at 23:10.</li>
+</ul>
+</body></html>

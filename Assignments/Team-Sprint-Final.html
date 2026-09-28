@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title> TEAM PLAN — the last 11 hours</title>
+<style>
+:root{
+  --ink:#16202b; --muted:#5a6b7b; --line:#dbe3ea; --soft:#f6f8fa;
+  --accent:#0b6b5f; --accent-soft:#e6f2f0; --warn:#a8410d; --warn-soft:#fdf1e7;
+  --hi:#8a1c1c; --hi-soft:#fdecec;
+}
+*{box-sizing:border-box}
+body{
+  font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink); line-height:1.62; max-width:920px; margin:0 auto;
+  padding:56px 40px 96px; background:#fff; font-size:15.5px;
+  -webkit-print-color-adjust:exact; print-color-adjust:exact;
+}
+h1{font-size:2.05em; line-height:1.2; margin:0 0 .15em; letter-spacing:-.02em}
+h1+h2{border:0; margin-top:.1em; color:var(--muted); font-weight:600; font-size:1.06em; padding:0}
+h1+h2+h3{border:0;margin-top:.6em}
+h2{
+  font-size:1.42em; margin:2.2em 0 .7em; padding-top:.55em;
+  border-top:2px solid var(--line); letter-spacing:-.01em;
+}
+h3{font-size:1.12em; margin:1.9em 0 .5em; color:var(--accent)}
+h3:first-of-type{margin-top:1.1em}
+p{margin:.72em 0}
+a{color:var(--accent)}
+strong{color:#0d1720}
+hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+/* tables */
+table{border-collapse:collapse; width:100%; margin:1.1em 0 1.5em; font-size:.92em}
+th,td{border:1px solid var(--line); padding:9px 11px; text-align:left; vertical-align:top}
+th{background:var(--soft); font-weight:650; font-size:.95em}
+tbody tr:nth-child(even){background:#fbfcfd}
+/* blockquotes */
+blockquote{
+  margin:1.3em 0; padding:14px 20px; border-left:4px solid var(--accent);
+  background:var(--accent-soft); border-radius:0 6px 6px 0;
+}
+blockquote p{margin:.35em 0}
+blockquote h3{margin-top:0; color:var(--accent)}
+/* code */
+code{
+  background:#eef2f5; padding:2px 6px; border-radius:4px; font-size:.87em;
+  font-family:"Cascadia Mono",Consolas,"SF Mono",Menlo,monospace;
+}
+pre{background:#f4f7f9; border:1px solid var(--line); border-radius:6px; padding:14px 16px; overflow-x:auto}
+pre code{background:none; padding:0; font-size:.86em; line-height:1.5}
+/* task lists */
+ul li{margin:.3em 0}
+input[type=checkbox]{margin-right:7px}
+/* print */
+@page{size:A4; margin:16mm 14mm}
+@media print{
+  body{padding:0; max-width:none; font-size:10.4pt; line-height:1.5}
+  h2{page-break-after:avoid} h3{page-break-after:avoid}
+  table,blockquote,pre{page-break-inside:avoid}
+  a{color:var(--ink); text-decoration:none}
+}
+</style>
+</head><body>
+<h1>TEAM PLAN — the last 11 hours</h1>
+<h3>Sunday 27 September 2026, 12:20 · Deadline 23:59 · <strong>Submit 23:15</strong> · 10.9 usable hours</h3>
+<p><strong>Team: Robert · Deborah · Elie · David · Igihozo</strong></p>
+<hr />
+<h1>0. The score, honestly, right now</h1>
+<p>Read this before anything else, because it changes what the night is for.</p>
+<table>
+<thead>
+<tr>
+<th>Pts</th>
+<th>Rubric row</th>
+<th>Status</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>10</strong></td>
+<td>Figma Prototype</td>
+<td>🟡 <strong>Screens built — NOT verified</strong></td>
+<td>Seven named criteria. See section 1.</td>
+</tr>
+<tr>
+<td><strong>10</strong></td>
+<td>Interview Execution, Ethics &amp; Evidence</td>
+<td>🔴 <strong>Open — 2 done</strong></td>
+<td>The night's real work.</td>
+</tr>
+<tr>
+<td><strong>10</strong></td>
+<td>Citation, Originality &amp; Formatting</td>
+<td>⚪ Open</td>
+<td>Worth 10 and costs almost nothing. Discipline, not labour.</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td>Journey Maps</td>
+<td>❓ Unknown</td>
+<td>Was Elie's. Confirm by 13:00 or assign it.</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td>Information Architecture &amp; User Flow</td>
+<td>🟡 <strong>Built — NOT verified</strong></td>
+<td>Needs 8+ screens and <strong>failure states</strong>.</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>Participant Recruitment</td>
+<td>🟠 Partial</td>
+<td>Plan + email + diversity note exist. "&gt;10 interviews" is the gap.</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>Empathy Maps</td>
+<td>🔴 <strong>Open</strong></td>
+<td>Blocked on interviews. 3 satisfies the row, not 4.</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>Personas</td>
+<td>🔴 <strong>Open</strong></td>
+<td>Blocked on interviews. 30 minutes once quotes exist.</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>UVP &amp; Reframed Problem</td>
+<td>✅ Done</td>
+<td>Robert</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>Storyboards</td>
+<td>🟡 Igihozo — verify</td>
+<td>Needs 6–10 panels, characters, setting, emotions.</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>Team Member Contribution</td>
+<td>✅ Done</td>
+<td>Igihozo — tracker link must be inside the PDF</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>Introduction &amp; Mission Alignment</td>
+<td>✅ Done</td>
+<td>Robert</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>Problem Statement &amp; Hypothesis</td>
+<td>✅ Done</td>
+<td>Robert — needs the baseline number filled</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>Literature Review</td>
+<td>✅ Done</td>
+<td>Robert — needs the real sources verified</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>Competitor Analysis</td>
+<td>❓ Unknown</td>
+<td>Confirm by 13:00 or assign it.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><strong>Banked if verification passes: ~40. Open and reachable: ~44.</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>⚠️ Two things about the target of 85 out of 90</h3>
+<p><strong>First: the rubric I have totals 84, not 90.</strong> I have read these 15 rows off your screenshot and they sum to 84. You have said 90 three times now, so either there is a second page or a row I have never seen, or the 90 is approximate. <strong>If there is a missing row, tell me what it is and I will re-cut the whole plan around it</strong> — six unplanned points is not something to discover at 22:00.</p>
+<p><strong>Second: 85 is not a number we aim at tonight.</strong> We aim at the full 84 on the sheet I can see, because the only lever left is the interviews and they either happen or they do not. Section 2 shows where the real ceiling is.</p>
+<hr />
+<h1>1. The trap that costs more than the missing interviews</h1>
+<p><strong>"Done" is not the same as "scores."</strong> Three of your finished rows are each worth 10, 6 and 5 points, and each one hinges on a specific list of named criteria. A row that looks finished but misses one named item can drop a whole band. <strong>Verify these before you celebrate, and verify them before you spend the night on interviews.</strong></p>
+<h3>Figma Prototype — 10 points, seven criteria</h3>
+<table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>Check</th>
+<th>Who</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>10+ screens</strong></td>
+<td>Count them. Ten is the floor, not the target.</td>
+<td>Deborah</td>
+</tr>
+<tr>
+<td><strong>Complete primary flow to a success state</strong></td>
+<td>Open the app → select insurer → find pharmacy → arrive. Does it actually complete?</td>
+<td>Deborah</td>
+</tr>
+<tr>
+<td><strong>Design tokens</strong></td>
+<td>Type scale + colour tokens, named, not hardcoded colours everywhere</td>
+<td>Deborah</td>
+</tr>
+<tr>
+<td><strong>Navigation, transitions, form fields</strong></td>
+<td>All three present</td>
+<td>Deborah</td>
+</tr>
+<tr>
+<td><strong>Hover / tap states</strong></td>
+<td>At least the primary button</td>
+<td>Deborah</td>
+</tr>
+<tr>
+<td><strong>Empty states</strong></td>
+<td>"No pharmacies found" must exist</td>
+<td>Deborah</td>
+</tr>
+<tr>
+<td><strong>🚩 PUBLIC share link, tested in incognito</strong></td>
+<td>Open it in a private window. <strong>A restricted link is 10 points gone.</strong></td>
+<td>Deborah</td>
+</tr>
+<tr>
+<td><strong>Screens map explicitly to the research</strong></td>
+<td>One-line caption under each key screen naming the insight it answers</td>
+<td>Deborah + Robert</td>
+</tr>
+</tbody>
+</table>
+<h3>And the exports do not exist yet</h3>
+<p><strong>There are currently zero image files in the Assignments folder.</strong> §20 needs the Figma screenshots <strong>embedded in the PDF</strong>, and §14, §10 and §11 all need images too. Exporting takes ten minutes; forgetting it costs the row. <strong>Deborah: export all 10 screens as PNG at 13:00, before anything else.</strong> §22's live link is separate and does not replace §20.</p>
+<h3>IA &amp; User Flow — 6 points</h3>
+<p>Needs <strong>8+ screens</strong>, the <strong>Choice Principle</strong> and <strong>Focused Navigation</strong> named in the write-up, a flow <strong>per core task</strong>, and <strong>happy path AND failure states</strong> — wrong insurer, no results, no network, pharmacy closed. If those four failure states are missing, add them tonight; it is 20 minutes.</p>
+<h3>Storyboard — 5 points</h3>
+<p><strong>6–10 panels</strong>, with <strong>characters, setting and emotions</strong>, and the discovery and resolution panels must <strong>show the app interfaces</strong>. Check Igihozo's against that list.</p>
+<hr />
+<h1>2. Where the ceiling actually is</h1>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>What we land</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Interviews stay at 2</strong></td>
+<td>Empathy maps and personas cannot open. We lose ~15 points outright and the 10-point interview row is thin. <strong>~65 of 84.</strong></td>
+</tr>
+<tr>
+<td><strong>Interviews reach 4</strong> ✅</td>
+<td>Empathy maps (4 maps), personas (2), and a defensible 10-point row. <strong>~75 of 84.</strong></td>
+</tr>
+<tr>
+<td><strong>Interviews reach 8–10</strong> 🎯</td>
+<td>Adds the recruitment band and real depth. <strong>~84 of 84.</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>The whole difference between 65 and 84 is how many 15-minute phone calls happen between now and 20:00.</strong> Four people dialling in parallel for three hours is eight interviews. That is the plan.</p>
+<hr />
+<h1>3. The night — phase by phase, all five</h1>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Phase</th>
+<th>Everyone does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>12:20 – 13:00</strong></td>
+<td><strong>Fire the recruitment + verify the done rows</strong></td>
+<td>Robert sends the blast (section 4). Deborah exports screenshots and runs the Figma checklist. Elie confirms IA failure states + status of journey map and competitors. David opens the evidence tracker. Igihozo starts assembling the PDF from what already exists.</td>
+</tr>
+<tr>
+<td><strong>13:00 – 13:30</strong></td>
+<td><strong>Book the slots</strong></td>
+<td>Every interviewer owns 2 named participants with a <strong>time</strong>, not a "yes". Write them in the group.</td>
+</tr>
+<tr>
+<td><strong>13:30 – 17:00</strong></td>
+<td><strong>Interviews begin + parallel work</strong></td>
+<td>Two people on pharmacy walk-ins (the only route to that segment and to real sensory notes). Everyone else: 15-minute calls as slots land. Non-interviewers finish the journey map and competitor analysis.</td>
+</tr>
+<tr>
+<td><strong>17:00 – 20:00</strong></td>
+<td><strong>🎯 Prime window — all hands on interviews</strong></td>
+<td>Students are home and answering. Three or four parallel streams, 30-minute slots, 15-minute calls. <strong>Push the total to 8–10.</strong></td>
+</tr>
+<tr>
+<td><strong>20:00</strong></td>
+<td>🚩 <strong>Hard stop</strong></td>
+<td>Stop dialling. Upload everything: script, consent, audio, notes. Count the Drive folders and post the number in the group.</td>
+</tr>
+<tr>
+<td><strong>20:30 – 22:00</strong></td>
+<td><strong>Synthesis sprint, five ways</strong></td>
+<td>See section 6. Nobody builds two things.</td>
+</tr>
+<tr>
+<td><strong>22:00 – 23:00</strong></td>
+<td><strong>Compile and gate</strong></td>
+<td>See section 7.</td>
+</tr>
+<tr>
+<td><strong>23:00 – 23:15</strong></td>
+<td><strong>Submit</strong></td>
+<td>Screenshot the confirmation.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Why the pharmacy walk-ins are at 13:30 and not later:</strong> pharmacists are at work now, they are a whole participant segment the diversity row is measuring, they give you the only genuine <strong>Sights / Sounds / Feels / Smells</strong> material you will get, and you can photograph the board on the door — which is direct evidence for the entire problem statement.</p>
+<hr />
+<h1>4. Paste these into the group — one block per person</h1>
+<h3>🔬 ROBERT</h3>
+<blockquote>
+<p>All six written sections are done. Tonight: <strong>send the recruitment blast now</strong> (individual DMs first, groups second), then run 2 interviews, then at 20:30 take <strong>§5 interview summary + the Claims → Evidence table</strong>, and fill the two blanks left in §4 and §16 from the real transcripts. Also: caption each Figma screenshot with the research finding it answers.</p>
+</blockquote>
+<h3>🎨 DEBORAH</h3>
+<blockquote>
+<p><strong>Before 13:00:</strong> export all 10 Figma screens as PNG into the Drive, then run the seven-point checklist — 10+ screens, primary flow completing, design tokens, navigation/transitions/form fields, tap states, empty state, and <strong>the share link opened in an incognito window</strong>. Post the result in the group. Then run 2 interviews. At 20:30 build <strong>2 personas</strong> — name, photo, demographics, goals, frustrations, behaviours, <strong>environment</strong>, and <strong>a real interview quote</strong>.</p>
+</blockquote>
+<h3>🧩 ELIE</h3>
+<blockquote>
+<p>Confirm by 13:00 that the IA has <strong>8+ screens</strong> and that the flows include the <strong>failure states</strong> — wrong insurer, no results, no network, pharmacy closed — and confirm the journey map and competitor analysis status. Then <strong>journey map</strong> if it is not done: one <strong>direct</strong> competitor, stages → actions → thoughts → feelings → pain points → opportunities, and every opportunity must <strong>name one of our screens by number</strong>. Then 2 interviews. At 20:30 do the <strong>IEEE cross-check</strong> with Igihozo: one reads each <code>[n]</code> aloud, the other confirms it exists in §24.</p>
+</blockquote>
+<h3>📞 DAVID</h3>
+<blockquote>
+<p>Own the evidence. Confirm the Drive structure, then push recruitment hard — a <strong>time</strong>, not a "yes". Run 2 interviews. <strong>Every hour, confirm that scripts, audio and consent have landed</strong>, and chase anyone silent for more than an hour. At 20:00 post the real interview count. At 20:30 build the <strong>Claims → Evidence table</strong>: insight → which participants → verbatim quote → where it appears in our design.</p>
+</blockquote>
+<h3>🧭 IGIHOZO</h3>
+<blockquote>
+<p>Start assembling the PDF now from what already exists, so tonight is insertion and not assembly: all 24 sections in order, the images you have placed, Times New Roman 12, single-spaced. Run 2 interviews. At 20:30 build <strong>1 aggregated empathy map</strong> and make sure the four individual maps carry the <strong>Sights · Sounds · Feels · Smells</strong> labels. Then finish the compile, confirm the <strong>contribution tracker link is inside the PDF</strong>, and submit at 23:00 with a screenshot.</p>
+</blockquote>
+<hr />
+<h1>5. The interview sprint — where the 25 points live</h1>
+<h3>Send this to individuals, one at a time</h3>
+<blockquote>
+<p>Hey [name] 👋 Quick favour — 15 minutes today, on a call. We're doing our final project on how people who've moved to Rwanda find a pharmacy that takes their insurance. You qualify if you arrived in the last two years. No right answers, anonymous, nothing sold. <strong>Free at 17:00 or 17:45?</strong> I'll call you, 15 minutes.</p>
+</blockquote>
+<h3>Then the group version</h3>
+<blockquote>
+<p>Hi all 👋 We're ALU students doing our final project on a real problem: when you arrive in Rwanda and need medicine, there's no way to know which pharmacy takes your insurance without walking there and reading the sign on the door. <strong>We need 15-minute phone calls today</strong>, anyone who arrived in Rwanda in the last 2 years. Anonymous, no sales pitch. Reply with a time. 🙏</p>
+</blockquote>
+<h3>The 15-minute script — same questions, everybody, every time</h3>
+<ol>
+<li><strong>Screener:</strong> When did you arrive in Rwanda, and which insurance do you hold?</li>
+<li>Walk me through the last time you needed medicine here. What happened, step by step?</li>
+<li>How did you decide which pharmacy to go to?</li>
+<li>How did you find out whether they take your insurance?</li>
+<li>What did you do when you weren't sure?</li>
+<li>How long did that take, and how many trips did it cost you? <em>(push for a real number)</em></li>
+<li>What if it were late at night, or a weekend? What would you do?</li>
+<li>What would have made that easier?</li>
+</ol>
+<p><strong>Three rules that decide whether the data is usable:</strong> no yes/no questions · <strong>never describe our app before question 8</strong> (the moment you do, every answer after it is contaminated and useless for an empathy map) · <strong>write quotes verbatim</strong>, in their words, 2–3 per person.</p>
+<p><strong>Per interview, capture or it did not happen:</strong> consent <strong>spoken on the recording</strong> · the recording · 2–3 verbatim quotes · what you saw, heard and smelt · uploaded to <code>03_Interviews/P07_Name/</code> <strong>that hour</strong>.</p>
+<p><strong>Never inflate the number.</strong> §5's count must equal the number of Drive folders. That row is graded on evidence — a document claiming twelve beside five folders is worse than one claiming five, because the second is checkable.</p>
+<hr />
+<h1>6. 20:30 – 22:00 — the synthesis sprint, five ways</h1>
+<p>Build from the quotes you wrote down, <strong>not from memory</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Who</th>
+<th>Builds</th>
+<th>The detail that wins marks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>4 individual empathy maps</strong></td>
+<td>Quadrants <strong>SAYS · THINKS · DOES · FEELS</strong> filled with verbatim quotes, <strong>plus Sights · Sounds · Feels · Smells</strong>. Put those four labels on the template <strong>before</strong> you start filling it. This is the most commonly missed item on this assignment.</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>1–2 aggregated maps</strong></td>
+<td>Name the segments by <strong>behaviour</strong>, not by person: <em>"the caller"</em>, <em>"the walker"</em>, <em>"the asker"</em>.</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>2 personas</strong></td>
+<td>Name, photo, demographics, goals, frustrations, behaviours, <strong>environment</strong>, <strong>real quote</strong>. The photo, the environment and the quote are the three people forget.</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>§5 + Claims → Evidence</strong></td>
+<td>Number conducted, strongest insights with quotes, and insight → participant → verbatim quote → screen. <strong>That table defends six rows.</strong></td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>§21 reflection + screenshot captions</strong></td>
+<td>Two paragraphs linking each design decision to the finding that produced it, plus a caption under each Figma screen.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>7. 22:00 – 23:15 — compile, gate, submit</h1>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Gate</th>
+<th>Who</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>22:00</td>
+<td>Assemble the final PDF: 24 sections in order, all images embedded, §24 built from the source table</td>
+<td>Igihozo</td>
+</tr>
+<tr>
+<td>22:20</td>
+<td><strong>Link gate:</strong> Figma share link opens in <strong>incognito</strong></td>
+<td>Deborah</td>
+</tr>
+<tr>
+<td>22:30</td>
+<td><strong>IEEE gate:</strong> every in-text <code>[n]</code> exists in §24, in order — one reads aloud, one verifies</td>
+<td>Elie + Igihozo</td>
+</tr>
+<tr>
+<td>22:45</td>
+<td><strong>Format gate:</strong> TNR 12, single-spaced, <strong>no bullets outside §2</strong></td>
+<td>Robert</td>
+</tr>
+<tr>
+<td>22:50</td>
+<td><strong>Presence gate:</strong> §1 Introduction and §16 Reframed Problem both still present</td>
+<td>Robert</td>
+</tr>
+<tr>
+<td>22:55</td>
+<td><strong>Count gate:</strong> interviews in §5 = folders in Drive. Check honestly.</td>
+<td>David</td>
+</tr>
+<tr>
+<td>23:00</td>
+<td><strong>Tracker gate:</strong> contribution tracker link works and is inside the PDF</td>
+<td>Igihozo</td>
+</tr>
+<tr>
+<td>23:00 – 23:15</td>
+<td>📤 <strong>SUBMIT.</strong> Screenshot the confirmation.</td>
+<td>Igihozo</td>
+</tr>
+<tr>
+<td>23:15 – 23:59</td>
+<td>Buffer. Do not plan to work here.</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>8. If it goes wrong — cut from the top</h1>
+<ol>
+<li><strong>Journey map</strong> → shrink to the emotional curve and pain points; describe the opportunities in §21.</li>
+<li><strong>Competitors</strong> → 4 is the floor. Do not go to 3; the row asks for 4–6.</li>
+<li><strong>Personas</strong> → keep. 30 minutes for 5 points from work you already have.</li>
+<li><strong>Empathy maps</strong> → 3 is the floor, not 4. Three still satisfies "3–4 key interviews".</li>
+<li><strong>Interviews</strong> → 4 is the floor for opening the empathy-map row at all.</li>
+</ol>
+<p><strong>Never cut:</strong> the citation cross-check, the incognito link test, §1 and §16, the tracker link, or the screenshots in §20.</p>
+<hr />
+<h1>9. Do not</h1>
+<ul>
+<li><strong>Do not skip the verification in section 1.</strong> A 10-point row missing one named criterion is the most expensive mistake available tonight.</li>
+<li><strong>Do not start the compile at 22:00.</strong> Igihozo starts it now and inserts as things land.</li>
+<li><strong>Do not describe the app during an interview.</strong> It poisons the data.</li>
+<li><strong>Do not batch the uploads.</strong> Per interview, same hour.</li>
+<li><strong>Do not inflate the interview count.</strong> The evidence folder is checked.</li>
+<li><strong>Do not use the last hour.</strong> Submit at 23:15.</li>
+</ul>
+</body></html>

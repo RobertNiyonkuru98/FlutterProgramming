@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title> SOLO MODE — you, alone, 11 hours</title>
+<style>
+:root{
+  --ink:#16202b; --muted:#5a6b7b; --line:#dbe3ea; --soft:#f6f8fa;
+  --accent:#0b6b5f; --accent-soft:#e6f2f0; --warn:#a8410d; --warn-soft:#fdf1e7;
+  --hi:#8a1c1c; --hi-soft:#fdecec;
+}
+*{box-sizing:border-box}
+body{
+  font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink); line-height:1.62; max-width:920px; margin:0 auto;
+  padding:56px 40px 96px; background:#fff; font-size:15.5px;
+  -webkit-print-color-adjust:exact; print-color-adjust:exact;
+}
+h1{font-size:2.05em; line-height:1.2; margin:0 0 .15em; letter-spacing:-.02em}
+h1+h2{border:0; margin-top:.1em; color:var(--muted); font-weight:600; font-size:1.06em; padding:0}
+h1+h2+h3{border:0;margin-top:.6em}
+h2{
+  font-size:1.42em; margin:2.2em 0 .7em; padding-top:.55em;
+  border-top:2px solid var(--line); letter-spacing:-.01em;
+}
+h3{font-size:1.12em; margin:1.9em 0 .5em; color:var(--accent)}
+h3:first-of-type{margin-top:1.1em}
+p{margin:.72em 0}
+a{color:var(--accent)}
+strong{color:#0d1720}
+hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+/* tables */
+table{border-collapse:collapse; width:100%; margin:1.1em 0 1.5em; font-size:.92em}
+th,td{border:1px solid var(--line); padding:9px 11px; text-align:left; vertical-align:top}
+th{background:var(--soft); font-weight:650; font-size:.95em}
+tbody tr:nth-child(even){background:#fbfcfd}
+/* blockquotes */
+blockquote{
+  margin:1.3em 0; padding:14px 20px; border-left:4px solid var(--accent);
+  background:var(--accent-soft); border-radius:0 6px 6px 0;
+}
+blockquote p{margin:.35em 0}
+blockquote h3{margin-top:0; color:var(--accent)}
+/* code */
+code{
+  background:#eef2f5; padding:2px 6px; border-radius:4px; font-size:.87em;
+  font-family:"Cascadia Mono",Consolas,"SF Mono",Menlo,monospace;
+}
+pre{background:#f4f7f9; border:1px solid var(--line); border-radius:6px; padding:14px 16px; overflow-x:auto}
+pre code{background:none; padding:0; font-size:.86em; line-height:1.5}
+/* task lists */
+ul li{margin:.3em 0}
+input[type=checkbox]{margin-right:7px}
+/* print */
+@page{size:A4; margin:16mm 14mm}
+@media print{
+  body{padding:0; max-width:none; font-size:10.4pt; line-height:1.5}
+  h2{page-break-after:avoid} h3{page-break-after:avoid}
+  table,blockquote,pre{page-break-inside:avoid}
+  a{color:var(--ink); text-decoration:none}
+}
+</style>
+</head><body>
+<h1>SOLO MODE — you, alone, 11 hours</h1>
+<h3>Sunday 27 September 2026 · Deadline 23:59 · <strong>Submit 23:15</strong></h3>
+<p><strong>🚩 FALLBACK, NOT THE PLAN.</strong> The team is running, so the live plan is <code>Team-Sprint-Final.md</code>. Open this file only if the others stop responding — it is the version of tonight that one person can execute, and its cut order still applies.</p>
+<p><strong>One person cannot execute the team plan. So we do not attempt it. We build the version that scores.</strong></p>
+<hr />
+<h1>0. The honest position</h1>
+<p><strong>Banked already (≈24 of 84 pts):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Row</th>
+<th>Pts</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>§1 Introduction &amp; Mission Alignment</td>
+<td>3</td>
+<td>✅ Yours, done</td>
+</tr>
+<tr>
+<td>§3 Literature Review</td>
+<td>3</td>
+<td>✅ Yours, done</td>
+</tr>
+<tr>
+<td>§4 Problem Statement &amp; Hypothesis</td>
+<td>3</td>
+<td>✅ Yours, done</td>
+</tr>
+<tr>
+<td>§15 UVP + §16 Reframed Problem</td>
+<td>5</td>
+<td>✅ Yours, done</td>
+</tr>
+<tr>
+<td>§19 Storyboards</td>
+<td>5</td>
+<td>✅ Igihozo</td>
+</tr>
+<tr>
+<td>§23 Team Member Contribution</td>
+<td>5</td>
+<td>✅ Igihozo</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Still open (≈60 pts) and you are one person:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Row</th>
+<th>Pts</th>
+<th>Solo reality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Citation, Originality &amp; Formatting</td>
+<td>10</td>
+<td><strong>Nearly free.</strong> It is discipline, not work. Do not lose it.</td>
+</tr>
+<tr>
+<td>Figma Prototype</td>
+<td>10</td>
+<td><strong>The expensive one.</strong> 10+ screens, interactive, public link.</td>
+</tr>
+<tr>
+<td>Interview Execution, Ethics &amp; Evidence</td>
+<td>10</td>
+<td>Needs real interviews with real evidence.</td>
+</tr>
+<tr>
+<td>Journey Maps</td>
+<td>6</td>
+<td>One direct competitor. ~45 min. Good ratio.</td>
+</tr>
+<tr>
+<td>Information Architecture &amp; User Flow</td>
+<td>6</td>
+<td>Falls out of the screen list. ~45 min.</td>
+</tr>
+<tr>
+<td>Participant Recruitment</td>
+<td>5</td>
+<td>Plan + email + diversity note already exist. The "&gt;10 interviews" band is gone.</td>
+</tr>
+<tr>
+<td>Empathy Maps</td>
+<td>5</td>
+<td>Needs <strong>3, not 4</strong>. The rubric says "3–4 key interviews", so 3 satisfies the row.</td>
+</tr>
+<tr>
+<td>Personas</td>
+<td>5</td>
+<td>2 cards, ~30 min, built from the same 3–4 interviews.</td>
+</tr>
+<tr>
+<td>Competitor Analysis</td>
+<td>3</td>
+<td>4 competitors, desktop work. ~45 min.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The three facts that decide tonight:</strong></p>
+<ol>
+<li><strong>Ten interviews is impossible. Three is enough.</strong> The empathy-map row asks for 3–4 key interviews. Three protects it. Four is comfortable. Do not spend the evening chasing a number you cannot reach and cannot evidence.</li>
+<li><strong>Figma must be built this afternoon, not tonight.</strong> It is 10 points and it also feeds §20 screenshots and §22's live link. If it slips into the last three hours, two rows go with it. Your evening belongs to interviews; your afternoon belongs to Figma.</li>
+<li><strong>Nothing is lost by being one person, as long as the document says so.</strong> The rubric grades what is in the PDF. An honest small sample, written up well, outscores a large claim that cannot be backed.</li>
+</ol>
+<hr />
+<h1>1. The order of work — the only thing that matters today</h1>
+<p>Students answer in the evening. Desktop tools do not care what time it is. <strong>So the afternoon is Figma and diagrams, and the evening is interviews and synthesis.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>You do</th>
+<th>Why this order</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>12:15 – 12:35</strong></td>
+<td><strong>Send the recruitment blast.</strong> Book four slots: 17:00, 17:45, 18:30, 19:15.</td>
+<td>Slots must exist <em>before</em> the afternoon, or the evening is wasted.</td>
+</tr>
+<tr>
+<td><strong>12:35 – 13:20</strong></td>
+<td><strong>Competitor analysis</strong> — 4 competitors, 2 direct 2 indirect, screenshots, and the 1★/3★ review complaints.</td>
+<td>3 points in 45 min. Pure desktop.</td>
+</tr>
+<tr>
+<td><strong>13:20 – 14:00</strong></td>
+<td><strong>Screen list → IA (8 screens) → user flows.</strong></td>
+<td>6 points, and it produces the blueprint Figma needs. Do not start Figma before this.</td>
+</tr>
+<tr>
+<td><strong>14:00 – 15:00</strong></td>
+<td><strong>Figma: design tokens + component library.</strong> Type scale, colours, buttons, cards, list rows, icons.</td>
+<td>Components first. Every screen after this is assembly, not design. This hour saves two.</td>
+</tr>
+<tr>
+<td><strong>15:00 – 17:15</strong></td>
+<td><strong>Figma: the 10 screens.</strong> Simple, consistent, real navigation.</td>
+<td>The bulk of your 10 points. Protect this block.</td>
+</tr>
+<tr>
+<td><strong>17:00 / 17:45 / 18:30 / 19:15</strong></td>
+<td><strong>The 4 interviews, 15 minutes each</strong> (see section 3)</td>
+<td>Break from Figma for each call. 15 min, back to work.</td>
+</tr>
+<tr>
+<td><strong>19:15 – 19:45</strong></td>
+<td><strong>Write up quotes + sensory notes, upload to Drive.</strong></td>
+<td>Do it now. Memory is worthless at 22:00.</td>
+</tr>
+<tr>
+<td><strong>19:45 – 20:30</strong></td>
+<td><strong>Figma: interactions, empty/tap states, share link → test in an incognito window.</strong></td>
+<td>The link gate is 10 points. Do it tonight, not at 23:00.</td>
+</tr>
+<tr>
+<td><strong>20:30 – 22:00</strong></td>
+<td><strong>Synthesis:</strong> 3–4 empathy maps, 1 aggregated, 2 personas, §5, Claims → Evidence.</td>
+<td>The interview points are actually earned here.</td>
+</tr>
+<tr>
+<td><strong>22:00 – 23:00</strong></td>
+<td><strong>Compile the PDF.</strong> Every section, every image, §21 reflection, §24 reference list.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>23:00 – 23:15</strong></td>
+<td><strong>Gates</strong> (section 7) → <strong>SUBMIT.</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>23:15 – 23:59</td>
+<td>Buffer. Do not plan to work here.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>The single riskiest line in that table is 14:00–17:15.</strong> If you spend the afternoon reorganising, the Figma row and the compile both land at 22:00, and something gets dropped. Start drawing at 14:00.</p>
+<hr />
+<h1>2. Get four interviews — the 35-minute version</h1>
+<h3>Send this now, to individuals, one at a time</h3>
+<blockquote>
+<p>Hey [name] 👋 Quick favour — 15 minutes today, on a call. We're doing our final project on how people who've moved to Rwanda find a pharmacy that takes their insurance. You qualify if you arrived in the last two years. No right answers, anonymous, nothing sold. <strong>Free at 17:00 or 17:45?</strong> I'll call you, 15 minutes.</p>
+</blockquote>
+<h3>Then the group version</h3>
+<blockquote>
+<p>Hi all 👋 We're ALU students doing our final project on a real problem: when you arrive in Rwanda and need medicine, there's no way to know which pharmacy takes your insurance without walking there and reading the sign on the door. <strong>We need 15-minute phone calls today</strong>, anyone who arrived in Rwanda in the last 2 years. Anonymous, no sales pitch. Reply with a time. 🙏</p>
+</blockquote>
+<h3>Three accelerators</h3>
+<ul>
+<li><strong>Ask your 2 existing participants for one referral each.</strong> <em>"Who else arrived recently?"</em> Referrals convert faster than any group post, and they widen the sample without extra work.</li>
+<li><strong>A "yes" is not an interview. A time is.</strong> Reply with two options: <em>"17:00 or 17:45?"</em></li>
+<li><strong>The pharmacy run is optional, with a rule.</strong> At 14:00, if you have <strong>fewer than 2 slots confirmed</strong>, go to a pharmacy — one in-person interview with a pharmacist buys you the diversity segment, the only real sensory notes you will get, and a photo of the board that is evidence for your whole problem statement. If you already have 3+ slots, skip it and spend the hour on Figma. Call ahead if you can; most Kigali pharmacies trade on Sundays but hours vary, <strong>and a pharmacy closed at 15:00 on a Sunday is itself a finding worth writing down.</strong></li>
+</ul>
+<h3>The 15-minute script</h3>
+<ol>
+<li><strong>Screener:</strong> When did you arrive in Rwanda, and which insurance do you hold?</li>
+<li>Walk me through the last time you needed medicine here. What happened, step by step?</li>
+<li>How did you decide which pharmacy to go to?</li>
+<li>How did you find out whether they take your insurance?</li>
+<li>What did you do when you weren't sure?</li>
+<li>How long did that take, and how many trips did it cost you? <em>(push for a number)</em></li>
+<li>What if it were late at night, or a weekend? What would you do?</li>
+<li>What would have made that easier?</li>
+</ol>
+<p><strong>Never describe the app before question 8.</strong> The moment you mention it, the rest of the answers are contaminated and useless for an empathy map.</p>
+<p><strong>Per interview, capture or it did not happen:</strong> consent spoken on the recording · the recording · 2–3 <strong>verbatim</strong> quotes · what you saw, heard and smelt · uploaded to <code>03_Interviews/</code> <strong>that hour</strong>.</p>
+<hr />
+<h1>3. Figma, alone, in 3 hours — the method that works</h1>
+<p><strong>Do not design 10 screens. Assemble 10 screens.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Time</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>20 min</td>
+<td><strong>Colour + type tokens.</strong> One brand colour, one accent for the primary action, mostly light neutrals. Name them.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>40 min</td>
+<td><strong>Components:</strong> button (default/pressed), input field, list row, card, bottom nav, header, status chip, icon set.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>2 h</td>
+<td><strong>The 10 screens.</strong> Start at the highest level of the flow and go down.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>20 min</td>
+<td><strong>Interactions + states:</strong> link the primary flow end to end, plus empty state (no results), loading, and a tap state.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>10 min</td>
+<td><strong>Share → anyone with the link → open it in an incognito window.</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>The 10 screens</strong> (this covers the whole journey and satisfies the row):</p>
+<ol>
+<li>Onboarding / value statement · 2. Select your insurer · 3. Location permission · 4. <strong>Results — pharmacies accepting your insurer</strong> · 5. Pharmacy detail (open now, what to bring, directions) · 6. Search / filter by insurer · 7. <strong>Emergency mode</strong> · 8. Home · 9. Profile &amp; insurance card · 10. Settings + saved pharmacies</li>
+</ol>
+<p><strong>Make them simple and consistent, not beautiful.</strong> Ten consistent simple screens score the same as ten pretty ones, and they take a third of the time. The rubric asks for <strong>navigation, transitions, form fields, tokens, hover/tap and empty states</strong>, and a <strong>public link</strong> — it does not ask for visual flourish.</p>
+<p><strong>Then 15 minutes that defends several rows at once:</strong> put a one-line caption under each key screenshot naming the research finding it answers. The rubric wants screens that map explicitly to the empathy map, journey map and UVP, and captions are the cheapest way to prove it.</p>
+<hr />
+<h1>4. The other diagrams, fast</h1>
+<p><strong>Competitor analysis (3 pts, 45 min).</strong> Four competitors: two direct (a tool that helps someone find a provider accepting their insurance, international is fine), two indirect (Google Maps, an insurer's app or the RSSB portal, and WhatsApp word of mouth). Per competitor: features, strengths, weaknesses, the gap it leaves us, URL, and <strong>proof you opened it</strong>. Then twenty minutes on the <strong>1★ and 3★ app-store reviews</strong> — those complaints are your differentiation evidence, in a competitor's own users' words.</p>
+<p><strong>IA + user flows (6 pts, 40 min).</strong> The IA is a sitemap of the 10 screens you just listed, with hierarchy and the two principles named in the brief (Choice Principle, Focused Navigation). The flows need the <strong>happy path and the failure states</strong>: wrong insurer selected, no results, no network, pharmacy closed. Do this one at a time and it is quick.</p>
+<p><strong>Journey map (6 pts, 45 min).</strong> Pick <strong>one direct competitor</strong>, actually use it, and map stages → actions → thoughts → feelings (draw the emotional curve) → pain points → <strong>Opportunities</strong>. Every opportunity must <strong>name one of your 10 screens</strong>:</p>
+<blockquote>
+<p>✗ <em>"Better experience."</em><br />
+✓ <em>"Show accepted insurers on the results card so the user need not open each pharmacy — screen 04."</em></p>
+</blockquote>
+<hr />
+<h1>5. Synthesis in 90 minutes</h1>
+<p>Build from the quotes you wrote down at 19:15, not from memory.</p>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Build</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20:30 – 21:10</td>
+<td><strong>3–4 individual empathy maps.</strong> Quadrants <strong>SAYS · THINKS · DOES · FEELS</strong>, filled with verbatim quotes, <strong>plus Sights · Sounds · Feels · Smells</strong>. Put those four labels on the template before you start — they are the most commonly missed item on this assignment.</td>
+</tr>
+<tr>
+<td>21:10 – 21:25</td>
+<td><strong>1 aggregated map.</strong> Name the segment by behaviour, not by person: <em>"the caller"</em>, <em>"the walker"</em>, <em>"the asker"</em>.</td>
+</tr>
+<tr>
+<td>21:25 – 21:55</td>
+<td><strong>2 personas.</strong> Name, photo, demographics, goals, frustrations, behaviours, <strong>environment</strong>, and <strong>a real interview quote</strong>. The photo, the environment and the quote are the three people forget.</td>
+</tr>
+<tr>
+<td>21:55 – 22:10</td>
+<td><strong>§5 summary + Claims → Evidence table.</strong> Number conducted, the strongest insights with quotes, and insight → which participant → verbatim quote → which screen it becomes. <strong>That table alone defends six rows.</strong></td>
+</tr>
+<tr>
+<td>22:10 – 22:20</td>
+<td><strong>§4 blank filled</strong> (the baseline number) and <strong>§16's composite replaced with a real quote.</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>6. If you fall behind — the cut list, in order</h1>
+<p>Cut from the top. Never cut the gates.</p>
+<ol>
+<li><strong>Journey map → shrink to the emotional curve and pain points.</strong> Mention the opportunities in §21 instead.</li>
+<li><strong>Competitors → 4 is the floor.</strong> Do not go to 3; the row asks for 4–6.</li>
+<li><strong>Figma screens → simplify each one.</strong> Do <strong>not</strong> go below 10. The row's band is "10+".</li>
+<li><strong>Interviews → 3 is the floor.</strong> Three still satisfies "3–4 key interviews". Below three, the empathy-map row cannot be opened.</li>
+<li><strong>Personas → keep.</strong> 30 minutes for 5 points, built from work you have already done.</li>
+<li><strong>Storyboard → check Igihozo's exists.</strong> If it does not, 45 minutes makes 5 points, which is the best ratio on the sheet.</li>
+</ol>
+<p><strong>Never cut:</strong> the citation cross-check, the incognito link test, §1 and §16, or §23's tracker link.</p>
+<hr />
+<h1>7. Gates — 23:00 to 23:15, then submit</h1>
+<table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>Check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Link</strong></td>
+<td>The Figma share link opens in an <strong>incognito window</strong></td>
+</tr>
+<tr>
+<td><strong>IEEE</strong></td>
+<td>Every in-text <code>[n]</code> exists in §24, in order. Read each one aloud against the list.</td>
+</tr>
+<tr>
+<td><strong>Format</strong></td>
+<td>Times New Roman 12, single-spaced, <strong>no bullets outside §2</strong></td>
+</tr>
+<tr>
+<td><strong>Presence</strong></td>
+<td>§1 Introduction and §16 Reframed Problem both still in the document</td>
+</tr>
+<tr>
+<td><strong>Count</strong></td>
+<td>The interview count in §5 equals the number of folders in Drive. Check honestly.</td>
+</tr>
+<tr>
+<td><strong>Tracker</strong></td>
+<td>The contribution tracker link works and is inside the PDF</td>
+</tr>
+<tr>
+<td><strong>Submit</strong></td>
+<td>Screenshot the confirmation</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>8. What to write about the sample size</h1>
+<p><strong>Write the real number, and make the constraint part of the method rather than an apology.</strong> Something in this register, in §5, in your own words:</p>
+<blockquote>
+<p>Fourteen potential participants were approached and four interviews were completed within the final window, all of whom are recently arrived and hold non-national insurance: [segments]. The sample is small, and it is reported as it stands. Depth was prioritised over breadth deliberately, so that each account could be examined closely and quoted directly. The four accounts converge on the same sequence of events, and it is that convergence, rather than the number, that the empathy maps and personas are built from.</p>
+</blockquote>
+<p><strong>And do not inflate it.</strong> The row is graded on evidence — script, consent, audio and notes per participant. A document claiming twelve interviews beside five Drive folders is worse than one claiming four, because the second is checkable and the first is not.</p>
+<p>The same rule applies to §23. <strong>Do not credit Deborah, Elie or David with work that did not happen.</strong> Credit Igihozo for what he delivered, credit yourself for the rest, and let the tracker show it. An honest tracker is a document of record; an invented one is a liability.</p>
+<hr />
+<h1>9. Do not</h1>
+<ul>
+<li><strong>Do not re-plan.</strong> This page is the plan. Re-planning feels like work and produces nothing.</li>
+<li><strong>Do not start Figma after 17:00.</strong> That is how the 10-point row dies.</li>
+<li><strong>Do not batch the Drive uploads.</strong> Per interview, same hour.</li>
+<li><strong>Do not build the empathy maps from memory.</strong> From the written quotes.</li>
+<li><strong>Do not touch a citation without re-verifying it.</strong> One broken <code>[n]</code> is treated as plagiarism.</li>
+<li><strong>Do not use the last hour.</strong> Submit at 23:15.</li>
+</ul>
+</body></html>

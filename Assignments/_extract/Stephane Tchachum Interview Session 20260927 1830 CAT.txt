@@ -1,0 +1,305 @@
+ Quick notes
+Please rate the new Quick notes tab by taking a short survey.
+
+Meeting Sep 27, 2026 at 18:30 CAT
+
+ Sep 27, 2026
+
+Healthcare research interview covering insurance navigation and emergency challenges and
+mobile application solutions
+
+Research background and healthcare access in Rwanda
+     Group 15 is conducting user empathy research regarding healthcare, insurance, and
+         emergency access in Rwanda.
+     Stephane has lived in Rwanda for 1 year and holds Britam health insurance coverage.
+     Stephane noted that locating covered pharmacies requires cross-referencing insurance
+         lists with mapping tools.
+     Lengthy insurance verification paperwork and unknown emergency hotlines create
+         obstacles during medical crises.
+
+Mobile application concept and features
+     Tony proposed a mobile application mapping nearby pharmacies and displaying
+         insurance compatibility and operational status.
+     Stephane evaluated the mobile application concept positively as a way to reduce
+         emergency stress.
+     Stephane suggested tracking pharmacy inventory stocks to confirm specific drug
+         availability prior to visits.
+
+Next steps
+         [Tony Robert] Track Inventory: Incorporate an inventory stock tracking feature into the
+         application.
+
+
+Want to see more? View the full notes
+Tip: You can always access your full notes from the left sidebar.
+You should review Gemini's notes to make sure they're accurate. Get tips and learn how Gemini
+takes notes
+ Full notes
+Sep 27, 2026
+
+Meeting Sep 27, 2026 at 18:30
+CAT
+
+Meeting records Transcript
+
+Summary
+
+Healthcare research interview covering insurance navigation and emergency
+challenges and mobile application solutions
+
+Participant Healthcare Background
+Participant shared health insurance usage and pharmacy selection methods relying on
+approved lists.
+
+Emergency and Administrative Delays
+Emergency preparedness lacks local hotlines and administrative delays with insurance
+providers cause friction.
+
+Application Concept Evaluation
+Mobile application concept integrating pharmacy matching and inventory tracking
+received positive evaluation.
+
+Next steps
+
+        [Tony Robert] Track Inventory: Incorporate an inventory stock tracking feature
+         into the application.
+Details
+
+     Research Objectives and Consent Process: Tony Robert outlined the
+         research goals for group 15, focusing on understanding user experiences
+         regarding healthcare, pharmacies, insurance, and emergency services in
+         Rwanda to develop a healthcare empathy application (00:00:18). Tchatchum
+         Stephane provided formal consent to participate in their recorded interview
+         session (00:04:52).
+
+     Participant Background and Pharmacy Selection Methods: Tchatchum
+         Stephane shared that they are from Cameroon and have lived in Rwanda for a
+         year, maintaining generally good health and using their health insurance
+         (00:06:12). When needing medicine, Tchatchum Stephane explained that they
+         review the list of approved hospitals and pharmacies provided by their
+         insurance and use Google Maps to find the closest option (00:07:20).
+
+     Emergency Preparedness and Healthcare Administrative Delays:
+         Regarding medical emergencies, Tchatchum Stephane stated they do not know
+         the local emergency or ambulance hotlines and would rely on Google searches
+         or asking friends or school facilitators for assistance (00:08:43). Furthermore,
+         Tchatchum Stephane highlighted significant operational delays caused by slow
+         paperwork and verification processes with insurance providers like Britam when
+         accompanying a sick friend to the hospital (00:10:17).
+
+     Mobile Application Concept for Pharmacy and Insurance Matching: Tony
+         Robert introduced their mobile application concept, which aims to help users
+         identify nearby pharmacies that accept their specific insurance and check
+         operating statuses (00:11:33). Tchatchum Stephane evaluated the concept
+         positively, noting that centralizing this information in an application would
+         alleviate the stress of checking separate lists during emergencies (00:13:12).
+
+     Proposed Inventory Tracking Feature: Tony Robert proposed incorporating
+         pharmacy inventory tracking into the application, suggesting it would be
+         beneficial to track stock availability. Tchatchum Stephane agreed with this
+         addition, pointing out that an updated database of pharmacy drug stocks would
+         prevent patients from traveling to a covered pharmacy only to find their specific
+         medication unavailable (00:14:21).
+You should review Gemini's notes to make sure they're accurate. Get tips and learn
+how Gemini takes notes
+
+How is the quality of these specific notes? Take a short survey to let us know your
+feedback, including how helpful the notes were for your needs.
+ Transcript
+Sep 27, 2026
+
+Meeting Sep 27, 2026 at 18:30
+CAT - Transcript
+
+00:00:18
+
+Tony Robert: Okay. So my name is Robert Tonyi and I'm planning to launch an interview
+session with uh a friend of mine which we are planning to uh conduct some
+questioning around some questions which are um are targeting uh certain research
+that we want to um to conduct. So yeah, just a few minutes he'll be joining and uh yeah,
+that is all. to Yeah. So for background purposes we are group 15 and we are our mission
+sector is in healthcare and uh this is to just try to get personal and mission u empathy
+apps for what we are trying to do targeting every user. So in a few minutes
+Stephanewill be joining and uh we'll start right away.
+Tchatchum Stephane: Hello Tony.
+Tony Robert: Uh, hello. How are you?
+Tchatchum Stephane: I'm fine, thank you. How are you?
+Tony Robert: I'm fine.
+Tchatchum Stephane: Do I have to on my camera?
+Tony Robert: No, you don't have to. It's It's If you want.
+Tchatchum Stephane: Okay. Okay.
+Tony Robert: Okay. So, I'm going to record.
+
+00:04:52
+Tony Robert: Unfortunately, recording is a premium feature. I'm going to use aim.
+Okay. So yeah, the recording has started. Let us go right into this. I hope you're okay
+though.
+Tchatchum Stephane: Sorry.
+Tony Robert: I hope you are okay.
+Tchatchum Stephane: Yeah. Yeah. Yeah. Yeah.
+Tony Robert: Yeah. So thank you for taking time to speak with me. So as I had sent you
+a message uh we are trying to conduct our research for our final project and and we
+want to
+Tchatchum Stephane: Yeah.
+Tony Robert: understand people's real experiencing accessing health care pharmacies
+insuranceances and emergency services in Rwanda and
+Tchatchum Stephane: Okay.
+Tony Robert: uh I was like let me reach out to you and then get get to ask you some
+questions. Yeah.
+Tchatchum Stephane: Okay.
+Tony Robert: Okay. So, do I have your consent? Do you agree to participate?
+Tchatchum Stephane: Yeah. Yeah. Yeah. You have my consent.
+Tony Robert: All right. So, when you first arrived here, could you um tell me about your
+Okay.
+
+00:06:12
+
+Tony Robert: First, can you just tell me about yourself and your experience living and
+working in Rwanda?
+Tchatchum Stephane: Okay, my name is Stephane.I am from Cameroon and I've been
+in Randa for a year now. Yes, it's been a year since I came to Randa and um Okay, my
+first experience was Yeah, I think all of us know that Randa is beautiful. It's a beautiful
+country. Yes, it's a very beautiful country. But I I I'm really I don't by God's grace I'm a
+healthy person. So on the health side I'm not really it's true I fall sick from time to time
+but it's not that deep. So it's only basic um uh things.
+Tony Robert: Okay. Okay. So, you have been in Rwanda for a year, right?
+Tchatchum Stephane: Yes.
+Tony Robert: Damn. Okay. Say that uh you Okay. Do you have a a health insurance?
+Tchatchum Stephane: Yes, I do. I I imposes a health insurance. I use Bard.
+Tony Robert: Oh, okay. Okay.
+
+00:07:20
+
+Tony Robert: Okay. Okay. So, I was about to ask you if you have ever needed health
+care or medicine in Rwanda using your using your insurance card.
+Tchatchum Stephane: Okay. I not really. It was not really I just I was just going for a
+check a full a full body check you know to check for maybe just in that that might have
+popped up without me noticing. So I went for a full check with the with the insurance
+nothing else.
+Tony Robert: Okay, I understand. Okay. So, but you do have you do have the need to
+get medicines. I don't know.
+Tchatchum Stephane: Yes, of course. I everyone does have the need to get medicine.
+Tony Robert: So,
+Tchatchum Stephane: Um the insurance is able to.
+Tony Robert: how do you Yeah. So, how do you normally decide where to go? If maybe
+you need one in the pharmacy in Rwanda, in your area, I don't know. How do you
+decide to go about it?
+Tchatchum Stephane: I usually check because our insurance give us a list of hospitals
+they they um they cover or pharmacies they cover and then I look I look at the list and
+then I look for the one that's closest to my place.
+
+00:08:43
+Tony Robert: Oh, so you use Google Maps, I presume.
+Tchatchum Stephane: Yes.
+Tony Robert: Okay. So, yeah, that's very helpful. It narrows down many questions to
+fewer because I was about to ask you how do you get to know that this particular
+pharmacy covers or this particular pharmacy works with your insurance and all that but
+yeah that is helpful and um I guess as then if if What emergency or am? Do you happen
+to know the uh hotlines for emergency or ambance numbers in Rwanda?
+Tchatchum Stephane: No, I don't think I know them.
+Tony Robert: Oh, okay. And I guess if you wanted to to to know one, it's a Google
+search.
+Tchatchum Stephane: Yes, obviously. Or ask a friend.
+Tony Robert: Yeah. So yeah, and then what would make it easier for you to get help
+during a medical emergency? If it's an emergency, you don't have time to do a Google
+search or as in what will be better in that situation.
+Tchatchum Stephane: I don't know if I had access to all the information in one place,
+it would have been easier.
+
+00:10:17
+
+Tchatchum Stephane: Or maybe if I have a random neighbor or somebody that
+knows all those details would help. But in case of an emergency, I really don't know
+what I'm going to do. I'm just going to look for a way on the spot like maybe ask a friend
+or call someone, call my friends or call a facilitator in school or someone but I really
+don't know how I'll do in the moment.
+Tony Robert: Okay. Okay. So, I'm guessing that your mission might not be in
+healthcare. Okay.
+Tchatchum Stephane: No,
+Tony Robert: So I was I was about to ask uh if you could change one thing about the
+process even though you're not you don't mostly leave the point of view of healthcare
+mission and all that. If you could change one thing about the process targeting the
+operations of this whole thing what would you do?
+Tchatchum Stephane: I believe the paperwork because I feel Because there was once
+I was going I was accompanying my friend to the hospital and then the paperwork was
+really long. We had to check verify Britam um our numbers from Britam.
+
+00:11:33
+
+Tchatchum Stephane: Britam had to confirm if we were able to um carry on with the
+processes and my friend was not feeling okay. So we had to like we had to help them
+like they had to ask them to be quick and they were not quick. It was very slow and
+then yeah it's true if they finally got she finally got the help she needed but still if the
+process was faster would have been
+Tony Robert: Mhm. Okay. All right. So just to give you context about our application in
+order for you to know if maybe we are the right way or if we could do something to uh
+improve that we have we have discovered that um we do have means to get uh
+information about which pharmacy works if a certain uh insurance
+Tchatchum Stephane: Mhm.
+Tony Robert: whaties are near us uh as in which are open open and closed status and
+all that and um getting to know okay for the medicine part we haven't covered that yet
+and uh I wouldn't say that I wouldn't say that the the paperwork for the insurance is is
+um we could resolve it as well I wouldn't say that is is that our mission is to make sure
+that if you want to access a medicine or if you want to just go to a certain pharmacy,
+you know that it covers your insurance and uh this is
+
+00:13:12
+
+Tchatchum Stephane: Yeah.
+Tony Robert: via a mobile application and uh that application
+Tchatchum Stephane: Mhm.
+Tony Robert: will have a way to map out where you are and the pharmacies near you
+and and the system will know what what
+Tchatchum Stephane: Okay.
+Tony Robert: insurance is or what insurers that that pharmacy accept or work with so
+that you don't just enter the pharmacy and they're like we don't work with your
+insurance and you go out and you Yeah,
+Tchatchum Stephane: Yeah.
+Tony Robert: it's annoying.
+Tchatchum Stephane: Yeah.
+Tony Robert: So
+Tchatchum Stephane: I believe it's a good idea because you know there was
+sometimes you might be in an emergency and you need to look for you have to check
+the list and then you have you're checking and you stressing up. If you have all that in
+one place in in the form of an app, it's going to be way easier. That's a great idea.
+Tony Robert: yeah. So do could you advise on a feature or a function we could add to
+support all that? I don't know.
+Tchatchum Stephane: Um, I would say um I don't know.
+
+00:14:21
+
+Tchatchum Stephane: Okay, let me let me think a little.
+Tony Robert: Mhm. It's okay.
+Tchatchum Stephane: Um,
+Tony Robert: I don't know. Maybe capturing the inventory stocks of the pharmacy. I
+don't know.
+Tchatchum Stephane: yes,
+Tony Robert: It will be
+Tchatchum Stephane: exactly. we might reach the pharmacy and then they don't
+have the particular drug you're looking for although they are covering with the
+insurance you have. So having an updated database of the different stocks of each
+pharmacy would be nice too.
+Tony Robert: Yeah, it will be nice but not easy. But yeah, that's that that's helpful. So
+yeah, that was the last question and uh thank you very much for participating.
+Tchatchum Stephane: Yeah, you're very welcome. Thank you so much for showing
+me.
+Tony Robert: Yeah. So recording stopped.
+Tchatchum Stephane: Okay, thank you, Tony.
+Tony Robert: Yeah. I hope you uh could you just an aside thing could you give me
+update of what has been happening in the choir.
+Tchatchum Stephane: Okay. So, we today we just finished recording our um so you
+know there's a health um health tech lab on Tuesday. I don't know. Then um we were
+asked we asked to perform but later on they decided that we we will be recorded
+instead. So, we produced our own music with some other people and then we we
+finished the recording today. They going to do the editing and stuff and then on
+Tuesday they're going to broadcast it with an animation. Then,
+Tony Robert: Oh,
+Tchatchum Stephane: yeah. And then what what else? We have also birthday
+celebrations coming up. It's true. Malik has not yet decided on which day we're going
+to celebrate, but it's next week. It's definitely going to be next week. And um
+
+Transcription ended after 00:16:16
+
+This editable transcript was computer generated and might contain errors. People can
+also change the text after it was created.
+

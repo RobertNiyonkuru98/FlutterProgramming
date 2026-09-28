@@ -1,0 +1,193 @@
+Final Project
+
+Part 1: User Research & Design
+
+Theg oalo fthisp artofthea ssignmentistohelpy ouunderstandande mpathizewithyourusers
+a nd to understand the m arket a nd c ompetitors b efore diving into d evelopment. This process
+ensuresthaty oubuilda mobilea pplicationthatpeoplea ctuallyn eedandw illu se.A ccordingto
+startup failure a nalysis, the top reason p roducts fail is " no market need";n otb ecauseo fbugs,
+p ricing, o r m arketing. T oa voidthis,youm ustempathizewithu sersa ndunderstandthem arket
+and competitors.
+
+D esign is a n iterative p rocess, a nd it is u sually recommended that you understand user
+e xperiences, s pecify their needs, design s olutions, and e valuate them repeatedly. T his p haseis
+crucial before writing any code.
+
+What You'll Do
+
+Preliminary Research and Literature Review
+
+B efore you s peak to a s ingle user, y ou m ust g round your problem in e vidence. This m eans
+c onductingab riefliteraturereviewtounderstandtheexistingresearch,d ata,a ndreportsrelated
+to your m ission area. Your review s hould be c oncise; no more than one page (minimum two
+p aragraphs); but must include credible sources that validate the problem you intend to solve.
+
+What to Include in Your Literature Review:
+
+     ProblemC ontext:B rieflyd escribethebroaderissueyourmissiona ddresses(e.g.,lackof
+         digital literacy, healthcare access gaps, agricultural inefficiency).
+
+     E vidence:R eference5­7credibles ources(reports,studies,a rticles)thatp rovidestatistics
+         or insights supporting the need for your solution.
+
+     G ap Identification:E xplainw hatexistingsolutionsa rem issingandwhyyourappcould
+         fill that gap.
+
+E xample (Agriculture F ocus): "Smallholder farmers across East Africa face s ignificant
+p ost-harvest losses due to limited a ccess to real-time marketinformation[1].Accordingtothe
+A lliance for a G reen Revolution in Africa, nearly 3 0% o f harvests are lost b ecause farmers
+c annot connect to b uyers b efore p roduce s poils. Existing d igital platforms often requirestable
+internet,whichisu navailablein60%o fruralregions[2].T hisgappresentsano pportunityfora n
+offline-capable mobile solution."
+Problem and Hypothesis Statement (Research-Backed)
+
+Using insights from y our literature review, craft a c lear p roblem s tatement and a testable
+hypothesis.
+
+Problem Statement :
+- [User Group/Persona] is a/an [characteristics] w ho needs [need] because [research-backed
+insight].
+
+E xample: " Smallholder farmers in rural R wanda a rea griculturalproducerswhon eeda ccessto
+offline market pricing because internet connectivity is u navailable in o ver 6 0% of farming
+c ommunities (GSMA, 2023)."
+
+H ypothesis Statement:
+- We b elieve that [solution a pproach] for [user] w ill result in [measurable o utcome] because
+[rationale from research].
+
+E xample: "We believe that a mobile a pp thatsyncsmarketdatawhenconnectivityisavailable
+will reduce p ost-harvest losses b y 25% w ithin one harvest s eason, as supported by pilot data
+from similar interventions in Kenya (FAO, 2022)."
+
+U ser Interviews & Empathy Maps
+
+Y ouw illconducta tleast1 0interviewswithp otentialusersfromyourtargeta udience,w itheach
+m emberintheteamc onductinga tleast2 interviews.Surveysaren ota ccepted;y oumustc onduct
+live (by talking to your users in-persono rv iaano nlinemeeting/call),interactiveinterviewsto
+g ather qualitative insights. After the interviews, y ou w ill c reate per-user empathy m aps a nd
+aggregated empathy maps for your target audience.
+
+Interviews a llow youtoobservee motions,a skfollow-upq uestions,andu ncoverimplicitneeds
+that surveys cannot capture.
+
+Interview Process ­ Four Steps
+
+Step 1: Recruiting Subjects
+
+Determiney ourinterviewgoals.C reatea screenersurvey(age,g ender,location,job,etc.)tofind
+suitable participants. Invite subjects and s chedule time.nYou m ay recruit through classmates,
+friends, family, online channels, h allway recruitment, or existing u sers. Below is a  s ample
+recruitment email, come up with something similar for your team.
+Step 2: Preparing for the Interviews
+
+Sample interview Script open-ended interview questions. C ollect s upplies such a s a p hone,
+recording app, a nd notebook. R esearch your subjects lightly a nd p ractice your interviewing
+s kills. Find e xample scripts b elow. Y our teach w ill have a  d ocumentlikeo neo fthebelowfor
+each p erson y ou interview. T he questionsw illbethesame,theresponsesiswhatw illd ifferfor
+each user.
+
+     E xample for food delivery app(By Google)
+      Example for apps scheduling dog walkers(By Google)
+
+Step 3: Conducting the Interviews
+
+Make subjects relaxed by b uilding rapport, thanking them, getting c onsent to record, a nd
+explainingthattherearenorighto rwronganswers.A sko pen-endedquestionsusing"why"and
+"what," and avoid y es/no q uestions. A sk follow-up q uestions based on their responses. T ake
+detailed notes, h ighlighting c ompelling q uotes a nd d ocumenting observations s uch a s m ood,
+expressions, a nd b ody language. W rap u p the interview b y giving the s ubjects the chance to
+share their final thoughts and thank them for their time. Include links to theinterviewswhere
+users gave consent that it should be recorded.
+
+AvoidingBiasinUserR esearch:Whenconductinginterviews,b ea wareofa ndavoidc ommon
+biasess uchasconfirmationb ias(lookingo nlyforevidencethats upportsy ourhypothesis),false
+consensus bias (assuming others think like y ou), recency/primacy bias (remembering only the
+first or last thingsaid),implicit/unconsciousb ias(unconsciousstereotypesaffectingwhomy ou
+interview), a nd the sunk cost fallacy (sticking w ith a n idea because y ou've a lready invested
+time). T o preventbias,a skopen-endedq uestions,interviewa d iversesetofusers,takedetailed
+n otes or recordings, use neutral language, a void leading questions, a nd s pace out interviews
+w ithout rushing.
+Step 4: Visualizing and Learning
+
+D rawempathym apsforeachintervieweduser.Identifyuserpainp ointsa ndrefineo rc reateuser
+p ersonas.
+W hat is an Empathy Map?
+A n empathy m ap is a c hart that explains everything you've learned a bout a u ser. It h as four
+q uadrants:SAYS(whattheu sersaysoutloud),T HINKS(whattheu serthinksbutmaynots ay),
+DOES (what the user does or how they behave), and FEELS (the user's emotional state).
+Createonemapp erintervieweduser,thenm erges imilarusersintoa ggregatedmapstoformuser
+segments, such as "Positive," "Negative," or "Confused" users.
+
+User Personas
+
+Based o n your e mpathy m aps a nd interview insights, c reate d etailed user p ersona(s) that
+representyourprimarytargetuser(s).A p ersonaisafictionalbutrealisticrepresentationo fauser
+segment, including:
+Example quote to p ersona: " John, 2 2, C omputerSciences tudent.G oals:Wakeupontimefor
+morning c lasses. Frustrations: S tays u p late gaming,ignoresa larms.Habit:U sesphoneinb ed.
+Quote: 'I just need something that forces me to stop scrolling and sleep."
+
+Personas help keep your design user-centered and guide feature decisions.
+
+Competitor Analysis
+
+Identify direct c ompetitors, w hich are products w ith s imilar o fferings and the same target
+audience. Also, identify indirect c ompetitors, which may h ave s imilar o fferingsbuta different
+a udience, or d ifferent o fferings but the s ame a udience. For e xample, for a weight-loss a pp
+targeting people in their 2 0s, a  d irect competitor would be a  health/wellnessa ppforpeoplein
+their 20s, while an indirect competitor might be a weight-loss app for people in their 60s.
+User Journey Mapping
+
+Createa u serjourneymapforanexistingsolution(ad irectcompetitor)relatedtoyoura ppidea.
+A userjourneym apillustratesthes tepsau sertakestoachieveagoal,alongw iththeirfeelings,
+p ainp oints,a ndimprovemento pportunities(whatyouwillincludeinyourapptom akeitbetter
+than your competitor's).
+
+Unique Value Proposition
+
+Based on y our p roblem s tatement a ndfindingsfromp reliminaryresearch,userinterviews,and
+competitor a nalysis, articulate your app's Unique V alue Proposition (UVP). This is a clear
+statement that describes the b enefit of y our product, how it solves users' needs, a nd w hat
+distinguishes it from the competition.
+Your UVP s hould answer: Why s hould users choose y our app over others? W hat unique
+perspective or solution does it offer?
+Example: "Our app p rovides personalized, gamified s leep scheduling that turnsbedtimeintoa 
+rewarding routine, unlike generic alarm apps."
+
+User Flows
+
+Designthekeyu serflowsfory oura pp.A userflowisa d iagramthatm apso utthestepsa u ser
+takes to c omplete a task w ithin your app. It includes s creens, decisions, a ctions, a nd possible
+outcomes (happy p ath a nd e dge cases). Create a  flow for each core task (e.g., signing up,
+bookinga s ervice,c ompletingano rder).U sesimpleshapesandarrowstoillustratethepath.This
+w ill serve as the blueprint for your prototype
+Storyboards
+
+Storybaords are a series of panels or frames that visually describes and explores a user's experience with
+y our app's solution. Below is a sample to refer to and create one for your app.
+
+                                                                                                    .
+
+Information Architecture (IA)
+
+O rganize y our app's c ontent and structure to help u sers navigate intuitively. Define the main
+s ections, screens, and n avigation p atterns.C onsiderp rinciplesliketheChoiceP rinciple(fewer,
+well-organized o ptions) and the F ocused N avigation Principle (logical menu d esign). C reate a
+sitemap or navigation diagram that shows the hierarchy of screens and how they connect.
+Figma Prototype Design
+
+T ranslateyouru serflowsandinformationarchitectureintoaninteractive,h igh-fidelityprototype
+u sing Figma. Your prototype should include:
+
+     H igh-Fidelity M ockups: Polished s creens with c onsistent typography, color (using the
+         6 0-30-10 rule), icons, and imagery.
+
+     Interactive Elements: Clickable b uttons, navigational links, transitions, and simulated
+         user interactions.
+
+      K ey Screens: Home, main task flows, profile, settings, and any unique features.
+
+Y our prototype should reflect the insights from your interaction w ith u sers v ia interviews,
+address user pain points, and demonstrate your unique value proposition.
+

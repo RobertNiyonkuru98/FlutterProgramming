@@ -16,7 +16,19 @@ class columnPages extends StatelessWidget {
         backgroundColor: Colors.green,
       ),
       body:Column(
+        // mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.end,
+      // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      // crossAxisAlignment: CrossAxisAlignment.stretch,
+      //   crossAxisAlignment: CrossAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.end,
       children: <Widget>[
+        Row(
+          children: <Widget>[
+            Text('Hello'),
+            Text('World'),
+          ],
+        ),
         Container(
           padding: EdgeInsets.all(20.0),
           color: Colors.cyan,

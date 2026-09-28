@@ -1,0 +1,654 @@
+Recruitment message
+Recruitment Message
+
+ Hi!
+
+We are a team of 5 ALU students working on our final project. We are conducting
+a short research study about healthcare access for international students and
+newcomers in Rwanda.
+
+We are interested in understanding how people find pharmacies that accept their
+insurance and how they access healthcare when they need it.
+
+We are looking for people who:
+· Arrived in Rwanda within the last 2 years
+· Are international students or other newcomers
+· Are pharmacists or pharmacy staff
+· Work at an insurance company, hospital, or clinic
+
+The interview takes about 20 minutes and can be done through WhatsApp,
+Google Meet, or in person.
+
+There are no right or wrong answers. This is not a sales pitch. We simply want to
+hear about your real experiences.
+
+Your participation is voluntary, and your responses will be kept anonymous for our
+academic research.
+
+ If you are interested, please reply here or DM me. Thank you!
+Participant Consent Form
+Participant Consent Form
+
+
+
+Research Topic
+
+Healthcare Access for International Students and Newcomers in Rwanda
+
+Purpose of the Interview
+
+We are a team of African Leadership University students conducting user research
+to understand how international students and newcomers access pharmacies,
+hospitals, insurance services, and emergency healthcare in Rwanda.
+The interview will take approximately 20 minutes.
+
+Voluntary Participation
+
+Your participation is completely voluntary. You may choose not to answer any
+question, and you may stop the interview at any time.
+
+Confidentiality
+
+Your responses will be used for academic research and project development. We
+will not intentionally identify you by name in our final project materials.
+
+Recording
+
+With your permission, the interview may be audio recorded so that the research
+team can accurately capture what you said.
+The recording will be used only for this academic project.
+
+Consent
+
+Please confirm the following:
+
+         I understand the purpose of this interview.
+         I understand that participation is voluntary.
+         I understand that I may skip questions or stop the interview at any time.
+         I agree to participate in the interview.
+         I agree to have the interview audio recorded.
+Participant name: ______________________
+Participant category: ___________________
+Date: _________________________________
+Interviewer: ___________________________
+Participant confirmation: _______________
+ Interview Script (Local Students)
+Healthcare Access User Interview Script
+(Local Students)
+
+Target Audience: Rwandan local students
+
+Focus: Real past experiences, habits, challenges with local healthcare systems, insurance,
+late-night/24-hour pharmacies, and emergency services.
+
+Opening 2
+
+     "Hello, thank you for taking the time to speak with us."
+
+     "We are conducting research for our African Leadership University project. We want
+         to understand students' actual, real-life experiences accessing healthcare,
+         pharmacies, insurance, and emergency services in Rwanda."
+
+     "There are no right or wrong answers, and we are not selling or pitching any product.
+         We only want to learn from your real experiences."
+
+     "Before we begin, do you agree to participate in this interview?"
+
+     "Do you also agree to have this interview audio recorded strictly for our academic
+         research?"
+
+     "Thank you. Let's begin."
+
+Section 1: Background & General Experience
+
+     "Can you briefly tell me about yourself and what you are studying?"
+
+     "What type of health insurance do you currently use (e.g., Mutuelle de Santé,
+         RSSB/RAMA, MMI, private insurance, or none)?"
+
+     "Can you walk me through the last time you needed to visit a clinic, hospital, or
+         pharmacy?" 2
+
+Section 2: Navigating Healthcare & Insurance Coverage -- 5 minutes
+
+     "When you feel unwell, how do you usually decide where to go or what clinic/hospital
+         to visit first?" 1
+
+     "How do you check beforehand whether a specific pharmacy or clinic accepts your
+         particular insurance?"
+
+     "Can you describe a time when you went to a pharmacy or healthcare facility, only to
+         find out your insurance was not accepted or didn't cover a specific medicine?"
+     "What did you end up doing in that situation?"
+
+     "What information do you feel is hardest to find before you physically visit a clinic or
+         pharmacy?"
+
+Section 3: Emergency Situations & Preparedness
+
+     "If you or a classmate had a sudden medical emergency on or off campus, what
+         exact steps would you take first?"
+
+     "Which emergency contact or ambulance service number would you call?" 3
+
+     "How did you learn about that number or emergency contact?"
+
+     "Have you ever experienced or witnessed a medical emergency in Rwanda? If yes,
+         can you walk me through what happened?"
+
+     "What was the most challenging part of getting immediate help during that situation?"
+
+Section 4: Finding Open & Duty Pharmacies (Garde)
+
+     "How do you usually find out which pharmacy is open near you, especially during
+         evenings, weekends, or holidays?"
+
+    
+     "Have you ever needed medicine late at night or outside regular business hours? Tell
+
+         me about that experience."
+    
+     "How do you currently check which pharmacies are on duty (pharmacie de garde) in
+
+         your area?"
+    
+     "What issues, if any, have you faced when trying to locate an open pharmacy at
+
+         night?"
+    
+
+Section 5: Closing
+
+     "Looking back at your experiences as a student, what is the single biggest frustration
+         or challenge you face when trying to get healthcare or medicine?"
+
+     "If you could improve one part of how healthcare or pharmacy information is shared
+         with local students, what would it be?" 4
+
+     "Is there anything else about accessing healthcare in Rwanda that you think we
+         should know?"
+
+     "Thank you very much for your time and for sharing your experiences with us."
+Interview script
+Interview Script
+
+This is one of the most important things you need to prepare.
+The assignment specifically says:
+
+     Don't ask only yes/no questions.
+     Don't describe your solution before asking about the problem.
+     Don't guess the answers.
+     Record what real people actually tell you.
+So the interview should focus on their existing experience, not on convincing
+them that your app is a good idea.
+
+                          --------------------------------------------------------
+
+Healthcare Access User Interview
+
+Opening -- 2 minutes
+
+Hello, thank you for taking the time to speak with us.
+We are conducting research for our African Leadership University final project. We
+want to understand people's real experiences accessing healthcare, pharmacies,
+insurance, and emergency services in Rwanda.
+There are no right or wrong answers. We are interested in your actual experiences.
+Before we begin, do you agree to participate in this interview?
+[Wait for answer]
+Do you also agree to have this interview audio recorded for our academic
+research?
+[Wait for answer]
+Thank you. Let's begin.
+
+Section 1: Background -- 3 minutes
+    1. Can you briefly tell me about yourself and your experience living or working
+         in Rwanda?
+
+    2. How long have you been in Rwanda?
+    3. What type of health insurance do you currently use, if any?
+    4. Can you tell me about the last time you needed healthcare or medicine in
+
+         Rwanda?
+
+Section 2: Finding Healthcare -- 5 minutes
+
+    5. When you need medicine or healthcare, how do you normally decide
+         where to go?
+
+    6. Can you walk me through what you did the last time you needed to find a
+         pharmacy?
+
+    7. How did you find out whether the pharmacy accepted your insurance?
+    8. What was difficult or inconvenient about that process?
+    9. Have you ever arrived at a pharmacy and discovered that it did not accept
+
+         your insurance? What happened?
+    10. What information would have helped you before going to the pharmacy?
+
+Section 3: Emergency Healthcare -- 3 minutes
+
+    11. If you or someone with you had a medical emergency in Rwanda, what
+         would you do first?
+
+    12. What emergency or ambulance number would you call?
+    13. How did you learn that number?
+    14. Have you ever called an ambulance or emergency service in Rwanda? If
+
+         yes, can you describe what happened?
+    15. What would make it easier for you to get help during a medical
+
+         emergency?
+
+Section 4: Pharmacies and Opening Hours -- 3
+minutes
+
+    16. How do you normally find out whether a pharmacy is open?
+    17. Have you ever needed a pharmacy outside normal working hours? Tell me
+
+         about that experience.
+    18. What do you know about pharmacies that operate 24 hours in Kigali?
+    19. If you needed medicine late at night, how would you find a pharmacy that
+         is open?
+
+    20.What information would you want to know before travelling to that
+         pharmacy?
+
+Section 5: Closing -- 2 minutes
+
+    21. What is the biggest challenge you have experienced when trying to access
+         healthcare in Rwanda?
+
+    22.If you could change one thing about the process, what would you change?
+    23.Is there anything else about accessing healthcare or pharmacies in Rwanda
+
+         that you think we should understand?
+
+Thank you very much for your time. Your experience is very valuable to our
+research.
+Questions you personally own
+Questions you personally own
+
+# Open question                                      Ask who           Owner
+
+1 What is the correct emergency/ambulance number, Pharmacist,          David
+
+and how does calling one actually work?              clinic reception
+
+2 Which insurers do international students at ALU    ALU student       Robert
+     hold? Does the university provide cover?        affairs + 6
+                                                     student
+                                                     interviews
+
+3 Do over-the-counter items still need a prescription, Pharmacists     Elie
+
+or only insured treatment?
+
+4 Are there 24-hour pharmacies in Kigali, and how    Pharmacists,      David
+     common?                                         students
+
+5 Do pharmacists know instantly which insurers they  Pharmacists       Elie
+
+take, or check a list? Would they welcome being
+
+listed in an app?
+Interviewer briefing
+Interviewer Briefing
+
+Team, before we start the interviews, please follow these guidelines:
+
+    1. Start by confirming consent.
+    2. If the interview is recorded, confirm permission to record before recording.
+    3. Use the interview script.
+    4. Ask open-ended questions instead of yes/no questions.
+    5. Do not explain or promote our proposed app before understanding the
+
+         participant's current problem.
+    6. Ask participants to describe real experiences, not what they think we want
+
+         to hear.
+    7. Use follow-up questions such as "Can you tell me more about that?" and
+
+         "What happened next?"
+    8. Do not invent or assume information.
+    9. Record important statements as accurately as possible.
+    10. After the interview, upload the audio, consent confirmation, and interview
+
+         notes to the shared Drive.
+
+Please let me know immediately if you cannot complete your assigned interview
+so we can reassign it.
+
+Our target is to have all 12 interviews completed by Saturday 19 September at
+midday.
+Links
+                                                                        
+
+Screener / Google Form
+Link
+
+https://docs.google.com/forms/d/e/1FAIpQLSf1fwixOjxEUawHh7JN74NWsPcZPkhragQR-SEh-4m
+FdZfFYw/viewform
+
+https://docs.google.com/forms/d/e/1FAIpQLSeKgyVINGdyN-7TnGvKt-uScsmvf02o1_d75FDDNb8
+6sq9wbQ/formResponse
+
+Interview booking tracker
+Link
+Interview - Script - Pharmacist
+Pharmacist Interview Script
+
+Opening -- 2 minutes
+
+Hello, thank you for taking the time to speak with us.
+We are conducting research for our African Leadership University final project.
+We want to understand the experiences of pharmacists and pharmacies in
+Rwanda, particularly around customers finding medicines, insurance, pharmacy
+availability, and emergency or after-hours healthcare.
+There are no right or wrong answers. We are interested in your actual
+experiences and challenges.
+Before we begin, do you agree to participate in this interview?
+[Wait for answer]
+Do you also agree to have this interview audio recorded for our academic
+research?
+[Wait for answer]
+Thank you. Let's begin.
+
+Section 1: Background & Pharmacy Experience -- 3
+minutes
+
+    1. Could you tell me a little about your role and your experience working as a
+         pharmacist in Rwanda?
+
+    2. What type of pharmacy do you currently work in, and what does a typical
+         working day look like for you?
+
+    3. What are the most common reasons customers come to your pharmacy?
+    4. Can you walk me through what normally happens when a customer
+
+         comes to your pharmacy looking for a particular medicine?
+
+Section 2: Medicine Availability -- 5 minutes
+    5. How do you currently keep track of the medicines that are available in
+         your pharmacy?
+
+    6. Can you tell me about a recent situation where a customer came looking
+         for a medicine that you did not have? What happened?
+
+    7. When you don't have a medicine a customer needs, what do you normally
+         do?
+
+    8. How do customers usually find out whether your pharmacy has a
+         particular medicine before coming to the pharmacy?
+
+    9. What challenges do you experience when customers are looking for
+         medicines that are unavailable?
+
+    10. Are there particular medicines or categories of medicines that are more
+         difficult to keep available? Why?
+
+    11. How do you communicate with suppliers or other pharmacies when you
+         need to find a medicine that you don't have?
+
+Section 3: Customers Finding Pharmacies -- 4
+minutes
+
+    12. How do new or existing customers usually find your pharmacy?
+    13. What questions do customers commonly ask before coming to the
+
+         pharmacy?
+    14.Can you describe a situation where a customer had difficulty finding your
+
+         pharmacy or reaching you?
+    15. How do customers find out your opening and closing hours?
+    16. How do you currently communicate changes in opening hours, temporary
+
+         closures, or holiday schedules to customers?
+    17. What information do you think customers often don't have before they
+
+         travel to a pharmacy?
+
+Section 4: Insurance & Payment -- 4 minutes
+
+    18. What types of health insurance do you commonly deal with at your
+         pharmacy?
+
+    19. Can you walk me through what happens when a customer wants to use
+         insurance to purchase medicine?
+
+    20.What challenges do you or your customers experience when processing
+         insurance?
+
+    21. Have you experienced situations where a customer believed their
+         insurance would work at your pharmacy but it didn't? Can you describe
+         what happened?
+    22.How do customers usually find out whether your pharmacy accepts their
+         particular insurance?
+
+    23.What information would make the insurance process easier for both
+         pharmacists and customers?
+
+Section 5: After-Hours & Emergency Situations -- 4
+minutes
+
+    24.Can you tell me about your experience dealing with customers who need
+         medicine outside normal pharmacy hours?
+
+    25.How do customers currently find pharmacies that are open late at night
+         or 24 hours?
+
+    26.What challenges do pharmacies face when providing services outside
+         normal working hours?
+
+    27.Have you ever had a customer come to your pharmacy during an urgent
+         or emergency situation? What happened?
+
+    28.When a customer needs something that your pharmacy cannot provide
+         during an emergency, what do you normally do?
+
+    29.What information do you think would be most useful to a person trying to
+         find an available pharmacy during an emergency?
+
+Section 6: Communication & Information -- 3
+minutes
+
+    30.How do you currently communicate with customers about medicine
+         availability, pharmacy services, or important updates?
+
+    31. What questions do customers repeatedly ask your staff that could
+         potentially be answered before they visit the pharmacy?
+
+    32.Are there situations where customers call or visit several pharmacies
+         looking for the same medicine? Can you describe what usually happens?
+
+    33.What information would you like customers to have before contacting or
+         visiting your pharmacy?
+
+Section 7: Challenges & Opportunities -- 4 minutes
+
+    34.What is the biggest operational challenge you currently face in serving
+         customers?
+    35.What is the biggest challenge your customers face when trying to get
+         medicines from your pharmacy?
+
+    36.If you could improve one part of how customers interact with your
+         pharmacy, what would you change?
+
+    37.What information or tools would make your work as a pharmacist easier?
+    38.Have you tried any technology or digital systems to address these
+
+         challenges? What was that experience like?
+    39.What concerns would you have about using a new digital system in your
+
+         pharmacy?
+
+Closing -- 2 minutes
+
+    40.Looking at the current healthcare and pharmacy system in Rwanda, what
+         do you think is the biggest gap that affects patients trying to get
+         medicines?
+
+    41. If you could change one thing about how pharmacies and patients
+         interact, what would you change?
+
+    42.Is there anything about working in a pharmacy or serving patients in
+         Rwanda that we haven't discussed but you think is important for us to
+         understand?
+
+Thank you very much for your time. Your experience and insights are very
+valuable to our research.
+Diagrams - playground
+1. Problem Statement (academic style)
+
+Newcomers to Rwanda -- including international students, expatriate professionals,
+and other recent arrivals -- frequently carry health insurance issued by a foreign or
+unfamiliar provider. While the majority of pharmacies in Rwanda accept cash
+payment regardless of insurance affiliation, a subset of pharmacies additionally
+accept specific insurers, and this information is only made available through a
+physical notice -- typically a board or sticker -- displayed at the pharmacy's
+entrance. Consequently, this information, although factually public, is not accessible
+in any centralized, searchable, or remote form.
+
+In practice, an individual seeking to determine whether a nearby pharmacy accepts
+their insurance has only two available methods: physically travelling to the pharmacy
+to read the posted notice, or contacting the insurance provider directly to request the
+information verbally. Both methods are time-inefficient, and neither scales to
+situations involving multiple pharmacies, unfamiliar neighbourhoods, or
+time-sensitive circumstances such as a medical emergency. This inefficiency is
+compounded for newcomers, who additionally lack local knowledge of pharmacy
+locations, operating hours, and emergency contact procedures.
+
+This gap -- between information that already exists publicly and the absence of any
+digital means to access it remotely -- constitutes the central problem this project
+addresses. The proposed intervention does not seek to alter existing healthcare or
+insurance procedures, but rather to digitize an existing, verifiable source of public
+information (the pharmacy-door notice) into a searchable, location-aware mobile
+application, thereby reducing the time, uncertainty, and physical effort currently
+required to locate insurance-compatible healthcare providers.
+
+2. Steps and Algorithm -- How the App Performs in Use
+
+User-facing steps (standard flow)
+
+    1. Onboarding -- user opens the app and selects their insurance provider from
+         a list (or enters "no insurance / cash only").
+
+    2. Location access -- app requests the user's current location (or a manually
+         entered area).
+
+    3. Provider retrieval -- app queries its database for pharmacies and hospitals
+         within a defined radius that are tagged as accepting the selected insurer.
+
+    4. Filtering & sorting -- results are filtered by distance and "open now" status,
+         and sorted nearest-first.
+
+    5. Results display -- user sees a list/map of matching providers, each showing
+         name, distance, open/closed status, and accepted insurers.
+    6. Provider detail view -- user taps a result to see full address, hours, phone
+         number, directions, and "what to bring" (e.g., insurance card, prescription, ID).
+
+    7. Navigation handoff -- user taps "Directions" and is routed via a maps app or
+         in-app routing.
+
+    8. Emergency mode (parallel path) -- at any point, a persistent one-tap
+         Emergency button lets the user skip all filtering and immediately see the
+         nearest open provider plus the correct emergency number, with an option to
+         call directly.
+
+Based on your problem statement, algorithm, pharmacist research, and the
+rubric, the design instructions should make the IA, user flows, and storyboard tell
+one consistent story. The diagrams should reflect the actual problem you are
+solving: helping newcomers remotely identify healthcare providers that match
+their insurance, availability, and location.
+
+Below is a design-ready specification your team can use directly in Figma.
+
+1. Information Architecture (IA)
+
+Goal
+
+Create an IA that shows how the app's information is organized and how a
+newcomer moves through the system.
+
+The IA should contain 8 core screens and keep the navigation simple. Do not create
+screens just to fill the requirement; each screen should support a real user task
+identified in the problem statement.
+The 8 screens
+
+#       Screen                            Purpose
+
+1 Onboarding /      User identifies their insurance provider or selects
+
+   Insurance Selection cash/no insurance
+
+2 Home              Main starting point with nearby healthcare options and
+                    core actions
+
+3 Search / Filters  User searches by pharmacy/hospital, insurance,
+                    distance, open status
+
+4 Results / Map     Displays matching providers based on location and
+                    filters
+5 Provider Details    Shows address, distance, hours, phone, accepted
+                      insurers and relevant information
+
+6 Directions          Provides the route/navigation handoff to the selected
+                      provider
+
+7 Emergency           One-tap emergency pathway showing nearest
+                      relevant open provider and emergency contact
+
+8 Profile / Settings  User manages insurance, location preferences and
+                      other account/app settings
+
+Navigation principle
+
+Keep the primary navigation focused:
+
+Home
+
+Search
+
+Emergency
+
+Profile
+
+Avoid putting every feature into the navigation bar.
+
+The Emergency action should be visually prominent and accessible without
+requiring the user to go through multiple screens.
+
+IA design requirements
+
+In Figma:
+
+     Use rectangles for screens.
+     Use lines/arrows to show relationships.
+     Group screens according to major areas.
+     Clearly identify the main navigation.
+     Use consistent screen names between the IA and user-flow diagrams.
+     Do not introduce features that aren't supported by your research.
+     Show the hierarchy rather than detailed UI components.
+2. User Flows
+The rubric specifically asks for happy paths and edge cases, so don't create only
+one straight-line flow.
+You should create three core flows because your app has three distinct user tasks.
+Flow A -- Find a pharmacy that accepts my insurance
+User goal
+
+       "I need medicine and want to find a nearby pharmacy that accepts my
+       insurance."
+
+3. User Flow B -- Emergency
+4. User Flow C -- Find out whether a provider accepts my insurance
+This is slightly different from simply finding the nearest pharmacy.
+
+User goal
+       "I already know about a pharmacy and want to know whether it accepts
+       my insurance."
+---------------------------
+
+USER FLOW DIAGRAM
+-----------------------------
+Figma Design
+Figma Design
+

@@ -1,7 +1,7 @@
 # Team Task Assignment — Round 1
 ### ALU Final Project, Part 1: User Research & Prototype Design
 **Team:** Robert · Deborah · Elie · David · Igihozo · **Kigali, Rwanda**
-**🚩 DEADLINE: Thursday 24 September, 23:59 — but we submit Wednesday 23 September.**
+**🚩 SUPERSEDED (25 Sep 2026). The deadline has moved to SUNDAY 27 SEPTEMBER, 23:59.** This file was written on 23 September against a 24 September deadline, so its calendar is historical. Read the role definitions and the domain facts below, but take the dates from `Round2-FreeNow-Assignments.md`.
 
 > **DRAFT for tomorrow's meeting (Thu 17).** Nothing is fixed until all five of us have read this and said whether it's doable.
 
@@ -9,7 +9,7 @@
 
 # ⏰ Read this first — we have 8 days
 
-Today is **Wednesday 16 September**. The deadline is **Thursday 24 September**. That is **8 days**, and only **one weekend** (Sat 19 – Sun 20). That weekend is not free time — it is the project.
+*(Written Wed 16 September, so the calendar below is historical. The deadline has since moved to **Sunday 27 September, 23:59** — see `Round2-FreeNow-Assignments.md` for the live schedule.)* Today is **Wednesday 16 September**. The deadline is **Thursday 24 September**. That is **8 days**, and only **one weekend** (Sat 19 – Sun 20). That weekend is not free time — it is the project.
 
 **Because of that, two things change from a normal plan:**
 
@@ -28,8 +28,8 @@ Today is **Wednesday 16 September**. The deadline is **Thursday 24 September**. 
 | **Our users** | International students · other newcomers · pharmacists · insurance/hospital staff |
 | **The app (working idea)** | Choose your insurance → see nearby pharmacies and hospitals that accept it → open now, directions, what to bring. Plus a one-tap **Emergency mode** |
 | **Live calls** | 4 only: Thu 17 (60m) · Sat 19 (90m) · Tue 22 (60m) · Wed 23 (15m) |
-| **🚩 Hard milestone** | **All 12 interviews done by Saturday 19 September, midday** |
-| **Submit** | **Wednesday 23 September.** Thursday 24th is buffer, not working time |
+| **🚩 Hard milestone** | **All 12 interviews done by Saturday 26 September, midday** *(moved from 19 September)* |
+| **Submit** | **Sunday 27 September, early evening.** The 23:59 deadline is a ceiling, not a target |
 
 ---
 
@@ -108,9 +108,11 @@ This is not the maximum version. It is the version that scores the marks with th
 
 ---
 
-# 🗓️ The 8 days
+# 🗓️ The 8 days — HISTORICAL CALENDAR, DO NOT FOLLOW
 
-**One weekend carries this project.** Saturday 19 and Sunday 20 are full working days. Plan your life around them now.
+> **⚠️ Every date below is dead.** This calendar was built on 16 September for a 24 September deadline. The deadline is now **Sunday 27 September, 23:59**, so the working days are **Friday 25 and Saturday 26** and we submit early on Sunday 27. The current calendar is in `Round2-FreeNow-Assignments.md`. The role definitions, the domain facts and the interview rules in this file are unchanged and still correct.
+
+**One weekend carries this project.** The equivalent weekend is now **Saturday 26 and Sunday 27**. Plan your life around them now.
 
 | Date | Day | What must be true by end of day |
 |---|---|---|
@@ -237,7 +239,7 @@ Whatever we lock here becomes the **spec we build later**. Flows and IA are the 
 # 🔁 Flexibility — what can move, what cannot
 
 **Cannot move. Zero-score or hard-deadline items:**
-- All 12 interviews done by **Saturday 19 September, midday**
+- All 12 interviews done by **Saturday 26 September, midday**
 - Consent recorded for every recorded interview
 - **Every in-text citation matches a reference in the list** — verified by two people separately
 - **We write the proposal ourselves.** AI only to fix grammar on text we already wrote. Over 50% AI-flagged text scores zero
@@ -261,7 +263,7 @@ Whatever we lock here becomes the **spec we build later**. Flows and IA are the 
 
 ---
 
-# 📊 Claims → Evidence table (fill Saturday 19 September)
+# 📊 Claims → Evidence table (fill Saturday 26 September)
 
 This proves our insights trace back to real people — the rubric's heaviest row asks for exactly that.
 
