@@ -1,0 +1,1 @@
+final ghanaianPhonePattern = RegExp(r'^(233\d{9}))

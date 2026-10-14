@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title> PulseTrack — Project & SLA Task Tracker</title>
+<style>
+:root{
+  --ink:#10182b; --muted:#5b6b7f; --line:#dde5ee; --soft:#f7f9fc;
+  --brand:#1D3B8B; --brand-soft:#eaeefb; --accent:#F97316; --accent-soft:#fef2e8;
+  --green:#12A150; --green-soft:#E6F6EC;
+  --amber:#B3780F; --amber-soft:#FDF3E0;
+  --red:#D92D20; --red-soft:#FDECEA;
+  --slate:#54637A; --slate-soft:#EEF1F5;
+}
+*{box-sizing:border-box}
+body{
+  font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Inter,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink); line-height:1.65; max-width:940px; margin:0 auto;
+  padding:56px 44px 100px; background:#fff; font-size:15.5px;
+  -webkit-print-color-adjust:exact; print-color-adjust:exact;
+}
+h1{font-size:2.1em; line-height:1.18; margin:0 0 .1em; letter-spacing:-.025em; color:var(--brand)}
+h1+h2{border:0; margin-top:.35em; color:var(--muted); font-weight:600; font-size:1.02em; padding:0}
+h1+h2+h3{border:0;margin-top:.7em}
+h2{font-size:1.38em; margin:2.4em 0 .7em; padding-top:.6em;
+   border-top:2px solid var(--line); letter-spacing:-.012em; color:var(--brand)}
+h3{font-size:1.1em; margin:1.9em 0 .5em; color:#14225a}
+h3:first-of-type{margin-top:1.1em}
+p{margin:.72em 0}
+a{color:var(--brand); word-break:break-word}
+strong{color:#0b1220}
+hr{border:0;border-top:1px solid var(--line);margin:2.3em 0}
+hr+h2{border-top:0; margin-top:1.3em}
+ul,ol{margin:.6em 0 .9em; padding-left:1.35em}
+li{margin:.32em 0}
+/* tables */
+table{border-collapse:collapse; width:100%; margin:1.15em 0 1.6em; font-size:.91em}
+th,td{border:1px solid var(--line); padding:9px 11px; text-align:left; vertical-align:top}
+th{background:var(--soft); font-weight:650; font-size:.94em; color:#14225a}
+tbody tr:nth-child(even){background:#fbfcfe}
+/* blockquotes / callouts */
+blockquote{margin:1.4em 0; padding:14px 20px; border-left:4px solid var(--accent);
+  background:var(--accent-soft); border-radius:0 8px 8px 0}
+blockquote p{margin:.35em 0}
+blockquote strong{color:#8a3d05}
+/* code */
+code{background:#eef2f7; padding:2px 6px; border-radius:4px; font-size:.87em;
+  font-family:"Cascadia Mono",Consolas,"SF Mono",Menlo,monospace; color:#14225a}
+pre{background:#0f1830; border:0; border-left:4px solid var(--accent); border-radius:8px;
+  padding:16px 18px; overflow-x:auto; margin:1.1em 0}
+pre code{background:none; padding:0; font-size:.845em; line-height:1.6; color:#e8eefc}
+/* meta banner + footer */
+.meta{background:var(--brand-soft); border:1px solid #d5ddf7; border-left:4px solid var(--brand);
+  border-radius:0 8px 8px 0; padding:14px 18px; margin:1.4em 0 1.8em; font-size:.93em; color:#1b2a5c}
+.footer{margin-top:3em; padding-top:1em; border-top:1px solid var(--line);
+  color:var(--muted); font-size:.85em; text-align:center}
+/* print */
+@page{size:A4; margin:15mm 13mm}
+@media print{
+  body{padding:0; max-width:none; font-size:10.2pt; line-height:1.48}
+  h2{page-break-after:avoid} h3{page-break-after:avoid}
+  table,blockquote,pre{page-break-inside:avoid}
+  pre{background:#f4f7fb; border-left:4px solid var(--accent)}
+  pre code{color:#12203f}
+  a{color:var(--ink); text-decoration:none}
+}
+</style>
+</head><body>
+<h1>PulseTrack — Project &amp; SLA Task Tracker</h1>
+<h3>Team Playbook — Gideon · Admire · Robert</h3>
+<div class="meta">
+<b>Course:</b> Mobile Development · <b>Type:</b> Group Assignment (3 members) · <b>Stack:</b> Flutter (no backend)<br>
+<b>Kickoff:</b> Thursday 08 October 2026, 09:30 · <b>Hard deadline:</b> <b>Sunday 11 October 2026, 23:59</b><br>
+<b>Time available from kickoff:</b> <b>≈ 86 hours (3 days 14 hours)</b> · <b>App name:</b> <b>PulseTrack</b>
+</div>
+
+<hr />
+<h2>1. What is actually being graded</h2>
+<p>Read this table before planning anything. The app is only <em>one</em> of six graded artefacts.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Deliverable</th>
+<th>Marks hinge on</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>GitHub repo</strong></td>
+<td>every member has a <strong>branch</strong>, <strong>visible commits spread across the days</strong>, PRs, readable code, clear structure. A single big upload at the end = <strong>not sufficient evidence</strong></td>
+<td>Robert (setup) → all</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>PDF report (max 3 pages)</strong></td>
+<td>repo link · project structure · what was built · screenshots</td>
+<td>Admire</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Technical report (2–4 pages)</strong></td>
+<td><strong>challenges faced + how you solved them</strong> — this is the whole point of the doc</td>
+<td>Admire + Robert</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Demo video (10–15 min)</strong></td>
+<td>main workflow (create → update → SLA status), UI decisions, navigation, validation, state, SLA logic, persistence. <strong>Every member speaks.</strong> Must show what makes your app unique</td>
+<td>All 3</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Group contribution tracker link</strong></td>
+<td>copy of the course tracker, filled in. <strong>Missing = your work is not graded at all</strong></td>
+<td>Admire</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>AI Usage Declaration</strong></td>
+<td>brief, honest description of how AI tools were used</td>
+<td>Robert</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Runs on emulator / real device</strong></td>
+<td>browser-only run = <strong>automatic zero</strong></td>
+<td>All 3</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Graded feature requirements inside the app</strong></p>
+<ul>
+<li>At least <strong>6 screens</strong>: Sign In / User Selection, Project Dashboard, Task List, Task Details, Create/Edit Task, Team Members/Profile. <em>(We are building 10.)</em></li>
+<li><strong>SLA status</strong> on every task: On Track · At Risk · Overdue · Completed — and you must be able to <strong>explain your At Risk rule out loud</strong>.</li>
+<li><strong>Persistence across app restart</strong> — SharedPreferences or sqflite, and you must <strong>justify the choice</strong>.</li>
+<li>Sign-in does <strong>not</strong> need a real auth service — just a believable Flutter flow.</li>
+<li>Demonstrates: widgets, layouts, navigation, forms + validation, error handling, application state, business logic.</li>
+</ul>
+<p><strong>Filename rule:</strong> <code>GroupName_AssignmentName</code> (e.g. <code>PulseTrack_ProjectAndSLATaskTracker.pdf</code>). Pick a group name tonight and write it down — you will reuse it in four places.</p>
+<hr />
+<h2>2. The app we are building</h2>
+<p><strong>PulseTrack</strong> — a project &amp; SLA task tracker for a small software team. Not a generic to-do list: the product promise is <strong>"tell me, in one screen, which tasks are about to breach their SLA."</strong></p>
+<h3>Screens (10 — the brief asks for 6)</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Screen</th>
+<th>What it does</th>
+<th>Rubric it wins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Sign In / Sign Up / User Selection</strong></td>
+<td>email + password with <strong>validation</strong>, plus one-tap "continue as" team member cards</td>
+<td>forms, validation, navigation, state</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Dashboard</strong></td>
+<td>KPI cards, <strong>Project Health ring gauge</strong>, status donut, attention queue, recent activity</td>
+<td>layout, charts, business logic</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Task List</strong></td>
+<td>search, <strong>SLA filter chips</strong>, sort, task cards with coloured SLA badges</td>
+<td>lists, filtering, state</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Task Details</strong></td>
+<td>SLA panel <strong>that explains why</strong> the status was assigned, progress slider, status changer, notes, activity trail</td>
+<td>business logic, state, navigation args</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Create / Edit Task</strong></td>
+<td>full form + field-level validation + error states</td>
+<td>forms, validation, error handling</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Team Members</strong></td>
+<td>per-member workload &amp; breach counts</td>
+<td>lists, aggregation</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Member Detail</strong></td>
+<td>one member's tasks + their SLA mix</td>
+<td>navigation, aggregation</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Profile</strong></td>
+<td>current user, stats, settings entry, sign out</td>
+<td>session state, persistence</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Insights</strong></td>
+<td>status bar chart, breach leaderboard, upcoming deadlines</td>
+<td>charts, business logic</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>SLA Rules &amp; Thresholds</strong></td>
+<td><strong>live-editable at-risk thresholds</strong></td>
+<td>⭐ the differentiator</td>
+</tr>
+</tbody>
+</table>
+<h3>What makes it unique (your demo-video money-shot)</h3>
+<ol>
+<li><strong>Explainable SLA engine</strong> — the Task Details screen <em>prints the rule</em> that produced the status (<code>"At Risk — 68% of the allotted window has elapsed"</code>). No other group will do this.</li>
+<li><strong>Live rule editing</strong> — on screen 10, drag the At Risk slider and watch task badges <strong>flip colour across the app in real time</strong>. This is your 60-second live demonstration of business logic.</li>
+<li><strong>Project Health Score (0–100)</strong> — one number computed from the SLA mix, shown as a ring gauge.</li>
+<li><strong>Attention Queue</strong> — Overdue + At Risk only, ranked by an urgency score, so the user sees the two things that matter.</li>
+<li><strong>Team breach board</strong> — who is overloaded, who is about to miss.</li>
+<li><strong>Activity Log</strong> — every status change journalled, persisted, filterable.</li>
+</ol>
+<hr />
+<h2>3. Our SLA rules (learn these — you will be asked)</h2>
+<p>Fields: <code>createdAt</code>, <code>dueDate</code>, <code>status</code> (To Do / In Progress / Blocked / Completed), <code>priority</code> (Low / Medium / High / Critical), <code>progress</code> (0–100).</p>
+<p>Evaluate <strong>in this order</strong> — first match wins:</p>
+<table>
+<thead>
+<tr>
+<th>Order</th>
+<th>Condition</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>status == Completed</code></td>
+<td><strong>Completed</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>status == Blocked</code></td>
+<td><strong>At Risk</strong> (blocked work cannot progress, so it is escalated)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>now &gt; dueDate</code></td>
+<td><strong>Overdue</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>remaining ≤ 24h</code></td>
+<td><strong>At Risk</strong> (hard safety net)</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>remainingPct ≤ threshold(priority)</code></td>
+<td><strong>At Risk</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td>otherwise</td>
+<td><strong>On Track</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Where <code>remainingPct = (dueDate − now) / (dueDate − createdAt)</code>.</p>
+<p><strong>Priority-weighted thresholds</strong> — the higher the priority, the earlier the warning:</p>
+<table>
+<thead>
+<tr>
+<th>Priority</th>
+<th>At Risk when remaining time drops below</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Critical</td>
+<td>50 %</td>
+<td>half the window gone and it is not done → alarm</td>
+</tr>
+<tr>
+<td>High</td>
+<td>40 %</td>
+<td></td>
+</tr>
+<tr>
+<td>Medium</td>
+<td>30 %</td>
+<td></td>
+</tr>
+<tr>
+<td>Low</td>
+<td>20 %</td>
+<td>ample slack</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Project Health Score</strong> = <code>100 × average(statusWeight)</code> over all tasks, where Completed = 1.0, On Track = 1.0, At Risk = 0.5, Overdue = 0.0. One sentence to explain, and it moves visibly when you complete a task on stage.</p>
+<blockquote>
+<p><strong>Why this is defensible in the demo:</strong> a flat "48 hours left = at risk" rule treats a 2-day task and a 6-week task identically. A percentage-of-window rule with a priority weight is proportional and tunable — and we can <em>show</em> it being tuned.</p>
+</blockquote>
+<hr />
+<h2>4. Technical decisions (and the exact words to say)</h2>
+<table>
+<thead>
+<tr>
+<th>Decision</th>
+<th>Choice</th>
+<th>What you say in the demo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Persistence</strong></td>
+<td><strong>sqflite</strong></td>
+<td>"Our data is relational — members own many tasks and the Insights screen aggregates with GROUP BY. sqflite gives us queries and sorting; SharedPreferences would force us to load and re-sort whole JSON lists on every screen."</td>
+</tr>
+<tr>
+<td><strong>Session user</strong></td>
+<td><code>shared_preferences</code></td>
+<td>"The signed-in member is a single small value, so it lives in SharedPreferences while the task data lives in SQLite — each store is used for what it is good at."</td>
+</tr>
+<tr>
+<td><strong>State</strong></td>
+<td><code>provider</code> (ChangeNotifier)</td>
+<td>"One <code>TaskProvider</code> exposes tasks and derived metrics. Screens call <code>context.watch</code> to rebuild. <code>setState</code> alone would force us to pass data down every widget tree, and Bloc is more ceremony than a 3-day build needs."</td>
+</tr>
+<tr>
+<td><strong>Navigation</strong></td>
+<td>named routes + <code>Navigator.pushNamed(arguments:)</code></td>
+<td>"Routes are declared in one place, arguments are typed objects, and the back stack behaves correctly on Android."</td>
+</tr>
+<tr>
+<td><strong>Charts</strong></td>
+<td><code>fl_chart</code></td>
+<td>donut + bar chart, no hand-rolled painters.</td>
+</tr>
+<tr>
+<td><strong>Theme</strong></td>
+<td>one <code>AppColors</code> + one <code>AppTheme</code></td>
+<td>"Every colour comes from a single token file, so the Flutter build matches the Figma design exactly."</td>
+</tr>
+<tr>
+<td><strong>Validation</strong></td>
+<td><code>Form</code> + <code>TextFormField</code> validators</td>
+<td>title required + min 3 chars, due date must be in the future, assignee required, progress 0–100. Error text shown under the field.</td>
+</tr>
+<tr>
+<td><strong>Error handling</strong></td>
+<td><code>FutureBuilder</code>/try-catch around every DB call + empty states</td>
+<td>"The list has an empty state, and a failed DB read shows a retry card instead of a red screen."</td>
+</tr>
+</tbody>
+</table>
+<p>Dependencies: <code>sqflite</code>, <code>path</code>, <code>provider</code>, <code>intl</code>, <code>fl_chart</code>, <code>shared_preferences</code>, <code>uuid</code>.</p>
+<hr />
+<h2>5. File ownership map — one file, one owner</h2>
+<p><strong>Rule: nobody edits a file they do not own.</strong> Need a change in someone else's file? Open a PR or ask in the group chat. This is what keeps a 3-person, 3-day build from drowning in merge conflicts.</p>
+<p>The <strong>FREEZE</strong> files are written by Robert <em>first</em> and merged to <code>main</code> <strong>before</strong> Gideon and Admire create their branches. Nobody is ever blocked waiting for a type that does not exist.</p>
+<pre><code>lib/
+  main.dart                     Robert   [FREEZE]
+  routes.dart                   Robert   [FREEZE]
+  theme/app_colors.dart         Robert   [FREEZE]
+  theme/app_theme.dart          Robert   [FREEZE]
+  data/db_helper.dart           Robert   [FREEZE]
+  data/seed_data.dart           Admire
+  data/models/task.dart         Robert   [FREEZE]
+  data/models/member.dart       Robert   [FREEZE]
+  data/models/activity.dart     Robert   [FREEZE]
+  data/models/sla_status.dart   Robert   [FREEZE]
+  data/models/sla_settings.dart Robert   [FREEZE]
+  data/repositories/*.dart      Robert   [FREEZE]
+  logic/sla_engine.dart         Robert   ★ graded core
+  logic/health_score.dart       Robert
+  widgets/sla_badge.dart        Admire
+  widgets/kpi_card.dart         Admire
+  widgets/health_ring.dart      Admire
+  widgets/activity_tile.dart    Admire
+  widgets/empty_state.dart      Admire
+  widgets/task_tile.dart        Gideon
+  screens/sign_in_screen.dart   Admire
+  screens/team_members_screen.dart  Admire
+  screens/member_detail_screen.dart Admire
+  screens/profile_screen.dart   Admire
+  screens/activity_log_screen.dart  Admire
+  screens/task_list_screen.dart Gideon
+  screens/task_details_screen.dart Gideon
+  screens/task_form_screen.dart Gideon
+  screens/dashboard_screen.dart Robert
+  screens/insights_screen.dart  Robert
+  screens/sla_settings_screen.dart Robert
+test/sla_engine_test.dart       Robert
+test/health_score_test.dart     Robert
+test/form_validation_test.dart  Gideon
+</code></pre>
+<hr />
+<h2>6. Git &amp; GitHub workflow</h2>
+<ol>
+<li><strong>Robert</strong> creates the repo <code>pulsetrack</code> (public), adds Gideon + Admire as <strong>collaborators</strong>, and pushes <code>main</code> containing: <code>README.md</code>, <code>.gitignore</code>, <code>pubspec.yaml</code>, the skeleton above, and <strong>seed/demo data</strong> so the app is never empty on stage.</li>
+<li>Each member creates one branch off <code>main</code>:<br />
+<code>bash
+   git checkout main &amp;&amp; git pull
+   git checkout -b feat/gideon-task-crud</code></li>
+<li><strong>Commit small and often</strong> — a commit is evidence. Target 3–5 commits per member per day, four days running. Example messages:<br />
+<code>bash
+   feat(tasks): add task list screen with SLA filter chips
+   feat(sla): add priority-weighted at-risk thresholds
+   fix(form): validate due date is in the future
+   test(sla): cover blocked-task escalation</code></li>
+<li><strong>One PR per feature</strong>, 1 reviewer from another member, squash-merge into <code>main</code>.</li>
+<li>Keep a <code>README.md</code> with the branch table and a <code>docs/</code> folder for screenshots.</li>
+</ol>
+<blockquote>
+<p>⚠️ <strong>The single biggest mark-loser:</strong> committing everything in one push on Saturday night. The brief says that is <em>not</em> sufficient evidence of collaboration. Push real commits <strong>tonight</strong>.</p>
+</blockquote>
+<hr />
+<h2>7. The 86-hour timeline</h2>
+<h3>🗓️ Thursday 08 October</h3>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Who</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10:00–12:00</td>
+<td><strong>All — MEETING 1 (Kickoff)</strong></td>
+<td>Agree scope · run the Stitch prompt · pick one design variant · agree the SLA rules in §3 · freeze the data model · assign files (§5) · create repo + branches</td>
+</tr>
+<tr>
+<td>12:00–18:00</td>
+<td>Robert</td>
+<td>Build the FULL skeleton: models, DB helper, repositories, theme, routes, <code>main.dart</code>, seed data, <strong>SLA engine + tests</strong> → merge to <code>main</code></td>
+</tr>
+<tr>
+<td>12:00–18:00</td>
+<td>Admire</td>
+<td>Run Stitch for your 5 screens, export to Figma, build <code>sign_in_screen</code> + <code>profile_screen</code> against the skeleton</td>
+</tr>
+<tr>
+<td>12:00–18:00</td>
+<td>Gideon</td>
+<td>Stitch for your 3 screens, export to Figma, build <code>task_tile</code> + <code>task_list_screen</code> shell</td>
+</tr>
+<tr>
+<td>19:00–23:00</td>
+<td>All</td>
+<td>First real screens. Commit and push.</td>
+</tr>
+</tbody>
+</table>
+<h3>🗓️ Friday 09 October</h3>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Who</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>09:00–14:00</td>
+<td>All</td>
+<td>Build. Everyone opens their first PR.</td>
+</tr>
+<tr>
+<td>14:00–15:00</td>
+<td><strong>All — MEETING 2 (Integration)</strong></td>
+<td>Merge PRs · resolve conflicts together · <strong>prove persistence on the emulator</strong> (kill app → reopen) · re-balance the leftovers</td>
+</tr>
+<tr>
+<td>15:00–23:00</td>
+<td>All</td>
+<td>Forms + validation · Insights charts · Activity log · SLA settings screen</td>
+</tr>
+</tbody>
+</table>
+<h3>🗓️ Saturday 10 October</h3>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Who</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>09:00–12:00</td>
+<td>All</td>
+<td>Polish: empty states, error handling, seeded demo data, app icon/name</td>
+</tr>
+<tr>
+<td><strong>12:00</strong></td>
+<td>—</td>
+<td><strong>FEATURE FREEZE.</strong> Nothing new after this.</td>
+</tr>
+<tr>
+<td>13:00–15:00</td>
+<td><strong>All — MEETING 3 (Demo rehearsal)</strong></td>
+<td>Full dry run on the emulator · script the 10–15 min video · <strong>agree who explains which section</strong></td>
+</tr>
+<tr>
+<td>15:00–20:00</td>
+<td>All</td>
+<td><strong>Record the demo video</strong> — emulator/device, screen + all three voices</td>
+</tr>
+<tr>
+<td>18:00–23:00</td>
+<td>Admire + Robert</td>
+<td>PDF report + technical report; Gideon captures screenshots</td>
+</tr>
+</tbody>
+</table>
+<h3>🗓️ Sunday 11 October</h3>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Who</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>09:00–13:00</td>
+<td>Admire</td>
+<td>Finish both reports, fill the contribution tracker, write the AI declaration</td>
+</tr>
+<tr>
+<td>13:00–18:00</td>
+<td>All</td>
+<td>Buffer — fix anything the recording exposed · re-record if needed</td>
+</tr>
+<tr>
+<td>18:00–19:00</td>
+<td><strong>All — FINAL REVIEW call</strong></td>
+<td>Walk the §9 checklist line by line, out loud</td>
+</tr>
+<tr>
+<td>20:00–21:00</td>
+<td>Robert</td>
+<td><strong>Submit.</strong> Two and a half hours of buffer, deliberately.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>8. Per-person brief (paste into WhatsApp)</h2>
+<h3>🧩 Robert — architecture, SLA engine, dashboard, insights, SLA settings</h3>
+<ul>
+<li>Own: repo + branch setup, <code>main.dart</code>, <code>routes.dart</code>, theme, all models, DB helper, repositories, <strong>SLA engine + health score</strong>, Dashboard, Insights, SLA Rules screen, 2 unit-test files.</li>
+<li>Deliverable: <strong>freeze the skeleton to <code>main</code> by Thu 18:00</strong> — Gideon and Admire are blocked on it.</li>
+<li>Also: AI Usage Declaration, final submission, PR reviews.</li>
+<li>Done when: <code>flutter test</code> green on <code>sla_engine_test.dart</code>; a task's badge changes colour when you move the threshold slider.</li>
+</ul>
+<h3>🧩 Gideon — the task journey (list → details → form)</h3>
+<ul>
+<li>Own: <code>task_tile.dart</code>, <code>task_list_screen.dart</code>, <code>task_details_screen.dart</code>, <code>task_form_screen.dart</code>, <code>form_validation_test.dart</code>.</li>
+<li>Deliverable: create a task in the form → it appears in the list → open details → change status → it persists after restart.</li>
+<li>Done when: the form rejects an empty title and a past due date with visible error text; filter chips actually filter.</li>
+<li>Blocker warning: your 3 screens are the heaviest work in the build — start the list shell on Thursday, do not wait for Figma.</li>
+</ul>
+<h3>🧩 Admire — entry point, team, profile, activity, and the reports</h3>
+<ul>
+<li>Own: <code>sign_in_screen.dart</code>, <code>team_members_screen.dart</code>, <code>member_detail_screen.dart</code>, <code>profile_screen.dart</code>, <code>activity_log_screen.dart</code>, the shared widgets (<code>sla_badge</code>, <code>kpi_card</code>, <code>health_ring</code>, <code>activity_tile</code>, <code>empty_state</code>), <code>seed_data.dart</code>.</li>
+<li>Also: <strong>the 3-page PDF + the 2–4 page technical report + the contribution tracker + video editing.</strong></li>
+<li>Deliverable: sign in as a member → dashboard greets that member → sign out → sign in as another member.</li>
+<li>Done when: <code>sla_badge.dart</code> renders all four statuses correctly — Gideon and Robert depend on it. <strong>Build it Thursday evening and push it early.</strong></li>
+</ul>
+<hr />
+<h2>9. Deliverables checklist — run this on Sunday</h2>
+<ul>
+<li>☐ Repo link in the PDF, repo is public</li>
+<li>☐ 3 branches exist; <strong>3 names appear in <code>git shortlog -sn</code></strong></li>
+<li>☐ Commits on all four days (Thu · Fri · Sat · Sun), no single mass upload</li>
+<li>☐ At least one PR per member, each with a description</li>
+<li>☐ App runs on an emulator or physical device (<strong>not</strong> a browser)</li>
+<li>☐ ≥ 6 screens present (we ship 10)</li>
+<li>☐ All four SLA statuses reachable and visible</li>
+<li>☐ Data survives killing and reopening the app</li>
+<li>☐ Form validation demonstrably fires</li>
+<li>☐ <code>flutter analyze</code> clean, <code>flutter test</code> passing</li>
+<li>☐ PDF report ≤ 3 pages, filename <code>GroupName_AssignmentName.pdf</code></li>
+<li>☐ Technical report 2–4 pages, split into Challenges / Solutions</li>
+<li>☐ Demo video 10–15 min, <strong>all three members speak</strong>, on emulator/device</li>
+<li>☐ Contribution tracker copied, filled, link in the PDF</li>
+<li>☐ AI Usage Declaration included</li>
+<li>☐ Submitted Sunday evening, <strong>not</strong> at 23:58</li>
+</ul>
+<hr />
+<h2>10. Risks and how we kill them</h2>
+<table>
+<thead>
+<tr>
+<th>Risk</th>
+<th>Impact</th>
+<th>Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Figma handoff eats a day</strong></td>
+<td>nobody codes on Thursday</td>
+<td>The data model and SLA engine do <strong>not</strong> depend on the visual design. Robert builds logic Thursday while design is generated. Design never blocks logic.</td>
+</tr>
+<tr>
+<td><strong>Merge conflicts</strong></td>
+<td>hours lost Sunday</td>
+<td>The freeze-then-branch rule in §5. One file, one owner.</td>
+</tr>
+<tr>
+<td><strong>Emulator blows up at record time</strong></td>
+<td>zero on the video</td>
+<td>Test <code>flutter run</code> on the emulator <strong>Thursday</strong>, long before the recording. Have one member's physical phone as backup.</td>
+</tr>
+<tr>
+<td><strong>Screens left half-built</strong></td>
+<td>rubric gaps</td>
+<td>Feature freeze Saturday noon, not Saturday night.</td>
+</tr>
+<tr>
+<td><strong>Reports written at 23:00 Sunday</strong></td>
+<td>poor marks on 5 of 6 deliverables</td>
+<td>Reports are a Saturday-evening + Sunday-morning task with a named owner (Admire).</td>
+</tr>
+<tr>
+<td><strong>One person does everything</strong></td>
+<td>contribution tracker looks fake</td>
+<td>The ownership map assigns every screen to a named person, and the tracker records it.</td>
+</tr>
+<tr>
+<td><strong>"We'll polish later"</strong></td>
+<td>nothing is finishable</td>
+<td>Polish is Friday night's job. Saturday is freeze + record.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="footer">
+<b>PulseTrack</b> · Team Playbook · generated 08 October 2026 · Gideon · Admire · Robert
+</div>
+</body></html>

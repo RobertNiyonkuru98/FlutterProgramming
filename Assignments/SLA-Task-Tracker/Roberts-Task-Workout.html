@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title> Robert's Task Workout — PulseTrack</title>
+<style>
+:root{
+  --ink:#10182b; --muted:#5b6b7f; --line:#dde5ee; --soft:#f7f9fc;
+  --brand:#1D3B8B; --brand-soft:#eaeefb; --accent:#F97316; --accent-soft:#fef2e8;
+  --green:#12A150; --green-soft:#E6F6EC;
+  --amber:#B3780F; --amber-soft:#FDF3E0;
+  --red:#D92D20; --red-soft:#FDECEA;
+  --slate:#54637A; --slate-soft:#EEF1F5;
+}
+*{box-sizing:border-box}
+body{
+  font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Inter,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink); line-height:1.65; max-width:940px; margin:0 auto;
+  padding:56px 44px 100px; background:#fff; font-size:15.5px;
+  -webkit-print-color-adjust:exact; print-color-adjust:exact;
+}
+h1{font-size:2.1em; line-height:1.18; margin:0 0 .1em; letter-spacing:-.025em; color:var(--brand)}
+h1+h2{border:0; margin-top:.35em; color:var(--muted); font-weight:600; font-size:1.02em; padding:0}
+h1+h2+h3{border:0;margin-top:.7em}
+h2{font-size:1.38em; margin:2.4em 0 .7em; padding-top:.6em;
+   border-top:2px solid var(--line); letter-spacing:-.012em; color:var(--brand)}
+h3{font-size:1.1em; margin:1.9em 0 .5em; color:#14225a}
+h3:first-of-type{margin-top:1.1em}
+p{margin:.72em 0}
+a{color:var(--brand); word-break:break-word}
+strong{color:#0b1220}
+hr{border:0;border-top:1px solid var(--line);margin:2.3em 0}
+hr+h2{border-top:0; margin-top:1.3em}
+ul,ol{margin:.6em 0 .9em; padding-left:1.35em}
+li{margin:.32em 0}
+/* tables */
+table{border-collapse:collapse; width:100%; margin:1.15em 0 1.6em; font-size:.91em}
+th,td{border:1px solid var(--line); padding:9px 11px; text-align:left; vertical-align:top}
+th{background:var(--soft); font-weight:650; font-size:.94em; color:#14225a}
+tbody tr:nth-child(even){background:#fbfcfe}
+/* blockquotes / callouts */
+blockquote{margin:1.4em 0; padding:14px 20px; border-left:4px solid var(--accent);
+  background:var(--accent-soft); border-radius:0 8px 8px 0}
+blockquote p{margin:.35em 0}
+blockquote strong{color:#8a3d05}
+/* code */
+code{background:#eef2f7; padding:2px 6px; border-radius:4px; font-size:.87em;
+  font-family:"Cascadia Mono",Consolas,"SF Mono",Menlo,monospace; color:#14225a}
+pre{background:#0f1830; border:0; border-left:4px solid var(--accent); border-radius:8px;
+  padding:16px 18px; overflow-x:auto; margin:1.1em 0}
+pre code{background:none; padding:0; font-size:.845em; line-height:1.6; color:#e8eefc}
+/* meta banner + footer */
+.meta{background:var(--brand-soft); border:1px solid #d5ddf7; border-left:4px solid var(--brand);
+  border-radius:0 8px 8px 0; padding:14px 18px; margin:1.4em 0 1.8em; font-size:.93em; color:#1b2a5c}
+.footer{margin-top:3em; padding-top:1em; border-top:1px solid var(--line);
+  color:var(--muted); font-size:.85em; text-align:center}
+/* print */
+@page{size:A4; margin:15mm 13mm}
+@media print{
+  body{padding:0; max-width:none; font-size:10.2pt; line-height:1.48}
+  h2{page-break-after:avoid} h3{page-break-after:avoid}
+  table,blockquote,pre{page-break-inside:avoid}
+  pre{background:#f4f7fb; border-left:4px solid var(--accent)}
+  pre code{color:#12203f}
+  a{color:var(--ink); text-decoration:none}
+}
+</style>
+</head><body>
+<h1>Robert's Task Workout — PulseTrack</h1>
+<h3>Your part, start to finish. Work top to bottom; do not skip a gate.</h3>
+<div class="meta">
+<b>You are:</b> <b>Robert Tony MITALI Niyonkuru</b> — the integrator, architecture owner, and SLA-engine author.<br>
+<b>Hard deadline:</b> <b>Sunday 11 October 2026, 23:59</b> — this doc was written <b>Thursday 08 October, 09:45</b>.<br>
+<b>Today's single goal:</b> get the <b>frozen skeleton on <code>main</code> by 18:00</b>. Gideon and Admire are blocked until you do.
+</div>
+
+<hr />
+<h2>⏱️ Status board — update this after every work session</h2>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>What</th>
+<th>Target</th>
+<th>State</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>0</strong></td>
+<td>Project + GitHub repo + collaborators</td>
+<td>Thu 10:30</td>
+<td>☐</td>
+</tr>
+<tr>
+<td><strong>1</strong></td>
+<td>Skeleton frozen on <code>main</code> (models, DB, repos, theme, routes, SLA engine, tests)</td>
+<td>Thu 18:00</td>
+<td>☐</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>Dashboard verified on device</td>
+<td>Fri 12:00</td>
+<td>☐</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>Insights + SLA Rules screens (the differentiator)</td>
+<td>Sat 12:00</td>
+<td>☐</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>AI Usage Declaration + final submission</td>
+<td>Sun 21:00</td>
+<td>☐</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Gates</strong> are where you stop and report back to me. There are <strong>three</strong> of them. Everything else you can just do.</p>
+<hr />
+<h2>Two rules before you touch anything</h2>
+<ol>
+<li><strong>You are the blocker.</strong> Nobody can write a screen until the models, <code>AppState</code> and routes exist. Phase 1 is not "your work" — it is everyone's work, and you are the one holding it.</li>
+<li><strong>Commit in small pieces, today.</strong> The rubric explicitly says a single big upload before the deadline is <em>not sufficient evidence of collaboration</em>. Your commit history over four days is a graded artefact.</li>
+</ol>
+<hr />
+<h2>PHASE 0 — Project + repo (~30 min). Do this now.</h2>
+<h3>0.1 Create the Flutter project</h3>
+<p>Open your terminal (git-bash) and run these exactly:</p>
+<pre><code class="language-bash">cd &quot;/c/Users/Richter Richard NAHO/TonyRobert98/FlutterProgramming/Assignments/SLA-Task-Tracker&quot;
+mkdir -p pulsetrack
+cd pulsetrack
+flutter create --org com.pulsetrack --project-name pulsetrack --platforms=android,ios .
+</code></pre>
+<p>Why these flags:<br />
+- <code>--project-name pulsetrack</code> — the Dart package name. <strong>The skeleton's tests import <code>package:pulsetrack/...</code>, so this must be <code>pulsetrack</code> or the tests will not compile.</strong><br />
+- <code>--platforms=android,ios</code> — we only ship mobile. The brief says a browser-only app scores zero, so there is no web target to accidentally submit.<br />
+- <code>--org com.pulsetrack</code> — the Android application id becomes <code>com.pulsetrack.pulsetrack</code>.</p>
+<h3>0.2 ⛔ GATE — prove it runs on the emulator</h3>
+<p><strong>Do not continue until a real emulator shows the Flutter counter app.</strong></p>
+<pre><code class="language-bash">flutter emulators
+flutter emulators --launch &lt;the_id_from_the_list_above&gt;
+flutter devices
+flutter run
+</code></pre>
+<p>When the counter app appears on the emulator, press <strong><code>q</code></strong> in the terminal to quit.</p>
+<blockquote>
+<p><strong>Why this gate matters more than it looks.</strong> This is the single riskiest part of the whole assignment: the brief scores zero for a browser-only app, and you cannot record a demo video without a working device. Finding out on Saturday that your emulator is broken is a disaster. Finding out on Thursday morning costs ten minutes.</p>
+<p>If the emulator will not boot or <code>flutter run</code> fails, <strong>stop and tell me</strong> — do not spend an hour on it.</p>
+</blockquote>
+<h3>0.3 First commit</h3>
+<p><code>flutter create</code> already wrote a <code>.gitignore</code> for you.</p>
+<pre><code class="language-bash">git init -b main
+git add .
+git commit -m &quot;chore: scaffold PulseTrack Flutter project&quot;
+</code></pre>
+<h3>0.4 Create the GitHub repo and push</h3>
+<p>The group needs <strong>its own</strong> public repo — not your personal <code>FlutterProgramming</code> one, because the rubric wants each member on their own branch with their own pull requests.</p>
+<pre><code class="language-bash">gh auth status
+</code></pre>
+<p><strong>If <code>gh</code> is authenticated:</strong></p>
+<pre><code class="language-bash">gh repo create pulsetrack --public --source=. --remote=origin --push
+</code></pre>
+<p><strong>If <code>gh</code> is not installed or not logged in</strong>, create the repo manually at github.com/new (name: <code>pulsetrack</code>, public, <strong>do not</strong> add a README), then:</p>
+<pre><code class="language-bash">git remote add origin git@github.com:RobertNiyonkuru98/pulsetrack.git
+git push -u origin main
+</code></pre>
+<h3>0.5 Add Gideon and Admire as collaborators</h3>
+<p>Replace the two placeholders with their real GitHub usernames (I still need these from you):</p>
+<pre><code class="language-bash">gh api -X PUT repos/RobertNiyonkuru98/pulsetrack/collaborators/&lt;GIDEON_USERNAME&gt; -f permission=push
+gh api -X PUT repos/RobertNiyonkuru98/pulsetrack/collaborators/&lt;ADMIRE_USERNAME&gt; -f permission=push
+</code></pre>
+<p>Via the website instead: repo → <strong>Settings</strong> → <strong>Collaborators</strong> → <strong>Add people</strong> → enter their username → role <strong>Write</strong>.</p>
+<h3>0.6 Keep your personal repo clean</h3>
+<p><code>pulsetrack/</code> is its own git repo nested inside <code>FlutterProgramming</code>, which is <em>also</em> a git repo. Tell the outer repo to ignore it, or your personal <code>git status</code> will fill up with noise:</p>
+<pre><code class="language-bash">cd &quot;/c/Users/Richter Richard NAHO/TonyRobert98/FlutterProgramming&quot;
+grep -qxF &quot;Assignments/SLA-Task-Tracker/pulsetrack/&quot; .gitignore 2&gt;/dev/null || echo &quot;Assignments/SLA-Task-Tracker/pulsetrack/&quot; &gt;&gt; .gitignore
+</code></pre>
+<h3>✅ Phase 0 done when</h3>
+<ul>
+<li>☐ The Flutter counter app ran on your emulator and you pressed <code>q</code></li>
+<li>☐ <code>github.com/RobertNiyonkuru98/pulsetrack</code> exists and is public</li>
+<li>☐ Your first commit is pushed and visible on GitHub</li>
+<li>☐ Gideon and Admire have accepted the collaborator invite</li>
+</ul>
+<hr />
+<h2>PHASE 1 — Freeze the skeleton (~2–3 h). Target: <strong>on <code>main</code> by 18:00.</strong></h2>
+<p>Everything in <code>Assignments/SLA-Task-Tracker/skeleton/</code> is written and syntax-checked. It contains the shared types, the SQLite layer, the theme, the routes, the <strong>SLA engine with 15 passing test expectations</strong>, four shared widgets, a complete Dashboard as the reference screen, and a stub for every other screen — so the app compiles and runs from the moment you push.</p>
+<h3>1.1 Add the dependencies</h3>
+<pre><code class="language-bash">cd &quot;/c/Users/Richter Richard NAHO/TonyRobert98/FlutterProgramming/Assignments/SLA-Task-Tracker/pulsetrack&quot;
+flutter pub add sqflite path provider intl shared_preferences uuid
+</code></pre>
+<p><code>flutter pub add</code> picks versions compatible with your Flutter, so you cannot get this wrong by guessing a version number.</p>
+<h3>1.2 Drop the skeleton in</h3>
+<pre><code class="language-bash">rm -f test/widget_test.dart
+cp -r ../skeleton/lib/. lib/
+cp -r ../skeleton/test/. test/
+</code></pre>
+<p><code>rm</code> is required: <code>flutter create</code> leaves a <code>widget_test.dart</code> that tests the counter app you just deleted, and it will fail the moment you run the tests.</p>
+<h3>1.3 Run the app</h3>
+<pre><code class="language-bash">flutter run
+</code></pre>
+<p>You should now get a real PulseTrack screen: the <strong>Dashboard</strong>, with 10 seeded tasks, a health ring, a donut chart, KPI cards and an "Attention Needed" queue. <strong>Look at it</strong> — the numbers are the SLA engine working.</p>
+<h3>1.4 ⛔ GATE — check the code</h3>
+<pre><code class="language-bash">flutter analyze
+flutter test
+</code></pre>
+<p><strong>Expected:</strong> <code>flutter test</code> reports all tests passing. <code>flutter analyze</code> may report <em>info</em>-level style lints, and any finding makes it exit non-zero.</p>
+<p>Either way: <strong>paste me both outputs.</strong> I will fix every finding before you commit, so <code>main</code> is clean for Gideon and Admire. Do not commit with a red analyze if you can avoid it.</p>
+<h3>1.5 Branch, commit, pull request</h3>
+<p>The rubric wants a branch and a PR from each member — including you.</p>
+<pre><code class="language-bash">git checkout -b feat/robert-skeleton
+git add .
+git commit -m &quot;feat(skeleton): add data models, sqflite layer, repositories, theme, routes, SLA engine, widgets and screen stubs&quot;
+git push -u origin feat/robert-skeleton
+</code></pre>
+<p>Open the PR. Title: <strong>Freeze the shared skeleton (models + SLA engine + routes)</strong>. Body: summary → why (unblocks all three members) → files added → how you verified (<code>flutter test</code>).</p>
+<pre><code class="language-bash">gh pr create --title &quot;Freeze the shared skeleton (models + SLA engine + routes)&quot; --body &quot;Adds the frozen shared layer so Gideon and Admire can branch tonight. Verified with flutter analyze + flutter test.&quot;
+</code></pre>
+<p>Then merge it <strong>without deleting the branch</strong> (the branch itself is evidence):</p>
+<pre><code class="language-bash">gh pr merge --squash
+</code></pre>
+<h3>1.6 Unblock the team — send this message</h3>
+<blockquote>
+<p><strong>PulseTrack — skeleton is frozen on <code>main</code>, you can start now.</strong><br />
+Pull it: <code>git clone git@github.com:RobertNiyonkuru98/pulsetrack.git</code><br />
+Then: <code>flutter pub get</code> and <code>flutter run</code> — the Dashboard already works with seeded demo data.<br />
+<strong>Read <code>lib/screens/dashboard_screen.dart</code></strong> — it is the reference screen, copy its patterns.<br />
+Your files are stubbed and waiting, with <code>/// OWNER:</code> comments on them.<br />
+<strong>Gideon:</strong> <code>task_list_screen.dart</code>, <code>task_details_screen.dart</code>, <code>task_form_screen.dart</code>, <code>widgets/task_tile.dart</code><br />
+<strong>Admire:</strong> <code>sign_in_screen.dart</code>, <code>team_members_screen.dart</code>, <code>member_detail_screen.dart</code>, <code>profile_screen.dart</code>, <code>activity_log_screen.dart</code><br />
+Do not edit files you do not own — ask in the group.<br />
+Branch: <code>git checkout -b feat/&lt;yourname&gt;-&lt;what&gt;</code><br />
+Kickoff call tonight 10:00 where we pick the Figma design.</p>
+</blockquote>
+<h3>✅ Phase 1 done when</h3>
+<ul>
+<li>☐ <code>flutter test</code> is green</li>
+<li>☐ <code>flutter analyze</code> is clean (or every finding is understood)</li>
+<li>☐ The skeleton is merged into <code>main</code> on GitHub</li>
+<li>☐ Gideon and Admire have been messaged</li>
+</ul>
+<hr />
+<h2>PHASE 2 — Your screens</h2>
+<p><strong>Already done for you:</strong> <code>lib/screens/dashboard_screen.dart</code>. Read it, understand it, and be ready to explain it — it is your screen and your reference pattern for the team.</p>
+<h3>2.1 Insights (<code>screens/insights_screen.dart</code>)</h3>
+<ul>
+<li>Status bar chart: On Track / At Risk / Overdue / Completed counts, colour-matched to the badges.</li>
+<li>SLA breach leaderboard: one row per member, avatar, name, a red bar proportional to their overdue count.</li>
+<li>Upcoming deadlines: the five soonest <code>dueDate</code> tasks with an SLA badge.</li>
+<li><strong>Acceptance:</strong> numbers match the Dashboard's KPI cards. If they disagree, one of the two is wrong — and that is exactly the kind of bug you want to find before the video.</li>
+</ul>
+<h3>2.2 SLA Rules &amp; Thresholds (<code>screens/sla_settings_screen.dart</code>) — ⭐ the differentiator</h3>
+<ul>
+<li>Four sliders, one per priority, bound to <code>SlaSettings</code>.</li>
+<li>Two switches: <code>flagBlockedAsAtRisk</code>, <code>warnUnder24h</code>.</li>
+<li><strong>A live preview card</strong> showing what a chosen sample task's status would become.</li>
+<li>Save writes through <code>AppState.saveSettings</code>, which persists to SQLite.</li>
+<li><strong>Acceptance — this is the demo moment:</strong> drag the Medium threshold slider and <strong>watch the badges across the app change colour without restarting.</strong> If the preview updates but the Dashboard does not, you have forgotten to call through <code>AppState</code> (which calls <code>notifyListeners()</code>).</li>
+</ul>
+<h3>2.3 Your logic is already tested</h3>
+<p><code>test/sla_engine_test.dart</code> and <code>test/health_score_test.dart</code> cover the rule order, the priority weighting, the 24-hour safety net, the blocked escalation, both toggles, and the health score. <strong>Learn these two files</strong> — when a lecturer asks "explain your SLA rules", the tests <em>are</em> your explanation.</p>
+<hr />
+<h2>PHASE 3 — Declaration and submission (Sunday)</h2>
+<h3>3.1 AI Usage Declaration</h3>
+<p>Write it honestly and specifically. Something like: <em>"We used AI tools to scaffold the initial project structure, to draft UI copy, and to help debug Flutter layout errors. All architectural decisions, the SLA rule design, and the final code were reviewed, tested and adjusted by the group. Every member can explain and modify any part of the submitted code."</em> Then list which tools, for what, and where.</p>
+<p>Say clearly <strong>what the AI did not do</strong>: it did not write your report, and it did not make your design choices. Then be able to prove it live.</p>
+<h3>3.2 Final gate — walk the checklist out loud with the team</h3>
+<p>Use §9 of <code>SLA-Tracker-Team-Plan.html</code>. Then submit at <strong>21:00, not 23:58</strong>.</p>
+<h3>3.3 Update the tracker</h3>
+<p><code>Contribution-Tracker.csv</code> sits in this folder with every row at <code>Not started</code>. Update the <strong>Status</strong> column as you finish each item, and paste the rows into your copy of the course tracker. The brief is blunt: <strong>no contribution tracker link = no grade.</strong></p>
+<hr />
+<h2>APPENDIX A — What every file does (so you can answer any question)</h2>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lib/main.dart</code></td>
+<td>Boots the app, installs <code>AppState</code>, declares all named routes</td>
+</tr>
+<tr>
+<td><code>lib/routes.dart</code></td>
+<td>Every route name, in one place</td>
+</tr>
+<tr>
+<td><code>lib/theme/app_colors.dart</code></td>
+<td>Every colour — the single source of truth from Figma</td>
+</tr>
+<tr>
+<td><code>lib/theme/app_theme.dart</code></td>
+<td>Material 3 theme + the shared card decoration</td>
+</tr>
+<tr>
+<td><code>lib/data/models/task.dart</code></td>
+<td><code>Task</code>, plus the <code>Priority</code> and <code>TaskStatus</code> enums</td>
+</tr>
+<tr>
+<td><code>lib/data/models/member.dart</code></td>
+<td>A team member, plus the <code>initials</code> avatar helper</td>
+</tr>
+<tr>
+<td><code>lib/data/models/sla_status.dart</code></td>
+<td>The four SLA states and their display labels</td>
+</tr>
+<tr>
+<td><code>lib/data/models/sla_settings.dart</code></td>
+<td>The tunable thresholds</td>
+</tr>
+<tr>
+<td><code>lib/data/models/activity.dart</code></td>
+<td>One audit-trail entry</td>
+</tr>
+<tr>
+<td><code>lib/data/db_helper.dart</code></td>
+<td>Opens SQLite, creates the 4 tables, seeds demo data</td>
+</tr>
+<tr>
+<td><code>lib/data/seed_data.dart</code></td>
+<td>10 demo tasks across all four SLA states, 5 members, 5 activity rows</td>
+</tr>
+<tr>
+<td><code>lib/data/repositories/*.dart</code></td>
+<td>Thin CRUD wrappers — the only place SQL is written</td>
+</tr>
+<tr>
+<td><code>lib/logic/sla_engine.dart</code></td>
+<td><strong>The graded core.</strong> Deadline + status → SLA status, plus the explanation sentence</td>
+</tr>
+<tr>
+<td><code>lib/logic/health_score.dart</code></td>
+<td>The 0–100 project health number</td>
+</tr>
+<tr>
+<td><code>lib/state/app_state.dart</code></td>
+<td>The <code>ChangeNotifier</code> every screen watches</td>
+</tr>
+<tr>
+<td><code>lib/widgets/sla_badge.dart</code></td>
+<td>The status pill used app-wide</td>
+</tr>
+<tr>
+<td><code>lib/widgets/kpi_card.dart</code> · <code>health_ring.dart</code> · <code>donut_chart.dart</code> · <code>empty_state.dart</code> · <code>app_bottom_nav.dart</code></td>
+<td>Shared UI</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The one-sentence architecture answer:</strong> <em>Screens never touch the database. They read from <code>AppState</code>, which talks to repositories; the repositories are the only code that writes SQL.</em></p>
+<hr />
+<h2>APPENDIX B — Commit messages to use</h2>
+<pre><code>chore: scaffold PulseTrack Flutter project
+feat(skeleton): add models, sqflite layer, repositories, theme, routes and screen stubs
+feat(sla): add priority-weighted at-risk thresholds and health score
+feat(widgets): add SLA badge, KPI card, health ring and donut chart
+feat(dashboard): add health gauge, KPI grid, attention queue and recent activity
+feat(insights): add status chart and breach leaderboard
+feat(sla-rules): make thresholds editable at runtime
+test(sla): cover rule order, priority weighting and both toggles
+fix(sla): clamp elapsed percentage so bad dates cannot break the UI
+</code></pre>
+<p>Commit in small logical pieces <strong>every day</strong>. Four days of history is what the rubric is looking for.</p>
+<hr />
+<h2>APPENDIX C — If something breaks</h2>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Cause and fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Target of URI doesn't exist: package:pulsetrack/...</code></td>
+<td>The project was created with a different <code>--project-name</code>. Either recreate with <code>--project-name pulsetrack</code>, or find-and-replace <code>pulsetrack</code> with your name across <code>lib/</code> and <code>test/</code>.</td>
+</tr>
+<tr>
+<td><code>flutter test</code> fails on <code>widget_test.dart</code></td>
+<td>You forgot <code>rm -f test/widget_test.dart</code> (step 1.2).</td>
+</tr>
+<tr>
+<td><code>MissingPluginException</code> on <code>sqflite</code></td>
+<td>sqflite is a native plugin — it does <strong>not</strong> run on Chrome/web. Run on the emulator or a device. This is expected, not a bug.</td>
+</tr>
+<tr>
+<td><code>flutter analyze</code> exits non-zero with only <code>info</code> lines</td>
+<td>Style lints. Paste them to me rather than disabling the linter — a clean analyzer is a strong signal in the report.</td>
+</tr>
+<tr>
+<td>The app shows 0 tasks</td>
+<td>The database was created before the seed existed. Uninstall the app from the emulator and <code>flutter run</code> again to force a fresh database.</td>
+</tr>
+<tr>
+<td>Emulator will not boot</td>
+<td>Report it immediately. Do not burn an hour. We have a fallback path.</td>
+</tr>
+<tr>
+<td>Merge conflict</td>
+<td>Nobody edits a file they do not own. If it happens anyway, stop and ask — do not "fix" it by overwriting someone's work.</td>
+</tr>
+</tbody>
+</table>
+<div class="footer">
+<b>PulseTrack</b> · Robert's Task Workout · generated 08 October 2026
+</div>
+</body></html>

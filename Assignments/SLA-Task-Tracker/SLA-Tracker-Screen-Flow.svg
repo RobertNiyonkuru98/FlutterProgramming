@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900" font-family="Segoe UI, Inter, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8a99b4"/>
+    </marker>
+    <marker id="arrowAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#F97316"/>
+    </marker>
+    <style>
+      .t{font-size:13.5px;font-weight:600;fill:#10182b}
+      .s{font-size:10.5px;fill:#64748B}
+      .own{font-size:10px;font-weight:700;letter-spacing:.4px}
+      .k{font-size:19px;font-weight:700;fill:#1D3B8B}
+      .rel{stroke:#8a99b4;stroke-width:1.6;fill:none}
+      .relA{stroke:#F97316;stroke-width:2;fill:none;stroke-dasharray:6 4}
+      .card{fill:#ffffff;stroke:#E2E8F0;stroke-width:1.2}
+      .lbl{font-size:10.5px;fill:#64748B}
+      .hdr{font-size:12.5px;font-weight:700;letter-spacing:.6px;fill:#5b6b7f}
+      .rule{font-size:11px;fill:#10182b}
+    </style>
+  </defs>
+
+  <rect width="1500" height="900" fill="#F5F7FB"/>
+
+  <text x="40" y="48" class="k">PulseTrack — Screen Flow &amp; Navigation Map</text>
+  <text x="40" y="72" class="s">10 screens · named routes via Navigator.pushNamed · one file / one owner · FAB = create a new task</text>
+  <text x="40" y="92" class="hdr">OWNERS:   ROBERT = navy   ·   GIDEON = teal   ·   ADMIRE = purple</text>
+
+  <!-- ============ ENTRY ============ -->
+  <g>
+    <rect class="card" x="40" y="130" width="235" height="120" rx="12"/>
+    <rect x="40" y="130" width="6" height="120" rx="3" fill="#7C3AED"/>
+    <text x="60" y="159" class="t">Sign In / User Selection</text>
+    <text x="60" y="178" class="s">email + password validation</text>
+    <text x="60" y="195" class="s">"continue as" member cards</text>
+    <text x="60" y="212" class="s">session user → SharedPreferences</text>
+    <text x="60" y="237" class="own" fill="#7C3AED">ADMIRE · screen 1</text>
+  </g>
+
+  <!-- Dashboard -->
+  <g>
+    <rect class="card" x="345" y="120" width="270" height="145" rx="12"/>
+    <rect x="345" y="120" width="6" height="145" rx="3" fill="#1D3B8B"/>
+    <text x="365" y="149" class="t">Dashboard  (home)</text>
+    <text x="365" y="168" class="s">4 KPI cards · health ring gauge</text>
+    <text x="365" y="185" class="s">status donut · attention queue</text>
+    <text x="365" y="202" class="s">recent activity</text>
+    <text x="365" y="235" class="own" fill="#1D3B8B">ROBERT · screen 2</text>
+    <rect x="520" y="134" width="80" height="22" rx="11" fill="#E6F6EC"/>
+    <circle cx="533" cy="145" r="3.5" fill="#12A150"/>
+    <text x="542" y="149" font-size="11" font-weight="600" fill="#12A150">On Track</text>
+  </g>
+
+  <line class="rel" x1="275" y1="190" x2="338" y2="190" marker-end="url(#arrow)"/>
+  <text x="287" y="181" class="lbl">sign in</text>
+
+  <!-- ============ BOTTOM NAV ============ -->
+  <text x="345" y="310" class="hdr">BOTTOM NAVIGATION</text>
+  <g>
+    <rect x="345" y="322" width="520" height="62" rx="10" class="card"/>
+    <text x="378" y="347" class="t" fill="#1D3B8B">Home</text>
+    <text x="464" y="347" class="t" fill="#64748B">Tasks</text>
+    <text x="552" y="347" class="t" fill="#64748B">Team</text>
+    <text x="635" y="347" class="t" fill="#64748B">Profile</text>
+    <text x="360" y="372" class="s">Home → Dashboard   ·   Tasks → Task List   ·   Team → Team Members   ·   Profile → Profile</text>
+  </g>
+
+  <!-- ============ SHARED LAYER ============ -->
+  <g>
+    <rect x="1105" y="118" width="355" height="176" rx="12" fill="#0f1830"/>
+    <text x="1125" y="146" font-size="12.5" font-weight="700" fill="#8fb4ff">SHARED LAYER (freeze before branching)</text>
+    <text x="1125" y="170" font-size="11.5" fill="#dbe6fb">data/models/task · member · activity</text>
+    <text x="1125" y="189" font-size="11.5" fill="#dbe6fb">data/repositories/*  ·  db_helper (sqflite)</text>
+    <text x="1125" y="208" font-size="11.5" fill="#dbe6fb">logic/sla_engine.dart   ★ graded core</text>
+    <text x="1125" y="227" font-size="11.5" fill="#dbe6fb">logic/health_score.dart</text>
+    <text x="1125" y="246" font-size="11.5" fill="#dbe6fb">theme/app_colors · app_theme · routes</text>
+    <text x="1125" y="274" font-size="10.5" font-weight="600" fill="#F97316">read by every screen   ·   one file = one owner   ·   no cross-edits</text>
+  </g>
+
+  <!-- Activity Log -->
+  <g>
+    <rect class="card" x="1105" y="332" width="355" height="112" rx="12"/>
+    <rect x="1105" y="332" width="6" height="112" rx="3" fill="#7C3AED"/>
+    <text x="1125" y="360" class="t">Activity Log</text>
+    <text x="1125" y="379" class="s">timeline · filter chips</text>
+    <text x="1125" y="396" class="s">every status change journalled + persisted</text>
+    <text x="1125" y="424" class="own" fill="#7C3AED">ADMIRE · screen 11</text>
+  </g>
+  <line class="rel" x1="1282" y1="296" x2="1282" y2="325" marker-end="url(#arrow)"/>
+
+  <!-- ============ TASK JOURNEY ============ -->
+  <text x="40" y="432" class="hdr">TASK JOURNEY  (GIDEON)</text>
+
+  <g>
+    <rect class="card" x="40" y="450" width="245" height="132" rx="12"/>
+    <rect x="40" y="450" width="6" height="132" rx="3" fill="#0F9B8E"/>
+    <text x="60" y="478" class="t">Task List</text>
+    <text x="60" y="497" class="s">search · SLA filter chips · sort</text>
+    <text x="60" y="514" class="s">task cards + coloured badges</text>
+    <text x="60" y="531" class="s">empty state variant</text>
+    <text x="60" y="561" class="own" fill="#0F9B8E">GIDEON · screen 3</text>
+  </g>
+
+  <g>
+    <rect class="card" x="370" y="450" width="245" height="132" rx="12"/>
+    <rect x="370" y="450" width="6" height="132" rx="3" fill="#0F9B8E"/>
+    <text x="390" y="478" class="t">Task Details</text>
+    <text x="390" y="497" class="s">SLA panel explains the rule</text>
+    <text x="390" y="514" class="s">progress slider · status change</text>
+    <text x="390" y="531" class="s">notes · activity trail</text>
+    <text x="390" y="561" class="own" fill="#0F9B8E">GIDEON · screen 4</text>
+  </g>
+
+  <g>
+    <rect class="card" x="700" y="450" width="245" height="132" rx="12"/>
+    <rect x="700" y="450" width="6" height="132" rx="3" fill="#0F9B8E"/>
+    <text x="720" y="478" class="t">Create / Edit Task</text>
+    <text x="720" y="497" class="s">full form · field validation</text>
+    <text x="720" y="514" class="s">date picker · priority segmented</text>
+    <text x="720" y="531" class="s">inline error states</text>
+    <text x="720" y="561" class="own" fill="#0F9B8E">GIDEON · screen 5</text>
+  </g>
+
+  <line class="rel" x1="286" y1="516" x2="363" y2="516" marker-end="url(#arrow)"/>
+  <text x="297" y="507" class="lbl">tap task</text>
+  <line class="rel" x1="616" y1="516" x2="693" y2="516" marker-end="url(#arrow)"/>
+  <text x="627" y="507" class="lbl">edit</text>
+
+  <!-- FAB: list -> create -->
+  <path class="relA" d="M 162,584 C 162,644 430,640 700,584" marker-end="url(#arrowAcc)"/>
+  <text x="330" y="664" class="lbl" fill="#B45309">FAB "+" on the Task List opens Create Task</text>
+
+  <!-- ============ ROW 3 ============ -->
+  <text x="40" y="700" class="hdr">TEAM, PROFILE &amp; INSIGHT</text>
+
+  <g>
+    <rect class="card" x="40" y="718" width="235" height="130" rx="12"/>
+    <rect x="40" y="718" width="6" height="130" rx="3" fill="#7C3AED"/>
+    <text x="60" y="746" class="t">Team Members</text>
+    <text x="60" y="765" class="s">workload + breach counts</text>
+    <text x="60" y="782" class="s">tap → Member Detail (screen 7)</text>
+    <text x="60" y="799" class="s">add member (FAB)</text>
+    <text x="60" y="826" class="own" fill="#7C3AED">ADMIRE · screens 6–7</text>
+  </g>
+
+  <g>
+    <rect class="card" x="315" y="718" width="235" height="130" rx="12"/>
+    <rect x="315" y="718" width="6" height="130" rx="3" fill="#7C3AED"/>
+    <text x="335" y="746" class="t">Profile</text>
+    <text x="335" y="765" class="s">current user + stats</text>
+    <text x="335" y="782" class="s">→ SLA Rules &amp; Thresholds</text>
+    <text x="335" y="799" class="s">sign out</text>
+    <text x="335" y="826" class="own" fill="#7C3AED">ADMIRE · screen 8</text>
+  </g>
+
+  <g>
+    <rect class="card" x="590" y="718" width="235" height="130" rx="12"/>
+    <rect x="590" y="718" width="6" height="130" rx="3" fill="#1D3B8B"/>
+    <text x="610" y="746" class="t">Insights</text>
+    <text x="610" y="765" class="s">status bar chart</text>
+    <text x="610" y="782" class="s">breach leaderboard</text>
+    <text x="610" y="799" class="s">upcoming deadlines</text>
+    <text x="610" y="826" class="own" fill="#1D3B8B">ROBERT · screen 9</text>
+  </g>
+
+  <g>
+    <rect x="865" y="718" width="235" height="130" rx="12" fill="#EAEEFB" stroke="#1D3B8B" stroke-width="2"/>
+    <rect x="865" y="718" width="6" height="130" rx="3" fill="#F97316"/>
+    <text x="883" y="746" class="t" fill="#1D3B8B">★ SLA Rules &amp; Thresholds</text>
+    <text x="883" y="765" class="s">live-editable thresholds</text>
+    <text x="883" y="782" class="s">drag slider → badges flip</text>
+    <text x="883" y="799" class="s">blocked / 24h safety toggles</text>
+    <text x="883" y="826" class="own" fill="#1D3B8B">ROBERT · screen 10 · differentiator</text>
+  </g>
+
+  <line class="rel" x1="550" y1="783" x2="583" y2="783" marker-end="url(#arrow)"/>
+  <line class="rel" x1="825" y1="783" x2="858" y2="783" marker-end="url(#arrow)"/>
+
+  <!-- persistence note -->
+  <g>
+    <rect class="card" x="40" y="270" width="235" height="122" rx="12"/>
+    <text x="60" y="297" font-size="12.5" font-weight="700" fill="#5b6b7f">PERSISTENCE</text>
+    <text x="60" y="319" font-size="11.5" fill="#10182b">sqflite → tasks, members, activity</text>
+    <text x="60" y="338" font-size="11.5" fill="#10182b">SharedPreferences → session user</text>
+    <text x="60" y="358" font-size="10.5" fill="#64748B">relational data + GROUP BY aggregation</text>
+    <text x="60" y="375" font-size="10.5" fill="#64748B">behind a repository = swappable</text>
+  </g>
+
+  <!-- ============ SLA RULE CARD ============ -->
+  <g>
+    <rect class="card" x="1105" y="470" width="355" height="272" rx="12"/>
+    <text x="1125" y="496" font-size="12.5" font-weight="700" fill="#5b6b7f">SLA RULE  ·  top-down, first match wins</text>
+
+    <rect x="1125" y="510" width="88" height="21" rx="10.5" fill="#EEF1F5"/>
+    <circle cx="1137" cy="520.5" r="3.5" fill="#64748B"/>
+    <text x="1146" y="524.5" font-size="10.5" font-weight="600" fill="#64748B">Completed</text>
+    <text x="1223" y="524.5" class="rule">status == Completed</text>
+
+    <rect x="1125" y="539" width="88" height="21" rx="10.5" fill="#FDF3E0"/>
+    <circle cx="1137" cy="549.5" r="3.5" fill="#E8A317"/>
+    <text x="1146" y="553.5" font-size="10.5" font-weight="600" fill="#B3780F">At Risk</text>
+    <text x="1223" y="553.5" class="rule">status == Blocked</text>
+
+    <rect x="1125" y="568" width="88" height="21" rx="10.5" fill="#FDECEA"/>
+    <circle cx="1137" cy="578.5" r="3.5" fill="#D92D20"/>
+    <text x="1146" y="582.5" font-size="10.5" font-weight="600" fill="#D92D20">Overdue</text>
+    <text x="1223" y="582.5" class="rule">now &gt; dueDate</text>
+
+    <rect x="1125" y="597" width="88" height="36" rx="10.5" fill="#FDF3E0"/>
+    <circle cx="1137" cy="610" r="3.5" fill="#E8A317"/>
+    <text x="1146" y="614" font-size="10.5" font-weight="600" fill="#B3780F">At Risk</text>
+    <text x="1223" y="609" class="rule">remaining ≤ 24h</text>
+    <text x="1223" y="624" class="rule">or   remaining% ≤ threshold(priority)</text>
+
+    <rect x="1125" y="645" width="88" height="21" rx="10.5" fill="#E6F6EC"/>
+    <circle cx="1137" cy="655.5" r="3.5" fill="#12A150"/>
+    <text x="1146" y="659.5" font-size="10.5" font-weight="600" fill="#12A150">On Track</text>
+    <text x="1223" y="659.5" class="rule">otherwise  (fallback)</text>
+
+    <line x1="1125" y1="682" x2="1440" y2="682" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="1125" y="702" font-size="11" font-weight="600" fill="#14225a">Project Health = 100 × average(status weight)</text>
+    <text x="1125" y="719" font-size="10.5" fill="#64748B">Completed 1.0  ·  On Track 1.0  ·  At Risk 0.5  ·  Overdue 0.0</text>
+  </g>
+
+  <text x="40" y="880" font-size="10.5" fill="#8a99b4">PulseTrack · screen flow · generated 08 October 2026 · Gideon · Admire · Robert</text>
+</svg>

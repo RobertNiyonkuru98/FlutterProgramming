@@ -1,0 +1,25 @@
+Task / Deliverable,Workstream,Owner,Day Due,Est. Hours,Status,Evidence (PR / commit / file),Verified By
+Repo created + collaborators added + README,Setup,Robert,Thu 08 Oct,1,Not started,github.com/RobertNiyonkuru98/pulsetrack,All
+Freeze skeleton: models + db_helper + repositories + theme + routes,Architecture,Robert,Thu 08 Oct,4,Not started,PR #1 lib/data/**,Gideon
+SLA engine + health score + unit tests,Logic,Robert,Thu 08 Oct,4,Not started,PR #2 lib/logic/sla_engine.dart,Admire
+Seed / demo data,Data,Admire,Thu 08 Oct,1,Not started,lib/data/seed_data.dart,Robert
+Shared widgets: sla_badge + kpi_card + health_ring,UI kit,Admire,Thu 08 Oct,3,Not started,PR #3 lib/widgets/**,Gideon
+Sign In / Sign Up screen,Screen 1,Admire,Fri 09 Oct,4,Not started,lib/screens/sign_in_screen.dart,Robert
+Dashboard screen,Screen 2,Robert,Fri 09 Oct,5,Not started,lib/screens/dashboard_screen.dart,Admire
+Task List screen + search + filter chips,Screen 3,Gideon,Fri 09 Oct,5,Not started,lib/screens/task_list_screen.dart,Robert
+Task Details screen + SLA panel,Screen 4,Gideon,Fri 09 Oct,5,Not started,lib/screens/task_details_screen.dart,Admire
+Create / Edit Task form + validation,Screen 5,Gideon,Fri 09 Oct,5,Not started,lib/screens/task_form_screen.dart,Robert
+Team Members screen,Screen 6,Admire,Fri 09 Oct,3,Not started,lib/screens/team_members_screen.dart,Robert
+Member Detail screen,Screen 7,Admire,Fri 09 Oct,2,Not started,lib/screens/member_detail_screen.dart,Gideon
+Profile screen,Screen 8,Admire,Sat 10 Oct,2,Not started,lib/screens/profile_screen.dart,Robert
+Insights / Statistics screen,Screen 9,Robert,Sat 10 Oct,4,Not started,lib/screens/insights_screen.dart,Admire
+SLA Rules & Thresholds screen (differentiator),Screen 10,Robert,Sat 10 Oct,3,Not started,lib/screens/sla_settings_screen.dart,Gideon
+Activity Log screen,Screen 11,Admire,Sat 10 Oct,2,Not started,lib/screens/activity_log_screen.dart,Robert
+Persistence verified on emulator (kill + reopen),QA,All,Sat 10 Oct,1,Not started,screenshot in docs/,All
+flutter analyze clean + flutter test passing,QA,Gideon,Sat 10 Oct,1,Not started,terminal output in PR,Robert
+Demo video recorded (10-15 min; all members speak),Submission,All,Sat 10 Oct,4,Not started,video link,All
+PDF report (max 3 pages),Submission,Admire,Sun 11 Oct,3,Not started,GroupName_AssignmentName.pdf,Robert
+Technical report: challenges + solutions (2-4 pages),Submission,Admire,Sun 11 Oct,3,Not started,GroupName_TechnicalReport.pdf,Robert
+Group contribution tracker copied + filled,Submission,Admire,Sun 11 Oct,1,Not started,tracker link,All
+AI Usage Declaration,Submission,Robert,Sun 11 Oct,1,Not started,PDF section,All
+Final submission,Submission,Robert,Sun 11 Oct 21:00,1,Not started,submission receipt,All

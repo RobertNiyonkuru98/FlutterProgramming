@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title> PulseTrack — Google Stitch Prompt Pack</title>
+<style>
+:root{
+  --ink:#10182b; --muted:#5b6b7f; --line:#dde5ee; --soft:#f7f9fc;
+  --brand:#1D3B8B; --brand-soft:#eaeefb; --accent:#F97316; --accent-soft:#fef2e8;
+  --green:#12A150; --green-soft:#E6F6EC;
+  --amber:#B3780F; --amber-soft:#FDF3E0;
+  --red:#D92D20; --red-soft:#FDECEA;
+  --slate:#54637A; --slate-soft:#EEF1F5;
+}
+*{box-sizing:border-box}
+body{
+  font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Inter,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink); line-height:1.65; max-width:940px; margin:0 auto;
+  padding:56px 44px 100px; background:#fff; font-size:15.5px;
+  -webkit-print-color-adjust:exact; print-color-adjust:exact;
+}
+h1{font-size:2.1em; line-height:1.18; margin:0 0 .1em; letter-spacing:-.025em; color:var(--brand)}
+h1+h2{border:0; margin-top:.35em; color:var(--muted); font-weight:600; font-size:1.02em; padding:0}
+h1+h2+h3{border:0;margin-top:.7em}
+h2{font-size:1.38em; margin:2.4em 0 .7em; padding-top:.6em;
+   border-top:2px solid var(--line); letter-spacing:-.012em; color:var(--brand)}
+h3{font-size:1.1em; margin:1.9em 0 .5em; color:#14225a}
+h3:first-of-type{margin-top:1.1em}
+p{margin:.72em 0}
+a{color:var(--brand); word-break:break-word}
+strong{color:#0b1220}
+hr{border:0;border-top:1px solid var(--line);margin:2.3em 0}
+hr+h2{border-top:0; margin-top:1.3em}
+ul,ol{margin:.6em 0 .9em; padding-left:1.35em}
+li{margin:.32em 0}
+/* tables */
+table{border-collapse:collapse; width:100%; margin:1.15em 0 1.6em; font-size:.91em}
+th,td{border:1px solid var(--line); padding:9px 11px; text-align:left; vertical-align:top}
+th{background:var(--soft); font-weight:650; font-size:.94em; color:#14225a}
+tbody tr:nth-child(even){background:#fbfcfe}
+/* blockquotes / callouts */
+blockquote{margin:1.4em 0; padding:14px 20px; border-left:4px solid var(--accent);
+  background:var(--accent-soft); border-radius:0 8px 8px 0}
+blockquote p{margin:.35em 0}
+blockquote strong{color:#8a3d05}
+/* code */
+code{background:#eef2f7; padding:2px 6px; border-radius:4px; font-size:.87em;
+  font-family:"Cascadia Mono",Consolas,"SF Mono",Menlo,monospace; color:#14225a}
+pre{background:#0f1830; border:0; border-left:4px solid var(--accent); border-radius:8px;
+  padding:16px 18px; overflow-x:auto; margin:1.1em 0}
+pre code{background:none; padding:0; font-size:.845em; line-height:1.6; color:#e8eefc}
+/* meta banner + footer */
+.meta{background:var(--brand-soft); border:1px solid #d5ddf7; border-left:4px solid var(--brand);
+  border-radius:0 8px 8px 0; padding:14px 18px; margin:1.4em 0 1.8em; font-size:.93em; color:#1b2a5c}
+.footer{margin-top:3em; padding-top:1em; border-top:1px solid var(--line);
+  color:var(--muted); font-size:.85em; text-align:center}
+/* print */
+@page{size:A4; margin:15mm 13mm}
+@media print{
+  body{padding:0; max-width:none; font-size:10.2pt; line-height:1.48}
+  h2{page-break-after:avoid} h3{page-break-after:avoid}
+  table,blockquote,pre{page-break-inside:avoid}
+  pre{background:#f4f7fb; border-left:4px solid var(--accent)}
+  pre code{color:#12203f}
+  a{color:var(--ink); text-decoration:none}
+}
+</style>
+</head><body>
+<h1>PulseTrack — Google Stitch Prompt Pack</h1>
+<h3>Copy-paste prompts that generate the full 10-screen UI</h3>
+<div class="meta">
+<b>Tool:</b> Google Stitch (stitch.withgoogle.com) · <b>Device:</b> Mobile · <b>Output:</b> 10 screens → export to Figma → hand to the Flutter developers<br>
+<b>Read §1 and §2 first — they stop you wasting a day.</b>
+</div>
+
+<hr />
+<h2>1. Stitch in 90 seconds (you have never used it — here is the whole thing)</h2>
+<ol>
+<li>Go to <strong>stitch.withgoogle.com</strong>, sign in with a Google account.</li>
+<li>Create a project, set <strong>Device = Mobile</strong>. Pick <strong>Android / Material 3</strong> if asked.</li>
+<li>There is a prompt box. You type a description, it generates a screen. <strong>One screen per prompt works far better than one giant prompt.</strong></li>
+<li>Switch to <strong>Experimental mode</strong> (Gemini-powered) for the complex screens — Dashboard, Task Details, SLA Rules. Standard mode is fine for simple list screens.</li>
+<li>Under each generated screen there is an input to <strong>refine</strong>: "make the badges pill-shaped", "add an empty state", "darken the header". Iterate 2–3 times per screen. Do not accept the first render.</li>
+<li>When happy: <strong>select the screen → "Copy to Figma"</strong> (see §6).</li>
+<li>Stitch has a <strong>free daily generation limit</strong>. Do not burn generations re-rolling for taste — generate, then refine, then move on.</li>
+</ol>
+<h3>Five rules that make Stitch prompts work</h3>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Name the platform and the grid</strong> — "mobile screen, 8pt grid, 16px margins"</td>
+<td>Stitch otherwise guesses desktop proportions</td>
+</tr>
+<tr>
+<td><strong>Give the palette as hex values</strong></td>
+<td>Vague colour words ("modern blue") produce a different blue every screen</td>
+</tr>
+<tr>
+<td><strong>Describe the layout top-to-bottom, in order</strong></td>
+<td>Stitch follows the order you write in</td>
+</tr>
+<tr>
+<td><strong>Name every label and its exact text</strong></td>
+<td>You get 'Project Health', not 'some card title'</td>
+</tr>
+<tr>
+<td><strong>One prompt per screen, and re-state the style in each</strong></td>
+<td>Stitch does not reliably carry a style across separate generations</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. The design system (this is your house style)</h2>
+<table>
+<thead>
+<tr>
+<th>Token</th>
+<th>Value</th>
+<th>Used for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Brand primary</td>
+<td><code>#1D3B8B</code></td>
+<td>buttons, active nav, selected chip, headers</td>
+</tr>
+<tr>
+<td>Accent</td>
+<td><code>#F97316</code></td>
+<td>FAB, highlights, progress fill</td>
+</tr>
+<tr>
+<td>Background</td>
+<td><code>#F5F7FB</code></td>
+<td>screen background</td>
+</tr>
+<tr>
+<td>Surface</td>
+<td><code>#FFFFFF</code></td>
+<td>cards</td>
+</tr>
+<tr>
+<td>Border</td>
+<td><code>#E2E8F0</code></td>
+<td>1px card/field borders</td>
+</tr>
+<tr>
+<td>Ink</td>
+<td><code>#0F172A</code></td>
+<td>primary text</td>
+</tr>
+<tr>
+<td>Muted</td>
+<td><code>#64748B</code></td>
+<td>secondary text, labels</td>
+</tr>
+<tr>
+<td><strong>On Track</strong></td>
+<td><code>#12A150</code> on <code>#E6F6EC</code></td>
+<td>SLA badge</td>
+</tr>
+<tr>
+<td><strong>At Risk</strong></td>
+<td><code>#E8A317</code> on <code>#FDF3E0</code></td>
+<td>SLA badge</td>
+</tr>
+<tr>
+<td><strong>Overdue</strong></td>
+<td><code>#D92D20</code> on <code>#FDECEA</code></td>
+<td>SLA badge</td>
+</tr>
+<tr>
+<td><strong>Completed</strong></td>
+<td><code>#64748B</code> on <code>#EEF1F5</code></td>
+<td>SLA badge</td>
+</tr>
+<tr>
+<td>Font</td>
+<td><strong>Inter</strong></td>
+<td>titles 20px semi-bold, body 14px</td>
+</tr>
+<tr>
+<td>Radii</td>
+<td>cards 16px · badges 999px · buttons 12px · inputs 12px</td>
+<td></td>
+</tr>
+<tr>
+<td>Icons</td>
+<td>rounded outlined Material Symbols</td>
+<td></td>
+</tr>
+<tr>
+<td>Avatars</td>
+<td>circle, initials, tinted background</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Say this in the demo if asked about the palette:</strong> red/amber/green for SLA status is a deliberate domain convention — a manager reads the colour before the word. The brand navy and orange sit outside that set so they can never be confused with a status.</p>
+</blockquote>
+<hr />
+<h2>3. PROMPT 0 — run this first (it generates the Dashboard and sets the tone)</h2>
+<pre><code>Design a mobile app UI for a software-team task tracker called &quot;PulseTrack&quot;.
+
+PLATFORM: mobile app screen, 390 x 844, Material 3, 8pt spacing grid, 16px screen margins.
+
+STYLE: modern, clean, professional productivity tool. Not playful, not corporate-sterile.
+Background #F5F7FB. Cards are white, 16px corner radius, 1px #E2E8F0 border, soft subtle shadow, 16px internal padding.
+Primary colour deep navy #1D3B8B. Accent orange #F97316. Body text #0F172A, secondary text #64748B.
+Typography: Inter. Screen titles 20px semibold. Card titles 15px semibold. Body 14px. Captions 12px #64748B.
+
+SIGNATURE COMPONENTS:
+- SLA status badge: pill shape (fully rounded), soft tinted background, small 6px solid dot before the label, 12px medium text.
+  On Track = green text #12A150 on #E6F6EC. At Risk = amber text #E8A317 on #FDF3E0.
+  Overdue = red text #D92D20 on #FDECEA. Completed = slate text #64748B on #EEF1F5.
+- Circular avatar with initials on a tinted background.
+- Rounded outlined Material icons.
+
+BOTTOM NAVIGATION: 4 tabs - Home, Tasks, Team, Profile. Active tab is navy with a filled icon, inactive is grey.
+
+SCREEN: Dashboard.
+- App bar: hamburger menu icon on the left, title &quot;Dashboard&quot;, a bell icon with a small red dot badge on the right. White app bar, no shadow, 1px bottom border.
+- Greeting block: &quot;Good morning, John&quot; in 22px semibold, and beneath it &quot;Here's what's happening with your project.&quot; in 14px muted.
+- Four KPI cards in a 2x2 grid. Each has a rounded tinted icon circle top-left, a large bold number, and a small label underneath:
+  Total Tasks 12 (navy icon), On Track 5 (green), At Risk 3 (amber), Overdue 2 (red).
+- A full-width card titled &quot;Project Health&quot;: a circular ring gauge in the centre showing 78 out of 100 with a navy-to-green arc, the label &quot;Health Score&quot; and a caption &quot;Based on the SLA status of 12 tasks&quot;.
+- A full-width card titled &quot;Task Overview&quot;: a donut chart with a legend of four rows - green dot On Track 5, amber dot At Risk 3, red dot Overdue 2, slate dot Completed 2.
+- A full-width card titled &quot;Attention Needed&quot;: two list rows, each showing a task title, its due date in muted 12px, and an SLA status badge on the right, with a chevron.
+- A section titled &quot;Recent Activity&quot; with three rows: circular avatar, text like &quot;Sarah updated UI Design&quot;, and a muted timestamp &quot;2 hours ago&quot;.
+- Orange rounded floating action button with a plus icon, bottom right.
+</code></pre>
+<hr />
+<h2>4. PROMPT 1 — Sign In / Sign Up / User Selection</h2>
+<pre><code>Mobile app screen, same PulseTrack style as before: background #F5F7FB, white cards 16px radius with 1px #E2E8F0 borders, primary navy #1D3B8B, accent orange #F97316, Inter font, 16px screen margins.
+
+SCREEN: Sign In.
+- Top area with generous whitespace: a rounded-square app icon (navy background, white pulse-waveform glyph, 20px radius), the app name &quot;PulseTrack&quot; in 26px bold navy, and the tagline &quot;Plan. Track. Deliver.&quot; in 13px muted letter-spaced.
+- Card containing a form:
+  - Heading &quot;Welcome back&quot; 18px semibold, subtext &quot;Sign in to continue&quot; 13px muted.
+  - Field &quot;Email&quot; with a rounded outlined text input, an envelope icon on the left, hint text &quot;you@company.com&quot;.
+  - Field &quot;Password&quot; with a rounded outlined text input, a lock icon on the left, a visibility eye toggle on the right, hint text &quot;••••••••&quot;.
+  - Below the email field show a validation error state on ONE field as a second variant: red 1px outline, red helper text &quot;Enter a valid email address&quot;, and a small red alert icon.
+  - Primary navy full-width button &quot;Sign In&quot; with 12px radius.
+  - Centred muted line: &quot;Don't have an account?  Sign Up&quot; with &quot;Sign Up&quot; in navy semibold.
+- Below the card, a divider with the centred label &quot;or continue as&quot;.
+- A horizontal row of four circular avatars with initials and the first name beneath each (John, Sarah, Mike, Emily). One avatar has a navy ring and a small check badge to show it is selected.
+- A ghost link at the very bottom: &quot;Manage team&quot;.
+No system status bar content. Clean, airy, lots of whitespace.
+</code></pre>
+<hr />
+<h2>5. PROMPT 2 — Task List</h2>
+<pre><code>Mobile app screen, same PulseTrack style: background #F5F7FB, white cards 16px radius with 1px #E2E8F0 borders, primary navy #1D3B8B, accent orange #F97316, Inter font, 16px margins.
+
+SCREEN: Task List.
+- App bar: hamburger menu left, title &quot;Tasks&quot;, a filter icon with a small navy badge dot on the right.
+- A search field: rounded filled #FFFFFF with a 1px border, search icon left, hint &quot;Search tasks...&quot;.
+- A horizontally scrollable row of filter chips: &quot;All&quot; (selected, navy background, white text), then &quot;On Track&quot;, &quot;At Risk&quot;, &quot;Overdue&quot;, &quot;Completed&quot; - unselected chips are white with a 1px border and dark text. The &quot;On Track&quot; chip is shown in its green tint, &quot;At Risk&quot; in amber tint, &quot;Overdue&quot; in red tint.
+- A sort control row: left label &quot;12 tasks&quot;, right small text button &quot;Sort: Due date&quot; with a chevron.
+- A vertical list of 5 task cards. Each card is a white 16px-radius card with a 6px vertical accent bar down the LEFT edge coloured by SLA status, and contains:
+  - top row: task title in 15px semibold on the left, and an SLA status badge on the right
+  - second row: a small muted project label with a folder icon, e.g. &quot;UI/UX Design&quot;
+  - third row: a priority pill (&quot;High&quot; in a soft red pill, &quot;Medium&quot; in a soft amber pill), a due date with a calendar icon &quot;10 Dec 2024&quot;, and an assignee avatar with initials on the far right
+  Example rows: &quot;Design Login Screen&quot; / UI/UX Design / High / On Track. &quot;Implement Local Storage&quot; / Mobile Development / Medium / At Risk. &quot;Create Task Model&quot; / Backend (Local) / Low / Overdue. &quot;Test Application&quot; / Quality Assurance / Medium / To Do. &quot;Prepare Demo&quot; / Documentation / Low / To Do.
+- Also show a second variant of this screen: the EMPTY STATE - a dashed rounded illustration of a checklist, heading &quot;No tasks match your filter&quot;, muted subtext &quot;Try a different filter or create a new task&quot;, and a navy outline button &quot;Clear filters&quot;.
+- Orange rounded-square floating action button with a plus icon, bottom right, casting a soft shadow.
+</code></pre>
+<hr />
+<h2>6. PROMPT 3 — Task Details (use Experimental mode)</h2>
+<pre><code>Mobile app screen, same PulseTrack style: background #F5F7FB, white cards 16px radius with 1px #E2E8F0 borders, primary navy #1D3B8B, accent orange #F97316, Inter font, 16px margins.
+
+SCREEN: Task Details.
+- App bar: back chevron left, title &quot;Task Details&quot;, a three-dot overflow menu right.
+- Header block: the task title &quot;Design Login Screen&quot; in 22px bold, and on the same line to the right an SLA status badge &quot;On Track&quot; (green pill, soft #E6F6EC background).
+- Card &quot;Overview&quot; with four label/value rows separated by hairline dividers:
+  - &quot;Assigned To&quot; - circular avatar with initials plus the name &quot;Sarah Lee&quot;
+  - &quot;Due Date&quot; - calendar icon plus &quot;10 Dec 2024&quot;
+  - &quot;Priority&quot; - a red-tinted pill &quot;High&quot;
+  - &quot;Status&quot; - a field showing &quot;In Progress&quot; with a dropdown chevron
+- Card &quot;SLA Status&quot;: a banner with a soft green #E6F6EC background and a 4px green left border containing a large badge &quot;On Track&quot;, a sentence &quot;The task is progressing as expected - 42% of the allotted window has elapsed.&quot; and a thin horizontal time-elapsed progress bar that is 42% filled in green, with small muted caption beneath: &quot;Deadline in 3 days&quot;.
+- Card &quot;Notes&quot;: a multiline note placeholder text &quot;Add any additional notes...&quot;.
+- Sticky bottom bar with two buttons: a full-width navy primary button &quot;Edit Task&quot; and a ghost outlined button &quot;Mark Complete&quot;.
+- Also show a second variant of the SLA Status card for an At Risk task: soft amber #FDF3E0 background, 4px amber left border, amber badge &quot;At Risk&quot;, sentence &quot;The deadline is approaching - 78% of the allotted window has elapsed.&quot;
+</code></pre>
+<hr />
+<h2>7. PROMPT 4 — Create / Edit Task</h2>
+<pre><code>Mobile app screen, same PulseTrack style: background #F5F7FB, white card 16px radius with 1px #E2E8F0 borders, primary navy #1D3B8B, accent orange #F97316, Inter font, 16px margins.
+
+SCREEN: Create Task.
+- App bar: back chevron left, title &quot;Create Task&quot;. No other actions.
+- A single white card holding a vertical form. Every field has a 13px semibold label ABOVE the input:
+  1. &quot;Task Title&quot; - rounded outlined text input, hint &quot;Enter task title&quot;, with a small red asterisk on the label.
+  2. &quot;Description&quot; - rounded outlined multiline textarea, 3 lines, hint &quot;Enter task description&quot;.
+  3. &quot;Project&quot; - rounded dropdown field showing &quot;UI/UX Design&quot; with a chevron.
+  4. &quot;Assign To&quot; - rounded dropdown field showing an avatar with initials plus &quot;Select team member&quot;.
+  5. &quot;Due Date&quot; - rounded outlined field with a calendar icon on the right, showing &quot;Select date&quot;.
+  6. &quot;Priority&quot; - a segmented control with four options: Low, Medium (selected, navy), High, Critical.
+  7. &quot;Status&quot; - rounded dropdown field showing &quot;To Do&quot;.
+  8. &quot;Progress&quot; - a horizontal slider at 0% with a small % value at the right end.
+- Show the validation error state on TWO fields as a second variant: &quot;Task Title&quot; has a red 1px outline with red helper text &quot;Title is required&quot; and a red alert icon, and &quot;Due Date&quot; has a red outline with red helper text &quot;Due date must be in the future&quot;.
+- Bottom: a full-width navy button &quot;Create Task&quot; with 12px radius, plus a ghost text button &quot;Cancel&quot; beneath it.
+</code></pre>
+<hr />
+<h2>8. PROMPT 5 — Team Members</h2>
+<pre><code>Mobile app screen, same PulseTrack style: background #F5F7FB, white cards 16px radius with 1px #E2E8F0 borders, primary navy #1D3B8B, accent orange #F97316, Inter font, 16px margins.
+
+SCREEN: Team Members.
+- App bar: hamburger menu left, title &quot;Team Members&quot;, a search icon right.
+- A summary strip of three small rounded stat chips in a row: &quot;4 Members&quot; (navy tint), &quot;12 Open&quot; (slate tint), &quot;2 Overdue&quot; (red tint). Each has a big number and a small label.
+- A vertical list of member cards. Each card: a large circular avatar with initials on a tinted background on the left, the member's full name in 15px semibold, their role in 13px muted beneath it, and on the right side three small stacked status pills showing counts - a green pill with a number for tasks on track, an amber pill for at risk, a red pill for overdue. A three-dot overflow menu at the far right of each card.
+  Members: John Doe - Project Manager. Sarah Lee - UI/UX Designer. Mike Kim - Mobile Developer. Emily Wong - QA Tester. David Liu - Documentation.
+- Below the list, a muted section label &quot;Workload&quot; and a simple horizontal bar for each member showing how many open tasks they hold, with the bar filled proportionally in navy.
+- Orange rounded floating action button with a plus icon, bottom right, to add a member.
+</code></pre>
+<hr />
+<h2>9. PROMPT 6 — Profile</h2>
+<pre><code>Mobile app screen, same PulseTrack style: background #F5F7FB, white cards 16px radius with 1px #E2E8F0 borders, primary navy #1D3B8B, accent orange #F97316, Inter font, 16px margins.
+
+SCREEN: Profile.
+- App bar: back chevron left, title &quot;Profile&quot;.
+- Centred header block: a large 88px circular avatar with the initials &quot;JD&quot; in white on a navy background, the name &quot;John Doe&quot; in 20px bold beneath it, and the role &quot;Project Manager&quot; in 13px muted.
+- A white rounded card containing three evenly spaced columns: &quot;Assigned 8&quot;, &quot;Completed 5&quot;, &quot;Overdue 1&quot; - each with a large bold number and a small muted label, separated by thin vertical dividers.
+- A white rounded settings list with rounded outlined icons on the left, a label, and a chevron on the right:
+  &quot;Edit Profile&quot; (person icon), &quot;SLA Rules &amp; Thresholds&quot; (sliders icon), &quot;Notifications&quot; (bell icon), &quot;About PulseTrack&quot; (info icon).
+- At the bottom, on its own, a sign-out row: a logout icon and the text &quot;Sign Out&quot; both in red #D92D20, no chevron.
+</code></pre>
+<hr />
+<h2>10. PROMPT 7 — Insights / Task Statistics</h2>
+<pre><code>Mobile app screen, same PulseTrack style: background #F5F7FB, white cards 16px radius with 1px #E2E8F0 borders, primary navy #1D3B8B, accent orange #F97316, Inter font, 16px margins.
+
+SCREEN: Insights.
+- App bar: back chevron left, title &quot;Insights&quot;, a small &quot;This week&quot; dropdown on the right.
+- Card &quot;Task Status&quot;: a vertical bar chart with four bars - green bar height 5 labelled On Track, amber bar height 3 labelled At Risk, red bar height 2 labelled Overdue, slate bar height 2 labelled Completed. Value labels sit above each bar and the axis labels beneath, in 12px muted.
+- Card &quot;SLA Breach by Member&quot;: a leaderboard list of four rows, each with a circular avatar, the member name, a horizontal bar filled in red proportional to the breach count, and the count number on the right.
+- Card &quot;Upcoming Deadlines&quot;: three rows, each with a small calendar icon, a task title, the due date in muted 12px, and an SLA badge on the right. Rows: &quot;Implement Local Storage - 12 Dec - At Risk&quot;, &quot;Test Application - 15 Dec - To Do&quot;, &quot;Prepare Demo - 18 Dec - To Do&quot;.
+- Card &quot;Project Health&quot;: a small line chart of the health score over the last 7 days, navy line with a soft navy gradient fill beneath it, with a single highlighted dot on today's value.
+</code></pre>
+<hr />
+<h2>11. PROMPT 8 — Activity Log</h2>
+<pre><code>Mobile app screen, same PulseTrack style: background #F5F7FB, white card 16px radius with 1px #E2E8F0 borders, primary navy #1D3B8B, accent orange #F97316, Inter font, 16px margins.
+
+SCREEN: Activity.
+- App bar: back chevron left, title &quot;Activity&quot;, a small calendar range button on the right.
+- A horizontally scrollable row of filter chips: &quot;All&quot; (selected, navy), &quot;Status&quot;, &quot;Created&quot;, &quot;Assigned&quot;.
+- A vertical timeline: a thin 2px light grey vertical line down the left, with circular coloured dots on it marking each event. Each entry to the right of the dot has:
+  - a circular avatar with initials
+  - one line of 14px text with the actor's name in semibold, e.g. &quot;Sarah changed the status of Design Login Screen to In Progress&quot;
+  - a muted 12px timestamp beneath, e.g. &quot;Today, 09:14&quot;
+  Dots are coloured by event type: navy for status changes, green for completions, blue for creation, amber for assignment.
+- Six entries visible, dated Today and Yesterday.
+</code></pre>
+<hr />
+<h2>12. PROMPT 9 — SLA Rules &amp; Thresholds ⭐ (your differentiator — use Experimental mode)</h2>
+<pre><code>Mobile app screen, same PulseTrack style: background #F5F7FB, white cards 16px radius with 1px #E2E8F0 borders, primary navy #1D3B8B, accent orange #F97316, Inter font, 16px margins.
+
+SCREEN: SLA Rules.
+- App bar: back chevron left, title &quot;SLA Rules&quot;, a &quot;Reset&quot; text button on the right.
+- Card &quot;How At Risk is calculated&quot;: a short paragraph of 13px muted explanatory text, and beneath it a bordered formula block in monospace 12px reading &quot;remaining % = (due date - now) / (due date - created)&quot;. Below that, four rows each with a priority pill on the left and an editable percentage value on the right: &quot;Critical 50%&quot;, &quot;High 40%&quot;, &quot;Medium 30%&quot;, &quot;Low 20%&quot;.
+- Card &quot;Adjust threshold&quot;: a large horizontal slider currently at 30% with a big navy value readout &quot;30%&quot; above it, and axis labels &quot;10%&quot; and &quot;60%&quot; at the ends in 12px muted.
+- Card &quot;Options&quot; with two toggle rows: &quot;Flag blocked tasks as At Risk&quot; (ON, navy switch) and &quot;Warn when less than 24 hours remain&quot; (ON, navy switch). Each has a one-line muted description beneath it.
+- Card &quot;Live preview&quot;: a single task card mock-up showing &quot;Implement Local Storage&quot;, a due date, and a badge that currently reads &quot;At Risk&quot; in amber, with a caption &quot;A Medium-priority task due in 2 days&quot;.
+- A sticky bottom bar with a full-width navy button &quot;Save Rules&quot; and a ghost text button &quot;Cancel&quot;.
+</code></pre>
+<hr />
+<h2>13. Refinement prompts (use these whenever a render is close but not right)</h2>
+<pre><code>Make every SLA status badge pill-shaped with a 6px solid dot before the label and a soft tinted background.
+</code></pre>
+<pre><code>The card shadows are too heavy. Reduce them to a very subtle elevation, keep the 1px #E2E8F0 border.
+</code></pre>
+<pre><code>Add a skeleton loading state to the dashboard cards: grey rounded placeholder blocks in place of the numbers and chart.
+</code></pre>
+<pre><code>Tighten the spacing to a strict 8pt grid and increase the whitespace between cards to 16px.
+</code></pre>
+<pre><code>Use filled Material icons for the active bottom-navigation tab and outlined icons for the inactive tabs.
+</code></pre>
+<pre><code>Make the app bar flat white with a 1px #E2E8F0 bottom border and no drop shadow.
+</code></pre>
+<pre><code>Increase the contrast of the secondary text: keep #64748B but raise the caption size to 12px and the weight to medium.
+</code></pre>
+<pre><code>Re-render this screen with the longest realistic content so I can see how the layout handles overflowing titles.
+</code></pre>
+<hr />
+<h2>14. Getting the designs into Figma</h2>
+<ol>
+<li>In Stitch, open the generated screen and choose <strong>Copy to Figma</strong> (or <strong>Export → Figma</strong>).</li>
+<li>Open the <strong>Figma desktop app</strong>, create a file <code>PulseTrack UI</code>, and paste (<code>Ctrl+V</code>). Stitch pastes as editable Figma layers/frames, not a flat image.</li>
+<li>Paste all ten screens into one page, arranged left to right in journey order: Sign In → Dashboard → Task List → Task Details → Create Task → Team Members → Member Detail → Profile → Insights → Activity → SLA Rules.</li>
+<li>Add frame labels above each screen (the Flutter screen filename, e.g. <code>task_list_screen.dart</code>) — this is what the developers work from, and it is what you show in the demo video when you say "here is our design".</li>
+<li>Optional but strong for the report: select all frames → export as PNG at 2x → drop into the PDF report.</li>
+<li><strong>Paste the Figma link into the GitHub README</strong> — it is free evidence of design process.</li>
+</ol>
+<hr />
+<h2>15. Figma tokens → Flutter tokens</h2>
+<p>Put these in <code>theme/app_colors.dart</code> once, and never type a colour literal anywhere else. This is what lets you say, honestly, <em>"the build matches the design"</em>.</p>
+<table>
+<thead>
+<tr>
+<th>Token</th>
+<th>Hex</th>
+<th>Flutter constant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Brand primary</td>
+<td><code>#1D3B8B</code></td>
+<td><code>AppColors.primary</code></td>
+</tr>
+<tr>
+<td>Accent</td>
+<td><code>#F97316</code></td>
+<td><code>AppColors.accent</code></td>
+</tr>
+<tr>
+<td>Background</td>
+<td><code>#F5F7FB</code></td>
+<td><code>AppColors.background</code></td>
+</tr>
+<tr>
+<td>Surface</td>
+<td><code>#FFFFFF</code></td>
+<td><code>AppColors.surface</code></td>
+</tr>
+<tr>
+<td>Border</td>
+<td><code>#E2E8F0</code></td>
+<td><code>AppColors.border</code></td>
+</tr>
+<tr>
+<td>Ink</td>
+<td><code>#0F172A</code></td>
+<td><code>AppColors.ink</code></td>
+</tr>
+<tr>
+<td>Muted</td>
+<td><code>#64748B</code></td>
+<td><code>AppColors.muted</code></td>
+</tr>
+<tr>
+<td>On Track</td>
+<td><code>#12A150</code> / <code>#E6F6EC</code></td>
+<td><code>AppColors.onTrack</code> / <code>AppColors.onTrackSoft</code></td>
+</tr>
+<tr>
+<td>At Risk</td>
+<td><code>#E8A317</code> / <code>#FDF3E0</code></td>
+<td><code>AppColors.atRisk</code> / <code>AppColors.atRiskSoft</code></td>
+</tr>
+<tr>
+<td>Overdue</td>
+<td><code>#D92D20</code> / <code>#FDECEA</code></td>
+<td><code>AppColors.overdue</code> / <code>AppColors.overdueSoft</code></td>
+</tr>
+<tr>
+<td>Completed</td>
+<td><code>#64748B</code> / <code>#EEF1F5</code></td>
+<td><code>AppColors.completed</code> / <code>AppColors.completedSoft</code></td>
+</tr>
+</tbody>
+</table>
+<div class="footer">
+<b>PulseTrack</b> · Stitch Prompt Pack · generated 08 October 2026
+</div>
+</body></html>
